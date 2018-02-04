@@ -1,0 +1,8 @@
+---
+---
+{%include layouts/general.css%}
+{%include slider_large/style.css%}
+
+.body {
+    background-color: #ccc;
+}
