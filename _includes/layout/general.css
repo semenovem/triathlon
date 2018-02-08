@@ -1,0 +1,34 @@
+{%include css/vars.css%}
+{%include header/general/style.css%}
+{%include footer/general/style.css%}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.layout-general-child-pos-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-general-child-size-bounded {
+
+}
+
+.layout-general-header {
+  flex: 1 0 auto;
+}
+.layout-general-content {
+  flex: 2 0 auto;
+}
+.layout-general-footer {
+  flex: 0 0 auto;
+}

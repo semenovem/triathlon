@@ -1,43 +1,18 @@
 ---
 layout: body
 ---
-{%include headers/general/index.html%}
-{{content}}
-{%include footers/general/index.html%}
+{%include header/general/index.html param="layout-general-child-pos-center layout-general-header"%}
+
+<div class="layout-general-content">
+    {{content}}
+</div>
+
+{%include footer/general/index.html param="layout-general-child-pos-center layout-general-footer"%}
 
 
-{%capture page.css%}{{ page.css | push: 'Spokane' }}{%endcapture%}
 
-{{jekyll.environment}}
 
 {% if jekyll.environment == "DEV" %}
-    000000000
+<!-- debug info -->
+    {%include debug/panel/index.html%}
 {% endif %}
-
-<h2>site</h2>
-{{ site }}
-
-
-
-<h2>page</h2>
-{{ page }}
-
-
-<h2>content</h2>
-{{content}}
-
-
-
-
-<br>
-
-
-
-
-<br>----<br>
-{{page.layout}}
-
-
-<br>----<br>
-{{links_css}}
-

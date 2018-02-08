@@ -1,0 +1,22 @@
+{
+  "home": {
+    "href": "",
+    "nav_item_name": "ГЛАВНАЯ"
+  },
+  "about_triathlon": {
+    "href": "about_triathlon",
+    "nav_item_name": "О ТРИАТЛОНЕ"
+  },
+  "coaches": {
+    "href": "coaches",
+    "nav_item_name": "ТРЕНЕРЫ"
+  },
+  "places": {
+    "href": "places",
+    "nav_item_name": "МЕСТА"
+  },
+  "sports_fees": {
+    "href": "sports_fees",
+    "nav_item_name": "СБОРЫ"
+  }
+}

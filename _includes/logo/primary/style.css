@@ -1,0 +1,33 @@
+.logo-primary {
+  display: inline-block;
+  text-align: center;
+
+  font-size: 18px;
+  font-family: var(--font-family-first);
+  font-weight: bold;
+}
+
+.logo-primary-abc-1 {
+  color: red;
+}
+.logo-primary-abc-2 {
+  color: green;
+}
+.logo-primary-abc-3 {
+  color: blue;
+}
+.logo-primary-abc-4 {
+  color: yellow;
+}
+.logo-primary-abc-5 {
+  color: green;
+}
+.logo-primary-abc-6 {
+  color: red;
+}
+
+
+.logo-primary-name {
+  text-align: center;
+  color: var(--font-color-first);
+}

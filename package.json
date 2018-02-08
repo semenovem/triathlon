@@ -1,0 +1,24 @@
+{
+  "name": "triathlon",
+  "version": "0.0.0",
+  "description": "site about triathlon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "JEKYLL_ENV=DEV jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semenovem/triathlon.git"
+  },
+  "keywords": [
+    "triathlon",
+    "sport"
+  ],
+  "author": "semenovem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/semenovem/triathlon/issues"
+  },
+  "homepage": "https://github.com/semenovem/triathlon#readme"
+}

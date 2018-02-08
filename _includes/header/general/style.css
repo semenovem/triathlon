@@ -1,0 +1,16 @@
+{%include logo/primary/style.css%}
+
+.header-general {
+  max-width: var(--content-txt-max-width);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-general-logo {
+
+}

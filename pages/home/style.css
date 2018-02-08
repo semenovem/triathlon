@@ -1,8 +1,4 @@
 ---
 ---
-{%include layouts/general.css%}
+{%include layout/general.css%}
 {%include slider_primary/style.css%}
-
-.body {
-    background-color: #ccc;
-}

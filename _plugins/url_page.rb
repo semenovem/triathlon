@@ -1,7 +1,7 @@
 module Jekyll
   module AssetFilter
-    def urlOfPageTags(tagName)
-      "tags/" + tagName.gsub(/\s+/, "_").downcase
+    def urlPage(href)
+      "/" + href
     end
   end
 end

@@ -1,8 +1,0 @@
----
----
-{%include headers/general/style.css%}
-{%include footers/general/style.css%}
-
-body {
-    background-color: #999;
-}
