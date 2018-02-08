@@ -1,9 +1,18 @@
 ---
 layout: body
 ---
+{%include headers/general/index.html%}
+{{content}}
+{%include footers/general/index.html%}
+
 
 {%capture page.css%}{{ page.css | push: 'Spokane' }}{%endcapture%}
 
+{{jekyll.environment}}
+
+{% if jekyll.environment == "DEV" %}
+    000000000
+{% endif %}
 
 <h2>site</h2>
 {{ site }}

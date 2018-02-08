@@ -1,7 +1,7 @@
 ---
 ---
 {%include layouts/general.css%}
-{%include slider_large/style.css%}
+{%include slider_primary/style.css%}
 
 .body {
     background-color: #ccc;
