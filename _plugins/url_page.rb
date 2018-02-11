@@ -1,7 +1,7 @@
 module Jekyll
   module AssetFilter
     def urlPage(href)
-      "/" + href
+      "/triathlon/" + href
     end
   end
 end

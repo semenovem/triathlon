@@ -3,7 +3,6 @@
 {%endcomment%}
 
 {%capture selected%}{%if page.current == include.param2%} selected{%endif%}{%endcapture%}
-
 <a href="{{site.data.pages[include.param2].href | urlPage}}" class="{{include.param | append: selected}}">
     {{site.data.pages[include.param2].nav_item_name | hardSpace}}
 </a>

@@ -8,7 +8,7 @@
 .slider-primary-poster {
     width: 100%;
     height: 100%;
-    background-image: url("/resources/imgs/slider_primary.png");
+    background-image: url("{{site.baseurl}}/resources/imgs/slider_primary.png");
     background-size: cover;
     background-position: 50% 50%;
     position: absolute;
