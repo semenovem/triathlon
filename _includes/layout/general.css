@@ -25,6 +25,20 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+
+
 .layout-general-child-pos-center {
   margin-left: auto;
   margin-right: auto;

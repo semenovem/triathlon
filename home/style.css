@@ -6,6 +6,7 @@
 {%include poster/section/race/style.css%}
 {%include poster/section/students/style.css%}
 {%include poster/section/calendar/style.css%}
+{%include last_news/style.css%}
 
 .page-home-info {
     max-width: var(--content-txt-max-width);
@@ -14,9 +15,6 @@
     margin-right: auto;
 }
 
-.page-home-info-title {
-    font-size: 24px;
-}
 .page-home-info-note {
     font-size: 18px;
 }
@@ -66,4 +64,15 @@
 
 .page-home-posters-item {
     width: 40%;
+}
+
+.page-home-last-news {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--content-txt-max-width);
+    text-align: center;
+}
+
+.page-home-last-news-size {
+    height: 250px;
 }
