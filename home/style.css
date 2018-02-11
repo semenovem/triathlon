@@ -5,13 +5,17 @@
   --font-color-second: #39c360;
 
   --typography: 18px;
-}
-:root {
-    --indent-el: 20px;
-    --indent-block: 40px;
-    --indent-section: 60px;
-}
 
+  --indent-el: 20px;
+  --indent-block: 40px;
+  --indent-section: 60px;
+
+  --indent-inner-xs: 10px;
+  --indent-inner-s: 20px;
+  --indent-inner-m: 30px;
+  --indent-inner-l: 40px;
+  --indent-inner-xl: 50px;
+}
 .indent-el-top {
     margin-top: var(--indent-el);
 }
@@ -88,7 +92,7 @@
 .nav-item-header {
     font-family: var(--font-family-first);
     color: var(--font-color-first);
-    size: 14px;
+    font-size: 16px;
     font-weight: bold;
     transition-property: color;
     transition-duration: 300ms;
@@ -157,9 +161,51 @@
 .header-general-contact-social {
   margin: 5px 0 0 0;
 }
+.nav-item-footer {
+    font-family: var(--font-family-first);
+    color: var(--font-color-first);
+    font-size: 12px;
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.nav-item-footer:hover {
+    color: var(--font-color-second);
+}
+
+.nav-item-footer.selected {
+    color: var(--font-color-second);
+    cursor: default;
+}
+
+
 .footer-general {
-  height: 100px;
-  background-color: darkolivegreen;
+  background-color: #F2F4F5;
+  width: 100%;
+  padding-top: var(--indent-inner-m);
+  padding-bottom: var(--indent-inner-m);
+}
+
+.footer-general .content {
+  max-width: var(--content-txt-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-general .social {
+  border-top: 1px #D0D6DA solid;
+  text-align: right;
+  padding-top: var(--indent-inner-xs);
+}
+
+.footer-general .nav {
+  display: flex;
+}
+
+.footer-general .nav>div {
+  display: flex;
+  flex-direction: column
 }
 
 html,
@@ -183,6 +229,20 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+
 
 .layout-general-child-pos-center {
   margin-left: auto;
@@ -294,10 +354,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .poster-section-base {
     position: relative;
+    overflow: hidden;
 }
 
 .poster-section-base img {
     width: 100%;
+    height: 100%;
+    transition: 10s;
+    backface-visibility: hidden;
+    border-radius: 3px;
+}
+
+.poster-section-base:hover img {
+    transition: 25s;
+    /*perspective: 1000px;*/
+    transform: scale(1.5) translateX(15%);
 }
 
 .poster-section-base .interaction {
@@ -318,10 +389,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .poster-section-base {
     position: relative;
+    overflow: hidden;
 }
 
 .poster-section-base img {
     width: 100%;
+    height: 100%;
+    transition: 10s;
+    backface-visibility: hidden;
+    border-radius: 3px;
+}
+
+.poster-section-base:hover img {
+    transition: 25s;
+    /*perspective: 1000px;*/
+    transform: scale(1.5) translateX(15%);
 }
 
 .poster-section-base .interaction {
@@ -342,10 +424,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .poster-section-base {
     position: relative;
+    overflow: hidden;
 }
 
 .poster-section-base img {
     width: 100%;
+    height: 100%;
+    transition: 10s;
+    backface-visibility: hidden;
+    border-radius: 3px;
+}
+
+.poster-section-base:hover img {
+    transition: 25s;
+    /*perspective: 1000px;*/
+    transform: scale(1.5) translateX(15%);
 }
 
 .poster-section-base .interaction {
@@ -366,10 +459,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .poster-section-base {
     position: relative;
+    overflow: hidden;
 }
 
 .poster-section-base img {
     width: 100%;
+    height: 100%;
+    transition: 10s;
+    backface-visibility: hidden;
+    border-radius: 3px;
+}
+
+.poster-section-base:hover img {
+    transition: 25s;
+    /*perspective: 1000px;*/
+    transform: scale(1.5) translateX(15%);
 }
 
 .poster-section-base .interaction {
@@ -387,6 +491,10 @@ h1, h2, h3, h4, h5, h6 {
 .poster-section-base .name {
     font-size: 48px;
     color: #fff;
+}
+.last-news {
+    border: 2px gold solid;
+    width: 100%;
 }
 
 .page-home-info {
@@ -396,9 +504,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-.page-home-info-title {
-    font-size: 24px;
-}
 .page-home-info-note {
     font-size: 18px;
 }
@@ -440,10 +545,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-home-posters {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
 }
 
 .page-home-posters-item {
     width: 40%;
+}
+
+.page-home-last-news {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--content-txt-max-width);
+    text-align: center;
+}
+
+.page-home-last-news-size {
+    height: 250px;
 }
