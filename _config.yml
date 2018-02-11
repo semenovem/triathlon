@@ -23,7 +23,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-ttt: bla bla
+
+contact_phone: +7 912 123 45 00
+contact_social_facebook: https://bla_bla.bla
+contact_social_instagram: https://bla_bla.bla
+contact_social_youtube: https://bla_bla.bla
+
+
 
 # Build settings
 markdown: kramdown

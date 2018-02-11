@@ -1,4 +1,5 @@
 {%include css/vars.css%}
+{%include css/indent.css%}
 {%include header/general/style.css%}
 {%include footer/general/style.css%}
 
@@ -12,6 +13,16 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: var(--font-family-first);
+  color: var(--font-color-first);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 .layout-general-child-pos-center {
@@ -19,16 +30,10 @@ body {
   margin-right: auto;
 }
 
-.layout-general-child-size-bounded {
-
-}
-
-.layout-general-header {
+.layout-general-wrap {
   flex: 1 0 auto;
 }
-.layout-general-content {
-  flex: 2 0 auto;
-}
+
 .layout-general-footer {
   flex: 0 0 auto;
 }

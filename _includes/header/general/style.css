@@ -1,4 +1,7 @@
 {%include logo/primary/style.css%}
+{%include nav/item/header/style.css%}
+{%include contact/phone/primary/style.css%}
+{%include contact/social/primary/style.css%}
 
 .header-general {
   max-width: var(--content-txt-max-width);
@@ -12,5 +15,24 @@
 }
 
 .header-general-logo {
+  min-width: 120px;
+}
 
+.header-general-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-general-items>* {
+  margin-left: 30px;
+}
+
+.header-general-contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-general-contact-social {
+  margin: 5px 0 0 0;
 }

@@ -1,18 +1,19 @@
 ---
 layout: body
 ---
-{%include header/general/index.html param="layout-general-child-pos-center layout-general-header"%}
+<div class="layout-general-wrap">
+    {%include header/general/index.html param="layout-general-child-pos-center layout-general-header"%}
 
-<div class="layout-general-content">
-    {{content}}
+    <div class="layout-general-content">
+        {{content}}
+    </div>
 </div>
-
 {%include footer/general/index.html param="layout-general-child-pos-center layout-general-footer"%}
 
 
 
 
-{% if jekyll.environment == "DEV" %}
+{%if jekyll.environment == "DEV"%}
 <!-- debug info -->
     {%include debug/panel/index.html%}
-{% endif %}
+{%endif%}

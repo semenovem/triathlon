@@ -1,0 +1,46 @@
+:root {
+    --indent-el: 20px;
+    --indent-block: 40px;
+    --indent-section: 60px;
+}
+
+.indent-el-top {
+    margin-top: var(--indent-el);
+}
+.indent-el-right {
+    margin-right: var(--indent-el);
+}
+.indent-el-bottom {
+    margin-bottom: var(--indent-el);
+}
+.indent-el-left {
+    margin-left: var(--indent-el);
+}
+
+
+.indent-block-top {
+    margin-top: var(--indent-block);
+}
+.indent-block-right {
+    margin-right: var(--indent-block);
+}
+.indent-block-bottom {
+    margin-bottom: var(--indent-block);
+}
+.indent-block-left {
+    margin-left: var(--indent-block);
+}
+
+
+.indent-section-top {
+    margin-top: var(--indent-section);
+}
+.indent-section-right {
+    margin-right: var(--indent-section);
+}
+.indent-section-bottom {
+    margin-bottom: var(--indent-section);
+}
+.indent-section-left {
+    margin-left: var(--indent-section);
+}

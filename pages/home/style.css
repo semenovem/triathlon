@@ -1,4 +1,49 @@
 ---
 ---
 {%include layout/general.css%}
-{%include slider_primary/style.css%}
+{%include slider/primary/style.css%}
+
+.page-home-info {
+    max-width: var(--content-txt-max-width);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-home-info-title {
+    font-size: 24px;
+}
+.page-home-info-note {
+    font-size: 18px;
+}
+
+.page-home-composition {
+    max-width: var(--content-txt-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.page-home-composition article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-home-composition .figure {
+
+}
+
+.page-home-composition .sign {
+    color: var(--font-color-second);
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.page-home-composition .description {
+    font-size: 18px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}

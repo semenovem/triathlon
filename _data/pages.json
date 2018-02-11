@@ -1,22 +1,43 @@
 {
-  "home": {
+  "HOME": {
     "href": "",
-    "nav_item_name": "ГЛАВНАЯ"
+    "nav_item_name": "ГЛАВНАЯ",
+    "title": "Азбука Триатлона"
   },
-  "about_triathlon": {
+  "ABOUT_TRIATHLON": {
     "href": "about_triathlon",
     "nav_item_name": "О ТРИАТЛОНЕ"
   },
-  "coaches": {
+  "COACHES": {
     "href": "coaches",
     "nav_item_name": "ТРЕНЕРЫ"
   },
-  "places": {
+  "PLACES": {
     "href": "places",
     "nav_item_name": "МЕСТА"
   },
-  "sports_fees": {
+  "SPORTS_FEES": {
     "href": "sports_fees",
     "nav_item_name": "СБОРЫ"
+  },
+  "PRICES": {
+    "href": "prices",
+    "nav_item_name": "ЦЕНЫ"
+  },
+  "REPORTS_ON_COMPETITION": {
+    "href": "reports_on_competition",
+    "nav_item_name": "ОТЧЕТЫ О ПРОШЕДШИХ СОРЕВНОВАНИЯХ"
+  },
+  "FEEDBACK": {
+    "href": "feedback",
+    "nav_item_name": "ОТЗЫВЫ"
+  },
+  "CONTACTS": {
+    "href": "contacts",
+    "nav_item_name": "КОНТАКТЫ"
+  },
+  "INDIVIDUAL_TRAINING": {
+    "href": "individual_training",
+    "nav_item_name": "Индивидуальные тренировки"
   }
 }
