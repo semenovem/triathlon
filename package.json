@@ -4,7 +4,6 @@
   "description": "site about triathlon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "JEKYLL_ENV=DEV jekyll serve"
   },
   "repository": {
