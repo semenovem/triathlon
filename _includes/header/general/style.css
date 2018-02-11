@@ -15,7 +15,7 @@
 }
 
 .header-general-logo {
-  min-width: 120px;
+  min-width: 155px;
 }
 
 .header-general-items {
@@ -30,9 +30,11 @@
 
 .header-general-contact {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .header-general-contact-social {
-  margin: 5px 0 0 0;
+  margin-top: 10px;
 }
+
+

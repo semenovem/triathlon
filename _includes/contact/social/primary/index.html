@@ -1,9 +1,18 @@
-<div class="contact-social-primary {{include.css}}">
-    <a href="{{site.contact_social_facebook}}" target="_blank">
-        <img src="{{'/resources/icons/facebook.svg' | urlPage}}" class="contact-social-primary-size"></a>
-    <a href="{{site.contact_social_instagram}}" target="_blank">
-        <img src="{{'/resources/icons/instagram.svg' | urlPage}}" class="contact-social-primary-size"/></a>
-    <a href="{{site.contact_social_youtube}}" target="_blank">
-        <img src="{{'/resources/icons/youtube.svg' | urlPage}}" class="contact-social-primary-size"></a>
+<div class="{{include.css}}">
+    <a href="{{site.contact_social_facebook}}" target="_blank" rel="noopener">
+        <img src="{{'/resources/icons/facebook.svg' | urlPage}}"
+             class="contact-social-primary-size"
+             alt="Моя группа в facebook">
+    </a>
+    <a href="{{site.contact_social_instagram}}" target="_blank" rel="noopener">
+        <img src="{{'/resources/icons/instagram.svg' | urlPage}}"
+             class="contact-social-primary-size"
+             alt="Мой instagram"/>
+    </a>
+    <a href="{{site.contact_social_youtube}}" target="_blank" rel="noopener">
+        <img src="{{'/resources/icons/youtube.svg' | urlPage}}"
+             class="contact-social-primary-size"
+             alt="Мой канал на youtube">
+    </a>
 </div>
 
