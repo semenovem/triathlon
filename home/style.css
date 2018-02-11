@@ -58,6 +58,8 @@
 }
 
 .page-home-posters {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
 }

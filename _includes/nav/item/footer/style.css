@@ -1,0 +1,17 @@
+.nav-item-footer {
+    font-family: var(--font-family-first);
+    color: var(--font-color-first);
+    font-size: 12px;
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.nav-item-footer:hover {
+    color: var(--font-color-second);
+}
+
+.nav-item-footer.selected {
+    color: var(--font-color-second);
+    cursor: default;
+}

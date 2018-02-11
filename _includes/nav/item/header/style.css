@@ -1,7 +1,7 @@
 .nav-item-header {
     font-family: var(--font-family-first);
     color: var(--font-color-first);
-    size: 14px;
+    font-size: 16px;
     font-weight: bold;
     transition-property: color;
     transition-duration: 300ms;

@@ -2,7 +2,7 @@
 определим текущий выбранный элемент
 {%endcomment%}
 
-{%capture selected%}{%if page.current == include.param2%} selected{%endif%}{%endcapture%}
-<a href="{{site.data.pages[include.param2].href | urlPage}}" class="{{include.param | append: selected}}">
-    {{site.data.pages[include.param2].nav_item_name | hardSpace}}
+{%capture selected%}{%if page.current == include.page_name%} selected{%endif%}{%endcapture%}
+<a href="{{site.data.pages[include.page_name].href | urlPage}}" class="{{include.css | append: selected}}">
+    {{site.data.pages[include.page_name].nav_item_name | hardSpace}}
 </a>

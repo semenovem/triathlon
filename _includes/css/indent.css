@@ -1,9 +1,3 @@
-:root {
-    --indent-el: 20px;
-    --indent-block: 40px;
-    --indent-section: 60px;
-}
-
 .indent-el-top {
     margin-top: var(--indent-el);
 }
