@@ -1,0 +1,24 @@
+.poster-section-base {
+    position: relative;
+}
+
+.poster-section-base img {
+    width: 100%;
+}
+
+.poster-section-base .interaction {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.poster-section-base .name {
+    font-size: 48px;
+    color: #fff;
+}

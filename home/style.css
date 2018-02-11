@@ -2,6 +2,10 @@
 ---
 {%include layout/general.css%}
 {%include slider/primary/style.css%}
+{%include poster/section/coaching/style.css%}
+{%include poster/section/race/style.css%}
+{%include poster/section/students/style.css%}
+{%include poster/section/calendar/style.css%}
 
 .page-home-info {
     max-width: var(--content-txt-max-width);
@@ -39,11 +43,25 @@
     color: var(--font-color-second);
     margin-top: 20px;
     font-size: 24px;
+    font-weight: bold;
+    transition: color 300ms;
 }
 
+.page-home-composition .sign:hover {
+    color: var(--font-color-first);
+}
 .page-home-composition .description {
     font-size: 18px;
     width: 300px;
     margin-top: 20px;
     text-align: center;
+}
+
+.page-home-posters {
+    display: flex;
+    justify-content: center;
+}
+
+.page-home-posters-item {
+    width: 40%;
 }

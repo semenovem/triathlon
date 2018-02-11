@@ -39,5 +39,17 @@
   "INDIVIDUAL_TRAINING": {
     "href": "individual_training",
     "nav_item_name": "Индивидуальные тренировки"
+  },
+  "SWIM": {
+    "href": "swim",
+    "nav_item_name": "Плавание"
+  },
+  "BIKE": {
+    "href": "bike",
+    "nav_item_name": "Велосипед"
+  },
+  "RUNNING": {
+    "href": "running",
+    "nav_item_name": "Бег"
   }
 }

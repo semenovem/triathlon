@@ -28,10 +28,8 @@
     border-radius: 50%;
     width: 13px;
     height: 13px;
-    margin: 0 2px;
+    margin: 0 4px;
     background-color: var(--font-color-first);
-    opacity: 0.9;
-    cursor: pointer;
 }
 
 .slider-primary-poster-pointers>span.selected {
@@ -87,8 +85,8 @@
 }
 
 .slider-primary-arrow-left {
-    background-image: url("/resources/icons/ic_keyboard_arrow_left_white_24px.svg");
+    background-image: url("{{site.baseurl}}/resources/icons/ic_keyboard_arrow_left_white_24px.svg");
 }
 .slider-primary-arrow-right {
-    background-image: url("/resources/icons/ic_keyboard_arrow_right_white_24px.svg");
+    background-image: url("{{site.baseurl}}/resources/icons/ic_keyboard_arrow_right_white_24px.svg");
 }
