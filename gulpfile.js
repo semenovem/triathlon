@@ -39,6 +39,7 @@ gulp.task('test', () => {
 // git checkout gh-pages
 // git reset --hard HEAD
 // отчистить директорию, кроме скрытых и _dist
+// find * -not -path "_dist/*" -delete
 
 // перенести  файлы из _dist в ./   mv -r ./_dist/* ./
 // перенести .gitignore   mv ./_dist/.gitignore ./
@@ -46,8 +47,6 @@ gulp.task('test', () => {
 // git commit -m 
 
 
-  // git clone http://whatever.git -b branch-name
-  // find * -not -path "_dist/*" -delete
 });
 
 
