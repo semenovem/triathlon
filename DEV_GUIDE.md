@@ -26,23 +26,5 @@ sign подпись под картинкой /
 
 
 
----
----
-скрипт депдлоя
 
-ветка мастер, все изменения закомиченны
-получим номер коммита
-yarn build
-checkout gh-pages
-add _site
-
-удалить все, кроме _site
-
-git mv _site/* ./
-rm -rf _site
-
-commit -m 'номер коммита, с которого собрали'
-push origin gh-pages
-
-checkout -
 

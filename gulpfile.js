@@ -30,7 +30,48 @@ gulp.task('clean-target', () => {
 });
 
 
+gulp.task('test', () => {
+
+  console.log('gulp test start');
+  // создать временную директорию
+
+  // клонировать репозиторий
+
+  // переключиться на ветку gh-pages
+  // отчистить директорию, кроме .git
+  // скопировать файлы
+
+
+  // git clone http://whatever.git -b branch-name
+
+});
+
+
+
+
+
+
 /*
 https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html
+
+---
+---
+скрипт депдлоя
+
+ветка мастер, все изменения закомиченны
+получим номер коммита
+yarn build
+checkout gh-pages
+add _site
+
+удалить все, кроме _site
+
+git mv _site/* ./
+rm -rf _site
+
+commit -m 'номер коммита, с которого собрали'
+push origin gh-pages
+
+checkout -
 
 */
