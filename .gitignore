@@ -1,8 +1,7 @@
 _site
 _dist
-.sass-cache
-.jekyll-metadata
-
-.idea
+.*
 
 node_modules
+
+!.gitignore

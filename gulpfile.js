@@ -32,18 +32,22 @@ gulp.task('clean-target', () => {
 
 gulp.task('test', () => {
 
-  console.log('gulp test start');
-  // создать временную директорию
+  console.log('gulp test start')
+// npm run-script build
 
-  // клонировать репозиторий
+// переключиться на ветку gh-pages
+// git checkout gh-pages
+// git reset --hard HEAD
+// отчистить директорию, кроме скрытых и _dist
 
-  // переключиться на ветку gh-pages
-  // отчистить директорию, кроме .git
-  // скопировать файлы
+// перенести  файлы из _dist в ./   mv -r ./_dist/* ./
+// перенести .gitignore   mv ./_dist/.gitignore ./
+// git add .
+// git commit -m 
 
 
   // git clone http://whatever.git -b branch-name
-
+  // find * -not -path "_dist/*" -delete
 });
 
 
