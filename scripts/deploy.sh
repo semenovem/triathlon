@@ -8,7 +8,7 @@ COMMIT=$(git rev-parse HEAD)
 
 
 ### сборка проекта
-# npm run-script build
+npm run-script build
 
 
 # cat .gitignore | grep -v ".gitignore" > tmp_gitignore
@@ -32,11 +32,7 @@ git reset --hard origin/$BRANCH
 find * -not -path "_dist/*" -not -path "_site/*" -not -path "node_modules/" -delete
 
 
-### 
-
-
 ### перенести  файлы из _dist в ./
-###
 mv -f ./_dist/* ./
 
 
