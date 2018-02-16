@@ -3,17 +3,12 @@
 # chmod ug+x scripts/deploy.sh
 # запускать из корня проекта todo приделать проверку места запуска
 
+
 ### сборка проекта
-###
 # npm run-script build
 
 
-
-pwd
-echo "1111"
-
 ### переключиться на ветку gh-pages
-###
 if git checkout ggggg ; then
   echo ok
 else
@@ -24,36 +19,20 @@ fi
 
 
 ### сбросить изменения к состоянию удаленной ветки, что бы не было конфликтов
+# git reset --hard origin/gh-pages
+
+
+### отчистить директорию, кроме скрытых и _dist
 ###
-# git reset --hard HEAD
-
-
-
-
-# отчистить директорию, кроме скрытых и _dist
 # find * -not -path "_dist/*" -delete
 
-# перенести  файлы из _dist в ./   mv -r ./_dist/* ./
-# перенести .gitignore   mv ./_dist/.gitignore ./
+
+### перенести  файлы из _dist в ./
+###
+# mv -r ./_dist/* ./
+
+
 # git add .
-# git commit -m
+# git commit -m номер коммита в ветке master
 
-
-
-#---
-# ---
-# скрипт депдлоя
-
-# ветка мастер, все изменения закомиченны
-# получим номер коммита
-# yarn build
-# checkout gh-pages
-# add _site
-
-# удалить все, кроме _site
-
-# git mv _site/* ./
-# rm -rf _site
-
-# commit -m 'номер коммита, с которого собрали'
-# push origin gh-pages
+### обратно в ветку master
