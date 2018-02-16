@@ -3,16 +3,17 @@
 # chmod ug+x scripts/deploy.sh
 # запускать из корня проекта todo приделать проверку места запуска
 
+BRANCH='gh-test';
 
 ### сборка проекта
 # npm run-script build
 
 
 ### переключиться на ветку gh-pages
-if git checkout ggggg ; then
+if git checkout "$BRANCH" ; then
   echo ok
 else
-  echo "Не удалось переключиться на ветку "
+  echo "Не удалось переключиться на ветку: $BRANCH"
   exit 1;
 fi
 
