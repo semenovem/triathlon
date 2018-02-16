@@ -29,52 +29,7 @@ gulp.task('clean-target', () => {
   del.sync(TARGET);
 });
 
-
-gulp.task('test', () => {
-
-  console.log('gulp test start')
-// npm run-script build
-
-// переключиться на ветку gh-pages
-// git checkout gh-pages
-// git reset --hard HEAD
-// отчистить директорию, кроме скрытых и _dist
-// find * -not -path "_dist/*" -delete
-
-// перенести  файлы из _dist в ./   mv -r ./_dist/* ./
-// перенести .gitignore   mv ./_dist/.gitignore ./
-// git add .
-// git commit -m 
-
-
-});
-
-
-
-
-
-
 /*
 https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html
-
----
----
-скрипт депдлоя
-
-ветка мастер, все изменения закомиченны
-получим номер коммита
-yarn build
-checkout gh-pages
-add _site
-
-удалить все, кроме _site
-
-git mv _site/* ./
-rm -rf _site
-
-commit -m 'номер коммита, с которого собрали'
-push origin gh-pages
-
-checkout -
 
 */
