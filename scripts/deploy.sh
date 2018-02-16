@@ -9,6 +9,9 @@ COMMIT=$(git rev-parse HEAD)
 ### сборка проекта
 # npm run-script build
 
+cat .gitignore | grep -v ".gitignore" > tmp_gitignore
+echo "scripts" >> tmp_gitignore 
+
 
 ### переключиться на ветку gh-pages
 if git checkout "$BRANCH" ; then
@@ -19,13 +22,17 @@ else
 fi
 
 
-
 ### сбросить изменения к состоянию удаленной ветки, что бы не было конфликтов
 # git reset --hard origin/$BRANCH
 
 
+git checkout -
+
 ### отчистить директорию, кроме скрытых и _dist
-find * -not -path "_dist/*" -delete
+# find * -not -path "_dist/*" -not -path "node_modules/*" -not -path "scripts/*" -delete
+
+
+### 
 
 
 ### перенести  файлы из _dist в ./
