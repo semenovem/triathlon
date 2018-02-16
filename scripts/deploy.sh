@@ -3,7 +3,8 @@
 # chmod ug+x scripts/deploy.sh
 # запускать из корня проекта todo приделать проверку места запуска
 
-BRANCH='gh-test';
+BRANCH='gh-test'
+COMMIT=$(git rev-parse HEAD)
 
 ### сборка проекта
 # npm run-script build
@@ -20,12 +21,11 @@ fi
 
 
 ### сбросить изменения к состоянию удаленной ветки, что бы не было конфликтов
-# git reset --hard origin/gh-pages
+# git reset --hard origin/$BRANCH
 
 
 ### отчистить директорию, кроме скрытых и _dist
-###
-# find * -not -path "_dist/*" -delete
+find * -not -path "_dist/*" -delete
 
 
 ### перенести  файлы из _dist в ./
