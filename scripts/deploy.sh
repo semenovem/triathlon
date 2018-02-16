@@ -6,12 +6,14 @@
 BRANCH='gh-test'
 COMMIT=$(git rev-parse HEAD)
 
+
 ### сборка проекта
 # npm run-script build
 
-cat .gitignore | grep -v ".gitignore" > tmp_gitignore
-echo "scripts" >> tmp_gitignore 
 
+# cat .gitignore | grep -v ".gitignore" > tmp_gitignore
+# echo "scripts" >> tmp_gitignore 
+# cp tmp_gitignore .gitignore
 
 ### переключиться на ветку gh-pages
 if git checkout "$BRANCH" ; then
@@ -23,13 +25,11 @@ fi
 
 
 ### сбросить изменения к состоянию удаленной ветки, что бы не было конфликтов
-# git reset --hard origin/$BRANCH
+git reset --hard origin/$BRANCH
 
-
-git checkout -
 
 ### отчистить директорию, кроме скрытых и _dist
-# find * -not -path "_dist/*" -not -path "node_modules/*" -not -path "scripts/*" -delete
+find * -not -path "_dist/*" -not -path "_site/*" -not -path "node_modules/" -delete
 
 
 ### 
@@ -37,10 +37,14 @@ git checkout -
 
 ### перенести  файлы из _dist в ./
 ###
-# mv -r ./_dist/* ./
+mv -f ./_dist/* ./
 
 
-# git add .
-# git commit -m номер коммита в ветке master
+git add .
+
+exit 0;
+
+# git commit -m "$COMMIT"
 
 ### обратно в ветку master
+git checkout -
