@@ -3,17 +3,12 @@
 # chmod ug+x scripts/deploy.sh
 # запускать из корня проекта todo приделать проверку места запуска
 
-BRANCH='gh-test'
+BRANCH='gh-pages'
 COMMIT=$(git rev-parse HEAD)
-
 
 ### сборка проекта
 npm run-script build
 
-
-# cat .gitignore | grep -v ".gitignore" > tmp_gitignore
-# echo "scripts" >> tmp_gitignore 
-# cp tmp_gitignore .gitignore
 
 ### переключиться на ветку gh-pages
 if git checkout "$BRANCH" ; then
@@ -29,7 +24,7 @@ git reset --hard origin/$BRANCH
 
 
 ### отчистить директорию, кроме скрытых и _dist
-find * -not -path "_dist/*" -not -path "_site/*" -not -path "node_modules/" -delete
+find * -not -path "_dist/*" -not -path "_site/*" -not -path "node_modules/*" -delete
 
 
 ### перенести  файлы из _dist в ./
@@ -37,10 +32,9 @@ mv -f ./_dist/* ./
 
 
 git add .
+git commit -m $COMMIT
+git push 
 
-exit 0;
-
-# git commit -m "$COMMIT"
 
 ### обратно в ветку master
 git checkout -
