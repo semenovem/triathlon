@@ -6,7 +6,7 @@
   "scripts": {
     "start": "JEKYLL_ENV=DEV jekyll serve",
     "build": "JEKYLL_ENV=production jekyll build && gulp build",
-    "deploy": "scripts/deploy.sh"
+    "deploy": "_scripts/deploy.sh"
   },
   "repository": {
     "type": "git",
