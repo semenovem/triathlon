@@ -1,0 +1,11 @@
+<div class="last-news {{include.css}}">
+
+  {%assign news = site.news%}
+
+  <!-- увеличить число итераций -->
+  {%for item in news limit:1%}
+    {%capture css%}{{'indent-el-left' | isTrue:forloop.last}}{%endcapture%}
+    {%include last_news/item/index.html item=item css=css%}
+  {%endfor%}
+
+</div>

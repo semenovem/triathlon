@@ -1,0 +1,11 @@
+{%include last_news/item/style.css%}
+
+.last-news {
+  border: 2px gold solid;
+  width: 100%;
+}
+
+.last-news-item {
+  height: 100%;
+  display: inline-block;
+}

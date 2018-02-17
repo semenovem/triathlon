@@ -1,55 +1,55 @@
 {
   "HOME": {
-    "href": "",
+    "url": "",
     "nav_item_name": "ГЛАВНАЯ",
     "title": "Азбука Триатлона"
   },
   "ABOUT_TRIATHLON": {
-    "href": "about_triathlon",
+    "url": "about_triathlon",
     "nav_item_name": "О ТРИАТЛОНЕ"
   },
   "COACHES": {
-    "href": "coaches",
+    "url": "coaches",
     "nav_item_name": "ТРЕНЕРЫ"
   },
   "PLACES": {
-    "href": "places",
+    "url": "places",
     "nav_item_name": "МЕСТА"
   },
   "SPORTS_FEES": {
-    "href": "sports_fees",
+    "url": "sports_fees",
     "nav_item_name": "СБОРЫ"
   },
   "PRICES": {
-    "href": "prices",
+    "url": "prices",
     "nav_item_name": "ЦЕНЫ"
   },
   "REPORTS_ON_COMPETITION": {
-    "href": "reports_on_competition",
+    "url": "reports_on_competition",
     "nav_item_name": "ОТЧЕТЫ О ПРОШЕДШИХ СОРЕВНОВАНИЯХ"
   },
   "FEEDBACK": {
-    "href": "feedback",
+    "url": "feedback",
     "nav_item_name": "ОТЗЫВЫ"
   },
   "CONTACTS": {
-    "href": "contacts",
+    "url": "contacts",
     "nav_item_name": "КОНТАКТЫ"
   },
   "INDIVIDUAL_TRAINING": {
-    "href": "individual_training",
+    "url": "individual_training",
     "nav_item_name": "Индивидуальные тренировки"
   },
   "SWIM": {
-    "href": "swim",
+    "url": "swim",
     "nav_item_name": "Плавание"
   },
   "BIKE": {
-    "href": "bike",
+    "url": "bike",
     "nav_item_name": "Велосипед"
   },
   "RUNNING": {
-    "href": "running",
+    "url": "running",
     "nav_item_name": "Бег"
   }
 }

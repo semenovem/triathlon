@@ -1,26 +1,72 @@
 <style>
-    {%include debug/panel/style.css%}
+  {%include debug/panel/style.css%}
+
+  .d-tr-td-content {
+    width: 100%;
+  }
+
+  .d-tr-td-content>textarea {
+    width: 100%;
+  }
+
 </style>
-<div class="debug-panel">
-
-    <h2>site</h2>
-    {{ site }}
+<section class="debug-panel"><div>
 
 
-    <h3>site.data.news</h3>
-    {{site.data.news}}
+  <h3>site.news</h3>
+    {{site.news.size}}
 
-    <h3>site.baseurl</h3>
-    {{site.baseurl}}
+    {%assign gist = site.news[110]%}
+    <table>
+      {%for key in gist%}
+      <tr>
+        <td>{{key}}</td>
+        <td class="d-tr-td-content">
+          <textarea rows="5">{{gist[key]}}</textarea>
+        </td>
+      </tr>
+      {%endfor%}
+    </table>
+
+  <br>
+
+
+  {%comment%}
+  <h2>page</h2>
+  <table>
+    {%for key in page%}
+    <tr>
+      <td>{{key}}</td>
+      <td class="d-tr-td-content">
+        <textarea rows="2">{{page[key]}}</textarea>
+      </td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%endcomment%}
 
 
 
-    <h2>page</h2>
-    {{ page }}
-    <br>
 
 
+  {%comment%}
+  <br><hr>
+  <h2>site</h2>
+    size site.posts: {{site.posts | size}}
+  <br>
+
+  <table>
+    {%for key in site%}
+
+      <tr>
+        <td>{{key}}</td>
+        <td class="d-tr-td-content">
+          <textarea rows="">{{site[key]}}</textarea>
+        </td>
+      </tr>
+    {%endfor%}
+  </table>
+  {%endcomment%}
 
 
-
-</div>
+</div></section>

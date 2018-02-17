@@ -4,7 +4,7 @@
 ---
 
 при подключении файла html, первый параметр всегда стили, передаваемые родительским компонентом
-{%include file.html param="css class"%}
+{%include file.html param='css class'%}
 
 
 ---

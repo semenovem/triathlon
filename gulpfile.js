@@ -6,7 +6,7 @@ const del = require('del');
 const SOURCE = '_site';
 const TARGET = '_dist';
 
-gulp.task('build', ['clean-target', 'minify-css', 'minify-html', 'transfer-resources']);
+gulp.task('build', ['clean-target', 'minify-css', 'minify-html', 'transfer-assets']);
 
 gulp.task('minify-css', () => (
   gulp.src(`${SOURCE}/**/*.css`)
@@ -20,9 +20,9 @@ gulp.task('minify-html', () => (
     .pipe(gulp.dest(TARGET))
 ));
 
-gulp.task('transfer-resources', () => (
-  gulp.src(`${SOURCE}/resources/**/*`)
-    .pipe(gulp.dest(`${TARGET}/resources/`))
+gulp.task('transfer-assets', () => (
+  gulp.src(`${SOURCE}/assets/**/*`)
+    .pipe(gulp.dest(`${TARGET}/assets/`))
 ));
 
 gulp.task('clean-target', () => {

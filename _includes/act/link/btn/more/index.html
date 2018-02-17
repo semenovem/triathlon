@@ -1,0 +1,10 @@
+{%comment%}
+<!-- ссыкла как кнопка -->
+{%endcomment%}
+
+<a
+  href="{{include.url | createURL}}"
+  class="act-link-btn-more {{include.css}}"
+>
+    {{include.children}}
+</a>

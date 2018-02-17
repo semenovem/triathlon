@@ -7,47 +7,48 @@ current: HOME
 {%include slider/primary/index.html%}
 
 <section class="page-home-info indent-section-top">
-    <h2>Я провожу индивидуальные тренировки и все такое</h2>
+  <h2>Я провожу индивидуальные тренировки и все такое</h2>
 
-    <div class="page-home-info-note">
-        Продающий текст, кратко говорящий кто я / мы, что мы деаем, сколько времения мы это делаем.
-        Читающий это понимает, что находится на сайте профессионала
-    </div>
+  <div class="page-home-info-note">
+    Продающий текст, кратко говорящий кто я / мы, что мы деаем, сколько времения мы это делаем.
+    Читающий это понимает, что находится на сайте профессионала
+  </div>
 </section>
 
 <section class="page-home-composition indent-section-top">
-    <article>
-        <img src="{{site.baseurl}}/resources/imgs/badge_swim.png" class="figure">
-        <a href="{{site.data.pages.SWIM.href | urlPage}}" class="sign">Плавание</a>
-        <div class="description">Постановка техники, развитие выносливости. Плавание в открытой воде. </div>
-    </article>
+  <article>
+    <img src="{{site.baseurl}}/assets/imgs/badge_swim.png" class="figure">
+    <a href="{{site.data.pages.SWIM.url | createURL}}" class="sign">Плавание</a>
+    <div class="description">Постановка техники, развитие выносливости. Плавание в открытой воде.</div>
+  </article>
 
-    <article class="indent-block-left">
-        <img src="{{site.baseurl}}/resources/imgs/badge_bike.png" class="figure">
-        <a href="{{site.data.pages.BIKE.href | urlPage}}" class="sign">Велосипед</a>
-        <div class="description">Подготовка к длинным дистанциям. </div>
-    </article>
+  <article class="indent-block-left">
+    <img src="{{site.baseurl}}/assets/imgs/badge_bike.png" class="figure">
+    <a href="{{site.data.pages.BIKE.url | createURL}}" class="sign">Велосипед</a>
+    <div class="description">Подготовка к длинным дистанциям.</div>
+  </article>
 
-    <article class="indent-block-left">
-        <img src="{{site.baseurl}}/resources/imgs/badge_run.png" class="figure">
-        <a href="{{site.data.pages.RUNNING.href | urlPage}}" class="sign">Бег</a>
-        <div class="description">Инфо о технике, как и кто проводит занятие. Продающий текст, информация о
-            преимуществах</div>
-    </article>
+  <article class="indent-block-left">
+    <img src="{{site.baseurl}}/assets/imgs/badge_run.png" class="figure">
+    <a href="{{site.data.pages.RUNNING.url | createURL}}" class="sign">Бег</a>
+    <div class="description">Инфо о технике, как и кто проводит занятие. Продающий текст, информация о
+      преимуществах
+    </div>
+  </article>
 </section>
 
 <section class="page-home-posters indent-section-top">
-    {%include poster/section/coaching/index.html css="page-home-posters-item indent-block-right"%}
-    {%include poster/section/race/index.html css="page-home-posters-item"%}
+  {%include poster/section/coaching/index.html css='page-home-posters-item indent-block-right'%}
+  {%include poster/section/race/index.html css='page-home-posters-item'%}
 </section>
 <section class="page-home-posters indent-block-top">
-    {%include poster/section/students/index.html css="page-home-posters-item indent-block-right"%}
-    {%include poster/section/calendar/index.html css="page-home-posters-item"%}
+  {%include poster/section/students/index.html css='page-home-posters-item indent-block-right'%}
+  {%include poster/section/calendar/index.html css='page-home-posters-item'%}
 </section>
 
 <section class="page-home-last-news indent-section-top">
-    <h2>Последние новости</h2>
-    {%include last_news/index.html css="page-home-last-news-size"%}
+  <h2>Последние новости</h2>
+  {%include last_news/widget/index.html css='page-home-last-news-size'%}
 </section>
 
 

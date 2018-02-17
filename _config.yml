@@ -25,6 +25,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 contact_phone: +7 912 123 45 00
+
 contact_social_facebook: https://facebook.com
 contact_social_instagram: https://instagram.com
 contact_social_youtube: https://youtube.com
@@ -36,6 +37,28 @@ markdown: kramdown
 #plugins:
 #  - jekyll-feed
 
-# Exclude from processing.
-exclude: ['README.md', '.idea/', 'node_modules', 'gulpfile.js', 'package*', 'LICENSE', '*.md']
+kramdown:
+  input: GFM
+#  syntax_highlighter: rouge
+#  syntax_highlighter_opts:
+#  css_class: 'highlight'
 
+#sass:
+#  style: :expanded
+
+# Exclude from processing.
+exclude: ['README.md', '.*', '.*/', '.idea/', 'node_modules', 'gulpfile.js', 'package*', 'LICENSE']
+
+collections:
+  news:
+    foo: bar
+    output: true
+#    permalink: /news/:path/
+
+
+defaults:
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: new

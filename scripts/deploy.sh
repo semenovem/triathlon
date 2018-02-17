@@ -11,7 +11,7 @@ npm run-script build
 
 
 ### переключиться на ветку gh-pages
-if git checkout "$BRANCH" ; then
+if git checkout ${BRANCH} ; then
   echo ok
 else
   echo "Не удалось переключиться на ветку: $BRANCH"
@@ -20,21 +20,18 @@ fi
 
 
 ### сбросить изменения к состоянию удаленной ветки, что бы не было конфликтов
-git reset --hard origin/$BRANCH
+git reset --hard origin/${BRANCH}
 
 
 ### отчистить директорию, кроме скрытых и _dist
 find * -not -path "_dist/*" -not -path "_site/*" -not -path "node_modules/*" -delete
 
 
-### перенести  файлы из _dist в ./
+### перенести  файлы из _dist в корень проекта ./
 mv -f ./_dist/* ./
 
 
 git add .
-git commit -m $COMMIT
-git push 
-
-
-### обратно в ветку master
+git commit -m ${COMMIT}
+git push
 git checkout -

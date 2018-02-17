@@ -1,0 +1,9 @@
+{%assign item=include.item%}
+{%assign css=include.css%}
+<a class="last-news-item {{include.css}}" href="{{item.url}}">
+
+  <img src="{{item.url | remove:'index.html' | createURL}}assets/poster.jpg">
+
+  <!--{{item.date}}-->
+
+</a>
