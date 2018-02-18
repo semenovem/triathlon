@@ -55,5 +55,13 @@
   "NEWS": {
     "url": "news",
     "nav_item_name": "Новости"
+  },
+  "GALLERY": {
+    "url": "gallery",
+    "nav_item_name": "Галлерея"
+  },
+  "CALENDAR": {
+    "url": "calendar",
+    "nav_item_name": "Календарь"
   }
 }
