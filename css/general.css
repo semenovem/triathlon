@@ -1,35 +1,41 @@
 .logo-primary {
+  --color: #3E7400;
+
+  color: var(--color);
+
   display: inline-block;
   text-align: center;
 
   font-size: 24px;
-  font-family: var(--font-family-first);
+  font-family: "Arial Black";
   font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 
 .logo-primary-abc-1 {
-  color: red;
+  /*color: red;*/
 }
 .logo-primary-abc-2 {
-  color: green;
+  /*color: green;*/
 }
 .logo-primary-abc-3 {
-  color: blue;
+  /*color: blue;*/
 }
 .logo-primary-abc-4 {
-  color: #c5c500;
+  /*color: #c5c500;*/
 }
 .logo-primary-abc-5 {
-  color: green;
+  /*color: green;*/
 }
 .logo-primary-abc-6 {
-  color: red;
+  /*color: red;*/
 }
 
 
 .logo-primary-name {
   text-align: center;
-  color: var(--font-color-second);
+  /*color: var(--font-color-second);*/
 }
 .nav-item-header {
     font-family: var(--font-family-first);
