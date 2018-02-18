@@ -1,5 +1,6 @@
 ---
-title: Марафон в Нью Йорке
+title: Соревнование Марафон в Нью Йорке
+name: Марафон в Нью Йорке
 ---
 
 Trailing zeros is the result of multilpy even number and every fifth number.

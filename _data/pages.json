@@ -51,5 +51,9 @@
   "RUNNING": {
     "url": "running",
     "nav_item_name": "Бег"
+  },
+  "NEWS": {
+    "url": "news",
+    "nav_item_name": "Новости"
   }
 }

@@ -6,6 +6,7 @@
 {%include poster/section/students/style.css%}
 {%include poster/section/calendar/style.css%}
 {%include last_news/widget/style.css%}
+{%include act/link/btn/more/style.css%}
 
 .page-home-info {
   max-width: var(--content-txt-max-width);
@@ -24,6 +25,7 @@
   margin-right: auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .page-home-composition article {

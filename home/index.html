@@ -47,8 +47,15 @@ current: HOME
 </section>
 
 <section class="page-home-last-news indent-section-top">
-  <h2>Последние новости</h2>
+  <h2 class="indent-el-bottom">Последние новости</h2>
   {%include last_news/widget/index.html css='page-home-last-news-size'%}
+
+  {%
+    include act/link/btn/more/index.html
+      css='indent-block-top'
+      url=site.data.pages.NEWS.url
+      children='СМОТРЕТЬ ВСЕ НОВОСТИ'
+  %}
 </section>
 
 

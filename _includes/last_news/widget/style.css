@@ -1,8 +1,8 @@
 {%include last_news/item/style.css%}
 
 .last-news {
-  border: 2px gold solid;
   width: 100%;
+  white-space: nowrap;
 }
 
 .last-news-item {

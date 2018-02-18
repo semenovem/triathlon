@@ -7,10 +7,11 @@
   padding: 15px 25px;
   cursor: pointer;
   font-weight: bold;
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: 300ms;
 }
 
 .act-link-btn-more:hover {
   background-color: var(--font-color-first);
+  box-shadow: 0 0 10px #999;
 }
