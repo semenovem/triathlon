@@ -1,7 +1,5 @@
 .logo-primary {
-  --color: #3E7400;
-
-  color: var(--color);
+  color: #3E7400;
 
   display: inline-block;
   text-align: center;
@@ -13,27 +11,6 @@
   letter-spacing: 1px;
 }
 
-.logo-primary-abc-1 {
-  /*color: red;*/
-}
-.logo-primary-abc-2 {
-  /*color: green;*/
-}
-.logo-primary-abc-3 {
-  /*color: blue;*/
-}
-.logo-primary-abc-4 {
-  /*color: #c5c500;*/
-}
-.logo-primary-abc-5 {
-  /*color: green;*/
-}
-.logo-primary-abc-6 {
-  /*color: red;*/
-}
-
-
 .logo-primary-name {
   text-align: center;
-  /*color: var(--font-color-second);*/
 }
