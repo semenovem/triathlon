@@ -47,7 +47,13 @@ kramdown:
 #  style: :expanded
 
 # Exclude from processing.
-exclude: ['README.md', '.*', '.*/', '.idea/', 'node_modules', 'scripts', 'gulpfile.js', 'package*', 'LICENSE']
+exclude: [
+  './README.md', './DEV_GUIDE.md',
+  './.idea/',
+  './node_modules', './scripts', './_dev',
+  './gulpfile.js', './package.json', './package-lock.json',
+  'LICENSE'
+]
 
 collections:
   news:

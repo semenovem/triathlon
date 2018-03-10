@@ -40,6 +40,10 @@
     "url": "individual_training",
     "nav_item_name": "Индивидуальные тренировки"
   },
+  "TRAINING_SESSIONS": {
+    "url": "training_sessions",
+    "nav_item_name": "Тренировки"
+  },
   "SWIM": {
     "url": "swim",
     "nav_item_name": "Плавание"
@@ -63,5 +67,9 @@
   "CALENDAR": {
     "url": "calendar",
     "nav_item_name": "Календарь"
-  }
+  },
+  "APPRENTICES": {
+    "url": "apprentices",
+    "nav_item_name": "Воспитанники"
+  },
 }
