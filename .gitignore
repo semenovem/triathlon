@@ -4,4 +4,6 @@ _dist
 
 tmp*
 
+.editorconfig
+
 node_modules

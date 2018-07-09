@@ -3,18 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="nofollow">
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex,nofollow">
 
     <title>{{page.title}}</title>
 
     <meta name="description" content="{{page.meta}} | {{ page.keywords | join:' | ' }}">
 
-    <link rel="icon" type="image/svg/jpg" href="{{site.baseurl}}/assets/icons/fav.jpg" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{page.path | remove:'index.html'}}style.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/general.css" />
+    <link rel="icon" type="image/svg/jpg" href="{{site.baseurl}}/icons/fav.jpg" />
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/vars.css" />
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/indent.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/typography.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/layout_adaptive.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/{{page.layout}}.css" />
+
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{page.path | remove:'index.html'}}style.css" />
 
     <script async src="{{site.baseurl}}/{{page.path | remove:'index.html'}}script.js"></script>
 </head>

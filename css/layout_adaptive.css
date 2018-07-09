@@ -14,7 +14,8 @@ body {
   flex-direction: column;
   height: 100%;
   font-family: var(--font-family-first);
-  color: var(--font-color-first);
+  color: var(--fint-colot-primary);
+  font-size: var(--font-size-base);
 }
 
 a {
@@ -23,18 +24,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 24px;
+  font-weight: normal;
 }
 
 .layout-general-child-pos-center {
@@ -48,4 +38,12 @@ h3 {
 
 .layout-general-footer {
   flex: 0 0 auto;
+  margin-top: var(--indent-section);
 }
+
+.layout-general-header {
+  margin-top: var(--indent-s);
+  margin-bottom: var(--indent-s);
+}
+
+.layout-general-content {}

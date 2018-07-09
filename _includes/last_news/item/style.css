@@ -37,12 +37,11 @@
 
 .last-news-item-sign .name {
   color: #fff;
-  font-size: 18px;
   display: inline-block;
 }
 
 .last-news-item-sign .date {
-  color: var(--font-color-second);
+  color: var(--font-color-secondary);
   font-size: 12px;
   display: inline-block;
 }

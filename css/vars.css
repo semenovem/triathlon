@@ -1,18 +1,26 @@
 :root {
   --content-txt-max-width: 1200px;
-  --font-family-first: "Comic Sans MS";
-  --font-color-first: #485F6E;
-  --font-color-second: #39c360;
 
-  --typography: 18px;
+  --font-family-first: triatlon-custom, sans-serif;
 
-  --indent-el: 20px;
-  --indent-block: 40px;
-  --indent-section: 60px;
+  --fint-colot-primary: #485F6E;
+  --font-color-secondary: #39c360;
 
-  --indent-inner-xs: 10px;
-  --indent-inner-s: 20px;
-  --indent-inner-m: 30px;
-  --indent-inner-l: 40px;
-  --indent-inner-xl: 50px;
+  --font-size-base: 20px;
+
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-h3: 36px;
+
+  --indent-el: 10px;
+  --indent-block: 20px;
+  --indent-section: 40px;
+
+  --indent-xs: 5px;
+  --indent-s: 10px;
+  --indent-m: 20px;
+  --indent-l: 30px;
+  --indent-xl: 40px;
+
+  --border-description: 1px solid #ccc;
 }

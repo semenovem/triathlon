@@ -5,6 +5,9 @@ const del = require('del');
 const imagemin = require('gulp-imagemin');
 // const pngquant = require('imagemin-pngquant');
 
+// const dotenv = require('dotenv');
+import dotenv from 'dotenv';
+
 const SOURCE = '_site';
 const TARGET = '_dist';
 
@@ -23,8 +26,8 @@ gulp.task('minify-html', () => (
 ));
 
 gulp.task('transfer-assets', () => (
-  gulp.src(`${SOURCE}/assets/**/*`)
-    .pipe(gulp.dest(`${TARGET}/assets/`))
+  gulp.src(`${SOURCE}/**/*`)
+    .pipe(gulp.dest(`${TARGET}/`))
 ));
 
 gulp.task('clean-target', () => {
@@ -35,6 +38,15 @@ gulp.task('img', () => {
   return gulp.src(`${SOURCE}/**/*`)
     .pipe(imagemin())
     .pipe(gulp.dest(TARGET));
+});
+
+
+gulp.task('empty', () => {
+
+  dotenv.config();
+
+  console.log('1111');
+  console.log(process.env);
 });
 
 /*

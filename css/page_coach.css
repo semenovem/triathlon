@@ -1,0 +1,11 @@
+.page-coach {
+  max-width: var(--content-txt-max-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid #ccc;
+}
+
+.page-coach-post {
+  text-align: center;
+}

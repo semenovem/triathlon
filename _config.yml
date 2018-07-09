@@ -31,7 +31,6 @@ contact_social_instagram: https://instagram.com
 contact_social_youtube: https://youtube.com
 
 
-
 # Build settings
 markdown: kramdown
 #plugins:
@@ -48,23 +47,23 @@ kramdown:
 
 # Exclude from processing.
 exclude: [
-  './README.md', './DEV_GUIDE.md',
-  './.idea/',
-  './node_modules', './scripts', './_dev',
-  './gulpfile.js', './package.json', './package-lock.json',
-  'LICENSE'
+  '.idea/',
+  'node_modules', '_scripts', '_dev',
+  'README.md', 'DEV_GUIDE.md',
+  'gulpfile.js', 'package.json', 'package-lock.json',
+  'LICENSE',
+  '.editorconfig'
 ]
 
 collections:
-  news:
-    foo: bar
+  coach:
+    layout: page_coach
     output: true
-#    permalink: /news/:path/
 
 
 defaults:
   - scope:
       path: ""
-      type: news
+      type: coach
     values:
-      layout: new
+      layout: page_coach

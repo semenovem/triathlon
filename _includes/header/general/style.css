@@ -5,6 +5,7 @@
 
 .header-general {
   max-width: var(--content-txt-max-width);
+  font-size: var(--font-size-base);
 
   display: flex;
   justify-content: space-between;
@@ -22,10 +23,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  line-height: 140%;
 }
 
 .header-general-items>* {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .header-general-contact {

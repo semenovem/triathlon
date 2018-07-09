@@ -2,7 +2,7 @@
 ---
 {%include slider/primary/style.css%}
 {%include poster/section/coaching/style.css%}
-{%include poster/section/race/style.css%}
+{%include poster/section/reports_on_competition/style.css%}
 {%include poster/section/students/style.css%}
 {%include poster/section/calendar/style.css%}
 {%include last_news/widget/style.css%}
@@ -13,16 +13,14 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.page-home-info-note {
-  font-size: 18px;
+  margin-top: var(--indent-section);
 }
 
 .page-home-composition {
   max-width: var(--content-txt-max-width);
   margin-left: auto;
   margin-right: auto;
+  margin-top: var(--indent-section);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -34,12 +32,16 @@
   align-items: center;
 }
 
+.page-home-composition article .description {
+    flex-grow: 1;
+}
+
 .page-home-composition .figure {
 
 }
 
 .page-home-composition .sign {
-  color: var(--font-color-second);
+  color: var(--font-color-secondary);
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
@@ -47,21 +49,29 @@
 }
 
 .page-home-composition .sign:hover {
-  color: var(--font-color-first);
+  color: var(--fint-colot-primary);
 }
 
 .page-home-composition .description {
-  font-size: 18px;
   width: 300px;
   margin-top: 20px;
-  text-align: center;
+  text-align: justify;
+  border: var(--border-description);
+  padding: var(--indent-s);
 }
 
 .page-home-posters {
+  margin-top: var(--indent-section);
+}
+.page-home-posters-row {
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
+}
+
+.page-home-posters-row:not(:first-child) {
+  margin-top: var(--indent-el);
 }
 
 .page-home-posters-item {
@@ -71,10 +81,13 @@
 .page-home-last-news {
   margin-left: auto;
   margin-right: auto;
+  margin-top: var(--indent-section);
   max-width: var(--content-txt-max-width);
   text-align: center;
 }
 
 .page-home-last-news-size {
   height: 250px;
+  margin-top: var(--indent-block);
+  margin-bottom: var(--indent-block);
 }

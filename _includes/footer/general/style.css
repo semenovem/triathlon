@@ -3,8 +3,8 @@
 .footer-general {
   background-color: #F2F4F5;
   width: 100%;
-  padding-top: var(--indent-inner-m);
-  padding-bottom: var(--indent-inner-m);
+  padding-top: var(--indent-m);
+  padding-bottom: var(--indent-m);
 }
 
 .footer-general .content {
@@ -16,7 +16,7 @@
 .footer-general .social {
   border-top: 1px #D0D6DA solid;
   text-align: right;
-  padding-top: var(--indent-inner-xs);
+  padding-top: var(--indent-xs);
 }
 
 .footer-general .nav {

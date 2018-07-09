@@ -1,6 +1,6 @@
 .nav-item-footer {
     font-family: var(--font-family-first);
-    color: var(--font-color-first);
+    color: var(--fint-colot-primary);
     font-size: 12px;
     font-weight: bold;
     transition-property: color;
@@ -8,10 +8,10 @@
 }
 
 .nav-item-footer:hover {
-    color: var(--font-color-second);
+    color: var(--font-color-secondary);
 }
 
 .nav-item-footer.selected {
-    color: var(--font-color-second);
+    color: var(--font-color-secondary);
     cursor: default;
 }

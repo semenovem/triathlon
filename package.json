@@ -24,10 +24,12 @@
   "homepage": "https://github.com/semenovem/triathlon#readme",
   "devDependencies": {
     "del": "^3.0.0",
+    "dotenv": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "imagemin-pngquant": "^5.0.1"
-  }
+  },
+  "dependencies": {}
 }

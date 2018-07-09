@@ -8,12 +8,11 @@ layout: body
     {{content}}
   </div>
 </div>
-{%include footer/general/index.html css='layout-general-child-pos-center layout-general-footer indent-section-top'%}
 
-
+{%include footer/general/index.html css='layout-general-child-pos-center layout-general-footer'%}
 
 
 {%if jekyll.environment == 'DEV'%}
-  <!-- debug info -->
-  {%include debug/panel/index.html%}
+<!-- debug info -->
+{%include debug/panel/index.html%}
 {%endif%}

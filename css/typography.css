@@ -1,0 +1,27 @@
+
+.typography-h1-banner-promo {
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+}
+
+.typography-h2-poster {
+  font-size: var(--font-size-h1);
+  font-style: italic;
+}
+
+.typography-h2-section-name {
+  font-size: var(--font-size-h2);
+}
+
+.typography-h2-title-for-people {
+  font-size: var(--font-size-h3);
+}
+
+.typography-text {
+
+ }
+
+.typography-text-definition {
+  font-size: calc(var(--font-size-base) + 4px);
+  text-align: justify;
+}
