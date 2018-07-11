@@ -1,4 +1,3 @@
-
 .typography-h1-banner-promo {
   font-size: var(--font-size-h2);
   font-weight: bold;
@@ -13,13 +12,9 @@
   font-size: var(--font-size-h2);
 }
 
-.typography-h2-title-for-people {
+.typography-h2-post-for-people {
   font-size: var(--font-size-h3);
 }
-
-.typography-text {
-
- }
 
 .typography-text-definition {
   font-size: calc(var(--font-size-base) + 4px);

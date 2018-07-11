@@ -1,0 +1,13 @@
+{%comment%}
+<!-- интро тренера на странице тренера -->
+{%endcomment%}
+
+<div
+    class="coach-intro {{include.css}} "
+>
+  {% for line in include.content %}
+    <div>{{line}}</div>
+  {% endfor %}
+  <!--<div class="shadow"></div>-->
+</div>
+

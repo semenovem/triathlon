@@ -1,4 +1,11 @@
+---
+---
+{%include avatar/coach/style.css%}
+{%include coach/intro/style.css%}
+
 .page-coach {
+  --h: 300px;
+
   max-width: var(--content-txt-max-width);
   margin-left: auto;
   margin-right: auto;
@@ -8,4 +15,17 @@
 
 .page-coach-post {
   text-align: center;
+}
+
+.page-coach-ava-intro {
+  display: flex;
+  margin-top: var(--indent-block);
+}
+
+.page-coach-ava-intro-h {
+  height: var(--h);
+}
+
+.page-coach-intro {
+  margin-left: var(--indent-xl);
 }

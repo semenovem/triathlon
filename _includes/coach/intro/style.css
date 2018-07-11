@@ -1,0 +1,17 @@
+.coach-intro {
+  text-align: justify;
+  overflow: auto;
+}
+
+.coach-intro>div:not(:first-child) {
+  margin-top: var(--indent-xs);
+}
+
+.coach-intro>.shadow {
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

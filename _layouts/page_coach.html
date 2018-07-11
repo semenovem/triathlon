@@ -2,23 +2,18 @@
 layout: layout_adaptive
 ---
 <div class="page-coach">
-  <h2 class="typography-h2-title-for-people page-coach-post">{{page.post}}</h2>
+  <h2 class="typography-h2-post-for-people page-coach-post">{{page.post}}</h2>
 
-  <div class="page-coach-ava-intro">
+  <div class="page-coach-ava-intro page-coach-ava-intro-h">
+    {%include avatar/coach/index.html
+      css='page-coach-ava-intro-h'
+      src='imgs/coach/nikulshin_aleksandr_viktrovich/ava0x1.png'
+    %}
 
+    {%include coach/intro/index.html css='page-coach-intro' content=page.intro%}
 
   </div>
 
-  {{ page.photos}}
-
-  <figure>
-
-
-  </figure>
-
-  <div>
-    {{page.intro}}
-  </div>
 
 
 </div>
