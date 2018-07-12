@@ -5,9 +5,14 @@
 <div
     class="coach-intro {{include.css}} "
 >
-  {% for line in include.content %}
-    <div>{{line}}</div>
-  {% endfor %}
-  <!--<div class="shadow"></div>-->
+  <div class="coach-intro-shadow-top"></div>
+
+  <div class="coach-intro-content">
+    {%for line in include.content%}
+      <div>{{line}}</div>
+    {%endfor%}
+  </div>
+
+  <div class="coach-intro-shadow-bottom"></div>
 </div>
 

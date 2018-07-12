@@ -1,17 +1,36 @@
 .coach-intro {
-  text-align: justify;
-  overflow: auto;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
-.coach-intro>div:not(:first-child) {
+.coach-intro-content {
+  text-align: justify;
+  overflow: auto;
+  /*height: 100%;*/
+  padding-top: var(--indent-xl);
+  padding-bottom: var(--indent-xl);
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.coach-intro-content>div:not(:first-child) {
   margin-top: var(--indent-xs);
 }
 
-.coach-intro>.shadow {
-  height: 10px;
-  background-color: red;
+.coach-intro-shadow-top, .coach-intro-shadow-bottom {
+  height: var(--indent-xl);
   position: absolute;
-  bottom: 0;
   left: 0;
   right: 0;
+}
+
+.coach-intro-shadow-top {
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0));
+  top: 0;
+}
+
+.coach-intro-shadow-bottom {
+  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+  bottom: 0;
 }

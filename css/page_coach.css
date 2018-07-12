@@ -4,13 +4,11 @@
 {%include coach/intro/style.css%}
 
 .page-coach {
-  --h: 300px;
+  --h-ava-intro: 400px;
 
   max-width: var(--content-txt-max-width);
   margin-left: auto;
   margin-right: auto;
-
-  border: 1px solid #ccc;
 }
 
 .page-coach-post {
@@ -19,11 +17,13 @@
 
 .page-coach-ava-intro {
   display: flex;
+  align-items: center;
   margin-top: var(--indent-block);
+  height: var(--h-ava-intro);
 }
 
-.page-coach-ava-intro-h {
-  height: var(--h);
+.page-coach-ava-h {
+  height: calc(var(--h-ava-intro) - var(--indent-xl) * 2);
 }
 
 .page-coach-intro {
