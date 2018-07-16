@@ -2,6 +2,7 @@
 ---
 {%include avatar/coach/style.css%}
 {%include coach/intro/style.css%}
+{%include student/item/style.css%}
 
 .page-coach {
   --h-ava-intro: 400px;
@@ -28,4 +29,8 @@
 
 .page-coach-intro {
   margin-left: var(--indent-xl);
+}
+
+.page-coach-students {
+  margin-top: var(--indent-section);
 }

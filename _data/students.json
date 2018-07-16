@@ -1,0 +1,116 @@
+{
+  "kalistratov_aleksei": {
+    "fio": "Калистратов Алексей",
+    "about": "Мастер спорта по триатлону",
+    "avatars": [
+      "imgs/students/kalistratov_aleksei/ava0.png"
+    ],
+    "coaches": [
+      "nikulshin_aleksandr_viktrovich",
+      "Мастер спорта по триатлону"
+    ],
+    "starts": [
+      {
+        "title": "Победитель  Ironstar  Kazan 2017",
+        "url": "https://iron-star.com/results/ironstar-113-kazan-2017/result/",
+        "logo": "ironman_40yearsofdreams.svg"
+      },
+      {
+        "title": "55",
+        "url": "www.triathlon.org/athletes/results/50028/alexey_kalistratov"
+      }
+    ],
+    "sport_logos": [
+      "triathlon_org",
+      "iron_star"
+    ]
+  },
+
+
+  "rostiagaev_dmitrii": {
+    "fio": "Ростягаев Дмитрий",
+    "avatars": [
+      "imgs/students/rostiagaev_dmitrii/avatar0.png"
+    ],
+    "coaches": [
+      "nikulshin_aleksandr_viktrovich"
+    ],
+    "starts": [
+      {
+        "title": "Призер Кленово 2017",
+        "url": "https://b12.results.zone/klenovo-olympic-2017/races/1483/results"
+      }
+    ]
+  },
+
+
+  "parienko_artem": {
+    "fio": "Париенко Артем",
+    "avatars": [
+      "imgs/students/parienko_artem/avatar0.png"
+    ],
+    "coaches": [
+      "nikulshin_aleksandr_viktrovich"
+    ],
+    "starts": [
+      {
+        "title": "Победитель Ironsart Zavidovo 2017",
+        "url": "https://iron-star.com/results/ironstar-1-4-zavidovo-2017/result/"
+      }
+    ],
+    "sport_logos": [
+      "iron_star"
+    ]
+  },
+
+
+  "matiukh_ekaterina": {
+    "fio": "Матюх Екатерина",
+    "avatars": [
+      "imgs/students/matiukh_ekaterina/avatar0.png"
+    ],
+    "coaches": [
+      "nikulshin_aleksandr_viktrovich"
+    ],
+    "starts": [
+      {
+        "title": "Призерка Первенства Европы до 23 лет",
+        "url": "https://www.triathlon.org/athletes/results/73209/ekaterina_matiukh"
+      }
+    ]
+  },
+
+
+  "briukhankov_andrei": {
+    "fio": "Брюханков Андрей",
+    "avatars": [
+      "imgs/students/briukhankov_andrei/avatar0.png"
+    ],
+    "coaches": [
+      "nikulshin_aleksandr_viktrovich"
+    ],
+    "starts": [
+      {
+        "title": "Победитель Кубков Европы по триатлон",
+        "url": "https://www.triathlon.org/athletes/profile/14190/andrey_bryukhankov"
+      }
+    ]
+  },
+
+
+  "goldovskii_kirill": {
+    "fio": "Голдовский Кирилл",
+    "avatars": [
+      "imgs/students/goldovskii_kirill/avatar0.png"
+    ],
+    "coaches": [
+      "nikulshin_aleksandr_viktrovich"
+    ],
+    "starts": [
+      {
+        "title": "3 место Hawaii Чемпионат Мира в категории (30-34)",
+        "url": "http://eu.ironman.com/triathlon/organizations/all-world-athlete/agr/2017-ironman-final-2018-status-.aspx?sex=M&agegroup=30-34&loc=RUS#axzz57aBBbg"
+      }
+    ]
+  }
+}

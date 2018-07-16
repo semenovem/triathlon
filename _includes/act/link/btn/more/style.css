@@ -12,6 +12,6 @@
 }
 
 .act-link-btn-more:hover {
-  background-color: var(--fint-colot-primary);
+  background-color: var(--font-colot-primary);
   box-shadow: 0 0 10px #999;
 }

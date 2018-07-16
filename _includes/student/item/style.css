@@ -1,0 +1,46 @@
+.student-item {
+  display: flex;
+  align-items: center;
+}
+
+.student-item:not(:first-child) {
+  margin-top: var(--indent-block);
+}
+
+.student-item-avatar {
+  width: 100px;
+}
+
+.student-item-avatar>img {
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.student-item-fio {}
+
+.student-item-about {
+}
+
+.student-item-info {
+  margin-left: var(--indent-m);
+  flex-grow: 1;
+}
+
+.student-item-starts>a {
+  display: block;
+}
+
+.student-item-sport-logos {
+  opacity: 0.5;
+}
+
+.student-item-sport-logos>img {
+  box-shadow: 3px 3px 2px 1px #ccc;
+  max-height: 40px;
+  max-width: 150px;
+}
+
+.student-item-sport-logos>img:not(:first-child) {
+  margin-left: var(--indent-xs);
+}

@@ -20,3 +20,13 @@
   font-size: calc(var(--font-size-base) + 4px);
   text-align: justify;
 }
+
+.typography-text-about {
+  font-size: calc(var(--font-size-base) - 4px);
+  text-align: justify;
+}
+
+.typography-link-ext-start {
+  color: var(--font-color-link-ext);
+  text-decoration: underline;
+}

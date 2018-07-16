@@ -68,8 +68,8 @@
     "url": "calendar",
     "nav_item_name": "Календарь"
   },
-  "APPRENTICES": {
-    "url": "apprentices",
+  "STUDENTS": {
+    "url": "students",
     "nav_item_name": "Воспитанники"
   }
 }

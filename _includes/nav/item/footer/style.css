@@ -1,6 +1,6 @@
 .nav-item-footer {
     font-family: var(--font-family-first);
-    color: var(--fint-colot-primary);
+    color: var(--font-colot-primary);
     font-size: 12px;
     font-weight: bold;
     transition-property: color;
