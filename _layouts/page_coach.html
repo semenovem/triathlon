@@ -7,7 +7,7 @@ layout: layout_adaptive
   <section class="page-coach-ava-intro">
     {%include avatar/coach/index.html
       css='page-coach-ava-h'
-      src='imgs/coaches/nikulshin_aleksandr_viktrovich/ava0x1.png'
+      avatars=page.avatars
     %}
     {%include coach/intro/index.html css='page-coach-intro' content=page.intro%}
   </section>
@@ -15,22 +15,20 @@ layout: layout_adaptive
   <section class="page-coach-students">
     {%for it in site.data.students%}
       {%assign student=it[1]%}
-      {%assign use=0%}
+      {%assign use='0'%}
       {%for coach in student.coaches%}
-        {%if coach==page.coach_id%}
-          {%assign use=1%}
+        {%if coach==page.coach%}
+          {%assign use='1'%}
           {%break%}
         {%endif%}
       {%endfor%}
 
-      {%if use==0%}
+      {%if use=='0'%}
         {%continue%}
       {%endif%}
 
       {%include student/item/index.html student=student css=''%}
     {%endfor%}
   </section>
-
-
 
 </div>

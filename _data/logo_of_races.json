@@ -1,0 +1,17 @@
+{
+  "iron-star.com": {
+    "logo": "imgs/logo_of_races/iron_star.com.png"
+  },
+
+  "triathlon.org": {
+    "logo": "imgs/logo_of_races/triathlon.org.png"
+  },
+
+  "3sport.org": {
+    "logo": "imgs/logo_of_races/3sport.org.png"
+  },
+
+  "eu.ironman.com": {
+    "logo": "imgs/logo_of_races/eu.ironman.com.svg"
+  }
+}

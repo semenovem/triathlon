@@ -2,7 +2,9 @@
 <!-- аватар тренера -->
 {%endcomment%}
 
+{%assign avatar = include.avatars[0]%}
+
 <img
-    src="{{include.src | createURL}}"
+    src="{{avatar | urlOnSite}}"
     class="avatar-coach {{include.css}}"
 >

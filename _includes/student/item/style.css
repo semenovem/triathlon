@@ -39,6 +39,7 @@
   box-shadow: 3px 3px 2px 1px #ccc;
   max-height: 40px;
   max-width: 150px;
+  min-width: 50px;
 }
 
 .student-item-sport-logos>img:not(:first-child) {

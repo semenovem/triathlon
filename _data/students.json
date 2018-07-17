@@ -7,22 +7,20 @@
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich",
-      "Мастер спорта по триатлону"
+      "goldovskii_kirill_mikhailovich"
     ],
-    "starts": [
+    "races": [
       {
         "title": "Победитель  Ironstar  Kazan 2017",
         "url": "https://iron-star.com/results/ironstar-113-kazan-2017/result/",
-        "logo": "ironman_40yearsofdreams.svg"
+        "logo": "iron-star.com",
+        "coach": "nikulshin_aleksandr_viktrovich"
       },
       {
-        "title": "55",
-        "url": "www.triathlon.org/athletes/results/50028/alexey_kalistratov"
+        "title": "___",
+        "url": "triathlon.org/athletes/results/50028/alexey_kalistratov",
+        "logo": "triathlon.org"
       }
-    ],
-    "sport_logos": [
-      "triathlon_org",
-      "iron_star"
     ]
   },
 
@@ -35,10 +33,11 @@
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
     ],
-    "starts": [
+    "races": [
       {
         "title": "Призер Кленово 2017",
-        "url": "https://b12.results.zone/klenovo-olympic-2017/races/1483/results"
+        "url": "https://b12.results.zone/klenovo-olympic-2017/races/1483/results",
+        "logo": "3sport.org"
       }
     ]
   },
@@ -46,36 +45,38 @@
 
   "parienko_artem": {
     "fio": "Париенко Артем",
+    "about": "Мастер спорта по триатлону",
     "avatars": [
       "imgs/students/parienko_artem/avatar0.png"
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
     ],
-    "starts": [
+    "races": [
       {
         "title": "Победитель Ironsart Zavidovo 2017",
-        "url": "https://iron-star.com/results/ironstar-1-4-zavidovo-2017/result/"
+        "url": "https://iron-star.com/results/ironstar-1-4-zavidovo-2017/result/",
+        "logo": "iron-star.com"
       }
-    ],
-    "sport_logos": [
-      "iron_star"
     ]
   },
 
 
   "matiukh_ekaterina": {
     "fio": "Матюх Екатерина",
+    "about": "Мастер Спорта по триатлону",
     "avatars": [
       "imgs/students/matiukh_ekaterina/avatar0.png"
     ],
     "coaches": [
-      "nikulshin_aleksandr_viktrovich"
+      "nikulshin_aleksandr_viktrovich",
+      "goldovskii_kirill_mikhailovich"
     ],
-    "starts": [
+    "races": [
       {
         "title": "Призерка Первенства Европы до 23 лет",
-        "url": "https://www.triathlon.org/athletes/results/73209/ekaterina_matiukh"
+        "url": "https://www.triathlon.org/athletes/results/73209/ekaterina_matiukh",
+        "logo": "triathlon.org"
       }
     ]
   },
@@ -89,10 +90,11 @@
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
     ],
-    "starts": [
+    "races": [
       {
         "title": "Победитель Кубков Европы по триатлон",
-        "url": "https://www.triathlon.org/athletes/profile/14190/andrey_bryukhankov"
+        "url": "https://www.triathlon.org/athletes/profile/14190/andrey_bryukhankov",
+        "logo": "triathlon.org"
       }
     ]
   },
@@ -106,11 +108,207 @@
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
     ],
-    "starts": [
+    "races": [
       {
         "title": "3 место Hawaii Чемпионат Мира в категории (30-34)",
-        "url": "http://eu.ironman.com/triathlon/organizations/all-world-athlete/agr/2017-ironman-final-2018-status-.aspx?sex=M&agegroup=30-34&loc=RUS#axzz57aBBbg"
+        "url": "http://eu.ironman.com/triathlon/organizations/all-world-athlete/agr/2017-ironman-final-2018-status-.aspx?sex=M&agegroup=30-34&loc=RUS#axzz57aBBbg",
+        "logo": "eu.ironman.com"
+      }
+    ]
+  },
+
+
+  "pylskii_urii": {
+    "fio": "Пыльский Юрий",
+    "about": "Мастер спорта по триатлону",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "Победитель Первенства России в эстафете"
+      }
+    ]
+  },
+
+
+  "obukhov_nikita_urevich": {
+    "fio": "Обухов Никита",
+    "about": "Мастер спорта по траитлону",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "Призер Кубка Европы по юниорам"
+      }
+    ]
+  },
+
+
+  "stambulskii_maksim": {
+    "fio": "Стамбульский Максим",
+    "about": "Мастер спорта по акватлону",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "Победитель Первенства России по Акватлону"
+      }
+    ]
+  },
+
+
+  "aleksandrova_elena": {
+    "fio": "Александрова Елена",
+    "about": "Мастер спорта по триатлону",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "2 место в эстафете на Первенстве Росси"
+      }
+    ]
+  },
+
+
+  "lapshin_ivan": {
+    "fio": "Лапшин Иван",
+    "about": "Мастер спорта по триатлону и КМС по плаванию",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "6 место в общем зачете Кубка России по триатлон"
+      }
+    ]
+  },
+
+
+  "gordeeva_daria": {
+    "fio": "Гордеева Дарья",
+    "about": "Мастер спорта по триатлону",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "1 место эстафета Первенство России"
+      },
+      {
+        "title": "2 место в общем зачете Кубка России"
+      }
+    ]
+  },
+
+
+  "morozova_natalia": {
+    "fio": "Морозова Наталья",
+    "about": "",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "1 место в рейтинге Ironman 2016г среди любителей России, в возрастной категорий 35-39",
+        "url": "http://eu.ironman.com/triathlon/organizations/all-world-athlete/agr/2016-ironman.aspx?sex=F&agegroup=35-39&loc=RUS#axzz57xTyQtJW",
+        "logo": "eu.ironman.com"
+      },
+      {
+        "title": "2 место в рейтинге Half – Ironman 2016г среди любителей России в возрастной 35-39. Наталья попала в 10 процентов All World athlete group 35-39",
+        "url": "http://eu.ironman.com/triathlon/organizations/all-world-athlete/agr/2016-ironman-70-3.aspx?sex=F&agegroup=35-39&loc=RUS#axzz57xTyQtJW",
+        "logo": "eu.ironman.com"
+      },
+      {
+        "title": "2 место Московском Триатлоне 2015г"
+      },
+      {
+        "title": "Кубок Европы среди любителей 2 место в своей категории Швеция"
+      },
+      {
+        "title": "2016 IRONMAN 70.3 Budapest - 5часов 10 минут 48 секунд – 6 место в группе"
+      },
+      {
+        "title": "Half- Ironman Люксембург время – 5 часов 42 минут"
+      }
+    ]
+  },
+
+
+  "liubov_korovina": {
+    "fio": "Любовь Коровина",
+    "about": "",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich"
+    ],
+    "races": [
+      {
+        "title": "2017 IRONMAN 70.3 Luxembourg – 5 часов 52. минут"
+      },
+      {
+        "title": "2017 IRONMAN Hamburg - 12 часов 12 минут",
+        "url": "http://eu.ironman.com/triathlon/organizations/all-world-athlete/agr/2017-ironman-final-2018-status-.aspx?sex=F&agegroup=30-34&loc=RUS#axzz57xTyQtJW",
+        "logo": "eu.ironman.com"
+      }
+    ]
+  },
+
+
+  "kalinin_dmitrii": {
+    "fio": "Калинин Дмитрий",
+    "about": "",
+    "avatars": [],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich",
+
+      "kalistratov_aleksei"
+    ],
+    "races": [
+      {
+        "title": "9 место в рейтинге Ironman среди любителей 40-44"
+      },
+      {
+        "title": "2017 IRONMAN 70.3 Luxembourg: 5 часов 8 минут"
+      },
+      {
+        "title": "2017 IRONMAN 70.3 Jonkoping: 5 часов 10 минут"
+      },
+      {
+        "title": "2017 IRONMAN Hamburg: 11 часов 19 минут"
+      }
+    ]
+  },
+
+
+
+  "tmp": {
+    "fio": "",
+    "about": "",
+    "avatars": [],
+    "coaches": [
+      "name coach"
+    ],
+    "races": [
+      {
+        "title": "Победитель  Ironstar  Kazan 2017",
+        "url": "https://iron-star.com/results/ironstar-113-kazan-2017/result/",
+        "logo": "iron-star.com",
+        "coach": "nikulshin_aleksandr_viktrovich"
       }
     ]
   }
+
+
+
 }

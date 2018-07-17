@@ -13,6 +13,7 @@
   --font-size-h1: 64px;
   --font-size-h2: 48px;
   --font-size-h3: 36px;
+  --font-size-h4: 28px;
 
   --indent-el: 10px;
   --indent-block: 20px;
@@ -24,5 +25,9 @@
   --indent-l: 30px;
   --indent-xl: 40px;
 
-  --border-description: 1px solid #ccc;
+  --border-description: 1px solid #979797;
+
+  --color-border-num: #979797;
+
+  --color-border-light: #D8D8D8;
 }
