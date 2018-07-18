@@ -1,0 +1,39 @@
+{%comment%}<!--
+@param coach данные тренера
+@param css
+@param is_extended = 'y' расширенный вывод
+-->{%endcomment%}
+
+{%assign coach = include.coach%}
+
+<div class="coaches-item {{include.css}}">
+
+  {%include coach/avatar/index.html avatars=coach.avatars css='coaches-item-avatar'%}
+
+  <div class="columns">
+    <div class="first">
+      <div class="title">
+        <div class="post">{{coach.post}}</div>
+        <div class="fio">{{coach.fio}}</div>
+      </div>
+      <div class="content">content</div>
+    </div>
+
+    {%if is_extended == 'y'%}
+    <div class="sdcont">
+      <div class="title">
+        <div class="post">Условия тренировок</div>
+      </div>
+      <div class="contebt">content</div>
+    </div>
+    {%endif%}
+  </div>
+
+  {%capture url%}{{site.data.pages.COACH.url}}/{{coach.coach_id}}{%endcapture%}
+
+  {%include act/link/btn/more/index.html
+    css=''
+    url=url
+    text='ПОДРОБНЕЕ'
+  %}
+</div>

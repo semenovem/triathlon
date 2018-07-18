@@ -12,6 +12,10 @@
     "url": "coaches",
     "nav_item_name": "ТРЕНЕРЫ"
   },
+  "COACH": {
+    "url": "coach",
+    "nav_item_name": "СТРАНИЦА ТРЕНЕРА"
+  },
   "PLACES": {
     "url": "places",
     "nav_item_name": "МЕСТА"

@@ -5,7 +5,7 @@ layout: layout_adaptive
   <h2 class="typography-h2-post-for-people page-coach-post">{{page.post}}</h2>
 
   <section class="page-coach-ava-intro">
-    {%include avatar/coach/index.html
+    {%include coach/avatar/index.html
       css='page-coach-ava-size'
       avatars=page.avatars
     %}
@@ -17,7 +17,7 @@ layout: layout_adaptive
       {%assign student=it[1]%}
       {%assign use='0'%}
       {%for coach in student.coaches%}
-        {%if coach==page.coach%}
+        {%if coach==page.coach_id%}
           {%assign use='1'%}
           {%break%}
         {%endif%}

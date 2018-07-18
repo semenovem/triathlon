@@ -1,7 +1,7 @@
 ---
 ---
 {%include_relative advantages/style.css%}
-{%include_relative list/style.css%}
+{%include_relative item/style.css%}
 
 .coaches-pos {
   max-width: var(--content-txt-max-width);
@@ -10,6 +10,19 @@
   margin-top: var(--indent-section);
 }
 
+
+
 .coaches-list>.title {
   text-align: center;
+  margin-bottom: var(--indent-section);
+}
+
+.coaches-list-line {
+  display: flex;
+  justify-content: center;
+
+}
+
+.coaches-list-line:not(:first-child) {
+  margin-top: var(--indent-section);
 }

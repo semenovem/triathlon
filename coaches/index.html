@@ -4,4 +4,58 @@ current: COACHES
 ---
 {%include_relative advantages/index.html css='coaches-pos'%}
 
-{%include_relative list/index.html css='coaches-pos'%}
+<section class="coaches-list coaches-pos">
+  <h1 class="typography-h1-page-name title">Тренерский состав</h1>
+
+  <div class="coaches-list-line">
+    {%for it in site.coach%}
+    {%if it.coach_id == 'nikulshin_aleksandr_viktrovich'%}
+    {%assign coach = it%}
+    {%endif%}
+    {%endfor%}
+    {%include_relative item/index.html coach=coach css='' is_extended='y'%}
+  </div>
+
+  <div class="coaches-list-line">
+    {%for it in site.coach%}
+    {%if it.coach_id == 'goldovskii_kirill_mikhailovich'%}
+    {%assign coach = it%}
+    {%endif%}
+    {%endfor%}
+    {%include_relative item/index.html coach=coach css='' is_extended=null%}
+
+    {%for it in site.coach%}
+    {%if it.coach_id == 'pakhomova_marina_sergeevna'%}
+    {%assign coach = it%}
+    {%endif%}
+    {%endfor%}
+    {%include_relative item/index.html coach=coach css='' is_extended=null%}
+  </div>
+
+  <div class="coaches-list-line">
+    {%for it in site.coach%}
+    {%if it.coach_id == 'pylskii_urii'%}
+    {%assign coach = it%}
+    {%endif%}
+    {%endfor%}
+    {%include_relative item/index.html coach=coach css='' is_extended=null%}
+
+    {%for it in site.coach%}
+    {%if it.coach_id == 'kalistratov_aleksei'%}
+    {%assign coach = it%}
+    {%endif%}
+    {%endfor%}
+    {%include_relative item/index.html coach=coach css='' is_extended=null%}
+  </div>
+
+  <div class="coaches-list-line">
+    {%for it in site.coach%}
+    {%if it.coach_id == 'obukhov_nikita_urevich'%}
+    {%assign coach = it%}
+    {%endif%}
+    {%endfor%}
+    {%include_relative item/index.html coach=coach css='' is_extended=null%}
+  </div>
+
+</section>
+

@@ -1,0 +1,13 @@
+{%include coach/avatar/style.css%}
+{%include coach/intro/style.css%}
+{%include act/link/btn/more/style.css%}
+
+.coaches-item {
+  text-align: center;
+}
+
+.coaches-item-avatar {
+  --size: 200px;
+  width: var(--size);
+  height: var(--size);
+}
