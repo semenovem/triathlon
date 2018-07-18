@@ -2,7 +2,7 @@
 <!-- аватар тренера -->
 {%endcomment%}
 
-{%assign avatar = include.avatars[0]%}
+{%capture avatar%}{{include.avatars[0] | default: 'imgs/coaches/default_avatar.png'}}{%endcapture%}
 
 <img
     src="{{avatar | urlOnSite}}"

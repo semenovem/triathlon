@@ -23,8 +23,12 @@
   height: var(--h-ava-intro);
 }
 
-.page-coach-ava-h {
-  height: calc(var(--h-ava-intro) - var(--indent-xl) * 2);
+.page-coach-ava-size {
+  --size: calc(var(--h-ava-intro) - var(--indent-xl) * 2);
+  min-width: var(--size);
+  min-height: var(--size);
+  max-width: var(--size);
+  max-height: var(--size);
 }
 
 .page-coach-intro {
