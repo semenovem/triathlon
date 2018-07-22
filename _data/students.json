@@ -121,7 +121,9 @@
   "pylskii_urii": {
     "fio": "Пыльский Юрий",
     "about": "Мастер спорта по триатлону",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/pylskii_urii/avatar0.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -151,7 +153,9 @@
   "stambulskii_maksim": {
     "fio": "Стамбульский Максим",
     "about": "Мастер спорта по акватлону",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/stambulskii_maksim/avatar0.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -166,7 +170,9 @@
   "aleksandrova_elena": {
     "fio": "Александрова Елена",
     "about": "Мастер спорта по триатлону",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/aleksandrova_elena/avatar0.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -181,7 +187,9 @@
   "lapshin_ivan": {
     "fio": "Лапшин Иван",
     "about": "Мастер спорта по триатлону и КМС по плаванию",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/lapshin_ivan/avatar0.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -196,7 +204,9 @@
   "gordeeva_daria": {
     "fio": "Гордеева Дарья",
     "about": "Мастер спорта по триатлону",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/gordeeva_daria/avatar0.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -214,7 +224,10 @@
   "morozova_natalia": {
     "fio": "Морозова Наталья",
     "about": "",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/morozova_natalia/avatar0.png",
+      "imgs/students/morozova_natalia/avatar1.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -227,7 +240,6 @@
       {
         "title": "2 место в рейтинге Half – Ironman 2016г среди любителей России в возрастной 35-39. Наталья попала в 10 процентов All World athlete group 35-39",
         "url": "http://eu.ironman.com/triathlon/organizations/all-world-athlete/agr/2016-ironman-70-3.aspx?sex=F&agegroup=35-39&loc=RUS#axzz57xTyQtJW",
-        "logo": "eu.ironman.com"
       },
       {
         "title": "2 место Московском Триатлоне 2015г"
@@ -248,7 +260,10 @@
   "liubov_korovina": {
     "fio": "Любовь Коровина",
     "about": "",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/liubov_korovina/avatar0.png",
+      "imgs/students/liubov_korovina/avatar1.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -268,10 +283,11 @@
   "kalinin_dmitrii": {
     "fio": "Калинин Дмитрий",
     "about": "",
-    "avatars": [],
+    "avatars": [
+      "imgs/students/kalinin_dmitrii/avatar0.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich",
-
       "kalistratov_aleksei"
     ],
     "races": [
@@ -308,7 +324,4 @@
       }
     ]
   }
-
-
-
 }

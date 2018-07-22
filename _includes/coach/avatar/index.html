@@ -2,7 +2,7 @@
 <!-- аватар тренера -->
 {%endcomment%}
 
-{%capture avatar%}{{include.avatars[0] | default: 'imgs/coaches/default_avatar.png'}}{%endcapture%}
+{%capture avatar%}{{include.avatars[0] | default: 'imgs/coaches/avatar.svg'}}{%endcapture%}
 
 <img
   src="{{avatar | urlOnSite}}"

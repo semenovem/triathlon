@@ -1,11 +1,11 @@
 ---
 ---
 {%include coach/avatar/style.css%}
-{%include coach/intro/style.css%}
+{%include coach/about/style.css%}
 {%include student/item/style.css%}
 
 .page-coach {
-  --h-ava-intro: 400px;
+  --h-ava-about: 400px;
 
   max-width: var(--content-txt-max-width);
   margin-left: auto;
@@ -16,25 +16,30 @@
   text-align: center;
 }
 
-.page-coach-ava-intro {
+.page-coach-ava-about {
   display: flex;
   align-items: center;
   margin-top: var(--indent-block);
-  height: var(--h-ava-intro);
+  height: var(--h-ava-about);
 }
 
 .page-coach-ava-size {
-  --size: calc(var(--h-ava-intro) - var(--indent-xl) * 2);
+  --size: calc(var(--h-ava-about) - var(--indent-xl) * 2);
   min-width: var(--size);
   min-height: var(--size);
   max-width: var(--size);
   max-height: var(--size);
 }
 
-.page-coach-intro {
+.page-coach-about {
   margin-left: var(--indent-xl);
 }
 
 .page-coach-students {
+  margin-top: var(--indent-section);
+}
+
+.page-coach-terms-of-training {
+  text-align: center;
   margin-top: var(--indent-section);
 }

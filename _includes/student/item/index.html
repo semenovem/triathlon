@@ -1,12 +1,14 @@
 {%assign student = include.student%}
 
+{%capture avatar%}{{student.avatars[0] | default: 'imgs/coaches/default_avatar.png'}}{%endcapture%}
+
 <div class="student-item {{include.css}}">
   <div class="student-item-avatar">
-    <img src="{{student.avatars[0] | urlOnSite}}">
+    <img src="{{avatar | urlOnSite}}">
   </div>
   <div class="student-item-info">
     <div class="student-item-fio">{{student.fio}}</div>
-    <div class="student-item-about typography-text-about">{{student.about}}</div>
+    <div class="student-item-about typography-subtext-about">{{student.about}}</div>
     <div class="student-item-starts">
       {%for race in student.races%}
         <a href="{{race.url}}" target="_blank" rel="noopener" class="typography-link-ext-start">
@@ -17,7 +19,10 @@
   </div>
   <div class="student-item-sport-logos">
     {%for race in student.races%}
-      <img src="{{site.data.logo_of_races[race.logo].logo | urlOnSite}}">
+      {%assign src=site.data.logo_of_races[race.logo].logo%}
+      {%if src%}
+        <img src="{{src | urlOnSite}}">
+      {%endif%}
     {%endfor%}
   </div>
 </div>

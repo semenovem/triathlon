@@ -12,18 +12,16 @@
 </style>
 <section class="debug-panel"><div>
 
-
   {%comment%}
-  <h3>site.coach</h3>
+  <h3>page</h3>
     {{site.coach.size}}
 
-    {%assign gist = site.coach[0]%}
     <table>
-      {%for key in gist%}
+      {%for key in page%}
       <tr>
         <td>{{key}}</td>
         <td class="d-tr-td-content">
-          <textarea rows="5">{{gist[key]}}</textarea>
+          <textarea rows="5">{{page[key]}}</textarea>
         </td>
       </tr>
       {%endfor%}

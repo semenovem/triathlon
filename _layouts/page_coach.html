@@ -2,33 +2,40 @@
 layout: layout_adaptive
 ---
 <div class="page-coach">
-  <h2 class="typography-h2-post-for-people page-coach-post">{{page.post}}</h2>
+  <h2 class="page-coach-post typography-h2-post-for-people">{{page.post}}</h2>
 
-  <section class="page-coach-ava-intro">
+  <section class="page-coach-ava-about">
     {%include coach/avatar/index.html
       css='page-coach-ava-size'
       avatars=page.avatars
     %}
-    {%include coach/intro/index.html css='page-coach-intro' content=page.intro%}
+    {%include coach/about/index.html css='page-coach-about' content=page.about%}
   </section>
 
   <section class="page-coach-students">
     {%for it in site.data.students%}
       {%assign student=it[1]%}
-      {%assign use='0'%}
+      {%assign use='n'%}
       {%for coach in student.coaches%}
         {%if coach==page.coach_id%}
-          {%assign use='1'%}
+          {%assign use='y'%}
           {%break%}
         {%endif%}
       {%endfor%}
 
-      {%if use=='0'%}
+      {%if use=='n'%}
         {%continue%}
       {%endif%}
 
       {%include student/item/index.html student=student css=''%}
     {%endfor%}
+  </section>
+
+  <section class="page-coach-terms-of-training">
+    <h2 class="typography-h2-post-for-people">Условия, время, места, стоимость тренировок</h2>
+
+    {%include coach/terms_of_training/index.html css='' content=page.price%}
+
   </section>
 
 </div>

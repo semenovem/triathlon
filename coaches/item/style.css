@@ -1,13 +1,44 @@
 {%include coach/avatar/style.css%}
-{%include coach/intro/style.css%}
+{%include coach/about/style.css%}
 {%include act/link/btn/more/style.css%}
 
 .coaches-item {
   text-align: center;
+  width: 100%;
+}
+
+.coaches-item:not(:first-child) {
+  margin-left: var(--indent-xl);
 }
 
 .coaches-item-avatar {
-  --size: 200px;
+  --size: 400px;
   width: var(--size);
   height: var(--size);
+}
+
+.coaches-item-about {
+  height: 400px;
+}
+
+.coaches-item .columns {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--indent-xl);
+}
+
+.coaches-item .title {
+  height: 80px;
+}
+
+.coaches-item .first, .coaches-item .second  {
+  width: 100%;
+}
+
+.coaches-item .second {
+  margin-left: calc(var(--indent-xl) * 2);
+}
+
+.coaches-item .action {
+  margin-top: var(--indent-l);
 }

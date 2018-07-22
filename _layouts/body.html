@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/indent.css" />
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/typography.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/typography_coach.css" />
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/layout_adaptive.css" />
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/{{page.layout}}.css" />
 
@@ -23,5 +24,10 @@
 </head>
 <body>
 {{content}}
+
+{%if jekyll.environment == '_DEV'%}
+<!-- debug info -->
+{%include debug/panel/index.html%}
+{%endif%}
 </body>
 </html>

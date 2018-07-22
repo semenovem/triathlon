@@ -28,19 +28,22 @@
 }
 
 .typography-h4-title {
-  font-size: calc(var(--font-size-h4));
+  font-size: var(--font-size-h4);
   color: var(--font-color-secondary);
 }
 
 
-
+.typography-text-title {
+  font-size: var(--font-size-h4);
+  font-weight: bold;
+}
 
 .typography-text-definition {
   font-size: calc(var(--font-size-base) + 4px);
   text-align: justify;
 }
 
-.typography-text-about {
+.typography-subtext-about {
   font-size: calc(var(--font-size-base) - 4px);
   text-align: justify;
 }
@@ -53,4 +56,5 @@
 .typography-link-ext-start {
   color: var(--font-color-link-ext);
   text-decoration: underline;
+  font-size: calc(var(--font-size-base) - 4px);
 }

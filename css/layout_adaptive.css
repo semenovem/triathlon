@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+ul {
+  margin: 0;
+}
+
 .layout-general-child-pos-center {
   margin-left: auto;
   margin-right: auto;

@@ -1,3 +1,4 @@
+<!--file-dec-->
 {%comment%}<!--
 @param coach данные тренера
 @param css
@@ -6,25 +7,27 @@
 
 {%assign coach = include.coach%}
 
-<div class="coaches-item {{include.css}}">
+<div class="coaches-item">
 
   {%include coach/avatar/index.html avatars=coach.avatars css='coaches-item-avatar'%}
 
   <div class="columns">
     <div class="first">
-      <div class="title">
+      <div class="title typography-text-title">
         <div class="post">{{coach.post}}</div>
         <div class="fio">{{coach.fio}}</div>
       </div>
-      <div class="content">content</div>
+
+      {%include coach/about/index.html css='coaches-item-about' content=coach.about%}
     </div>
 
-    {%if is_extended == 'y'%}
-    <div class="sdcont">
-      <div class="title">
+    {%if include.is_extended == 'y'%}
+    <div class="second">
+      <div class="title typography-text-title">
         <div class="post">Условия тренировок</div>
       </div>
-      <div class="contebt">content</div>
+
+      {%include coach/terms_of_training/index.html css='coaches-item-about' content=coach.price%}
     </div>
     {%endif%}
   </div>
@@ -32,7 +35,7 @@
   {%capture url%}{{site.data.pages.COACH.url}}/{{coach.coach_id}}{%endcapture%}
 
   {%include act/link/btn/more/index.html
-    css=''
+    css='action'
     url=url
     text='ПОДРОБНЕЕ'
   %}

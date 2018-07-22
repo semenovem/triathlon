@@ -10,19 +10,20 @@
   margin-top: var(--indent-section);
 }
 
-
-
 .coaches-list>.title {
   text-align: center;
-  margin-bottom: var(--indent-section);
 }
 
 .coaches-list-line {
   display: flex;
   justify-content: center;
-
 }
 
-.coaches-list-line:not(:first-child) {
+.coaches-list-line:not(:first-of-type) {
+  margin-top: calc(var(--indent-section) * 2);
+}
+
+.coaches-list-line:first-of-type {
   margin-top: var(--indent-section);
 }
+
