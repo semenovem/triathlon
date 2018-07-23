@@ -11,9 +11,16 @@
     <div class="student-item-about typography-subtext-about">{{student.about}}</div>
     <div class="student-item-starts">
       {%for race in student.races%}
-        <a href="{{race.url}}" target="_blank" rel="noopener" class="typography-link-ext-start">
-          {{race.title}}
-        </a>
+
+        {%if race.url%}
+          <a href="{{race.url}}" target="_blank" rel="noopener" class="typography-link-ext-start">
+            {{race.title}}
+          </a>
+        {%continue%}
+        {%endif%}
+
+        <div class="typography-not-link-ext-start">{{race.title}}</div>
+
       {%endfor%}
     </div>
   </div>

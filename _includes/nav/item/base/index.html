@@ -1,6 +1,9 @@
-{%comment%}
+{%comment%}<!--
+
 определим текущий выбранный элемент
-{%endcomment%}
+@param String page_name
+
+-->{%endcomment%}
 
 {%capture selected%}{%if page.current == include.page_name%} selected{%endif%}{%endcapture%}
 <a href="{{site.data.pages[include.page_name].url | createURL}}" class="{{include.css | append: selected}}">

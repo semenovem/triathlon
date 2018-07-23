@@ -9,7 +9,7 @@
 {%include act/link/btn/more/style.css%}
 
 .page-home-info {
-  max-width: var(--content-txt-max-width);
+  max-width: var(--max-width-content);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -17,7 +17,7 @@
 }
 
 .page-home-composition {
-  max-width: var(--content-txt-max-width);
+  max-width: var(--max-width-content);
   margin-left: auto;
   margin-right: auto;
   margin-top: var(--indent-section);
@@ -53,7 +53,7 @@
 }
 
 .page-home-composition .description {
-  width: 300px;
+  width: 280px;
   margin-top: 20px;
   text-align: justify;
   border: var(--border-description);
@@ -82,7 +82,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: var(--indent-section);
-  max-width: var(--content-txt-max-width);
+  max-width: var(--max-width-content);
   text-align: center;
 }
 

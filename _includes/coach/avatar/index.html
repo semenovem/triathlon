@@ -1,6 +1,10 @@
-{%comment%}
-<!-- аватар тренера -->
-{%endcomment%}
+{%comment%}<!--
+аватар тренера
+
+@param Array avatars
+@param String css
+
+ -->{%endcomment%}
 
 {%capture avatar%}{{include.avatars[0] | default: 'imgs/coaches/avatar.svg'}}{%endcapture%}
 

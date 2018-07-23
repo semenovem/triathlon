@@ -39,7 +39,7 @@
 }
 
 .slider-primary-interaction {
-  max-width: var(--content-txt-max-width);
+  max-width: var(--max-width-site);
   margin-left: auto;
   margin-right: auto;
   height: 100%;

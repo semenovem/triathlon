@@ -3,4 +3,53 @@ layout: layout_adaptive
 current: ABOUT_TRIATHLON
 ---
 
-about_triathlon
+<section class="about-triathlon">
+  <h1 class="typography-h1-page-name title">О Триатлоне</h1>
+
+  <div class="line">
+    <div class="description">
+      Триатлон – это гонка состоящая из трех этапов плавание, велогонка и бег которые сменяют друг друга и этим он привлекает все больше любителей спорта которые хотят преодолеть триатлон в зависимости от подготовки от спринтерской дистанции до железной IRONMAN.
+    </div>
+    <img src="{{'imgs/about_triathlon/00.png' | urlOnSite}}" class="img">
+  </div>
+
+  <div class="line">
+    <div class="description">
+      Триатлон преодолело уже десятки тысяч человек всем мире. Так же он набирает все больше и больше популярность в России, как для взрослых и особенно детей.
+    </div>
+    <img src="{{'imgs/about_triathlon/01.png' | urlOnSite}}" class="img">
+  </div>
+
+  <div class="line">
+    <div class="description">
+      Совершенствуя, каждый вид триатлона вы приобретаете выносливость, силу, гибкость, ловкость, но и то же время путешествуете и расширяете горизонты своего привычного жизненного ритма.
+    </div>
+    <img src="{{'imgs/about_triathlon/02.png' | urlOnSite}}" class="img">
+  </div>
+
+</section>
+
+
+<section class="about-triathlon-coaches">
+  <h1 class="typography-h1-page-name title">Тренерский состав</h1>
+
+  <div class="list">
+    <div class="coaches">
+      {%for coach in site.coach%}
+        {% include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar'%}
+      {%endfor%}
+    </div>
+
+    <div class="shadow-left"></div>
+    <div class="shadow-right"></div>
+  </div>
+
+  {%
+    include act/link/btn/more/index.html
+    css='action'
+    url=site.data.pages.COACHES.url
+    text='ВЫБРАТЬ ТРЕНЕРА'
+  %}
+
+</section>
+

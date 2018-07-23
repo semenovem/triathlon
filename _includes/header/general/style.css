@@ -4,7 +4,7 @@
 {%include contact/social/primary/style.css%}
 
 .header-general {
-  max-width: var(--content-txt-max-width);
+  max-width: var(--max-width-site);
   font-size: var(--font-size-base);
 
   display: flex;
