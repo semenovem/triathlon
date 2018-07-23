@@ -1,0 +1,187 @@
+.logo-primary {
+  color: #3E7400;
+
+  display: inline-block;
+  text-align: center;
+
+  font-size: 24px;
+  font-family: "Arial Black";
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.logo-primary-name {
+  text-align: center;
+}
+.nav-item-header {
+    font-family: var(--font-family-first);
+    color: var(--font-colot-primary);
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.nav-item-header:hover {
+    color: var(--font-color-secondary);
+}
+
+.nav-item-header.selected {
+    color: var(--font-color-secondary);
+    cursor: default;
+}
+
+.contact-phone-primary {
+    border-radius: 3px;
+    color: var(--font-color-secondary);
+    padding: 3px 10px 3px 25px;
+    font-family: var(--font-family-first);
+    font-size: 12px;
+
+    background-color: #D8D8D8;
+    background-image: url("/triathlon/icons/ic_call_black_24px.svg");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 5px 50%;
+}
+.contact-social-primary-size {
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+
+.header-general {
+  max-width: var(--content-txt-max-width);
+  font-size: var(--font-size-base);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-general-logo {
+  min-width: 155px;
+}
+
+.header-general-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 140%;
+}
+
+.header-general-items>* {
+  margin-left: 40px;
+}
+
+.header-general-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-general-contact-social {
+  margin-top: 10px;
+}
+
+
+
+.nav-item-footer {
+    font-family: var(--font-family-first);
+    color: var(--font-colot-primary);
+    font-size: 12px;
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+.nav-item-footer:hover {
+    color: var(--font-color-secondary);
+}
+
+.nav-item-footer.selected {
+    color: var(--font-color-secondary);
+    cursor: default;
+}
+
+
+.footer-general {
+  background-color: #F2F4F5;
+  width: 100%;
+  padding-top: var(--indent-m);
+  padding-bottom: var(--indent-m);
+}
+
+.footer-general .content {
+  max-width: var(--content-txt-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-general .social {
+  border-top: 1px #D0D6DA solid;
+  text-align: right;
+  padding-top: var(--indent-xs);
+}
+
+.footer-general .nav {
+  display: flex;
+}
+
+.footer-general .nav>div {
+  display: flex;
+  flex-direction: column
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--font-family-first);
+  color: var(--font-colot-primary);
+  font-size: var(--font-size-base);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+}
+
+.layout-general-child-pos-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-general-wrap {
+  flex: 1 0 auto;
+}
+
+.layout-general-footer {
+  flex: 0 0 auto;
+  margin-top: var(--indent-section);
+}
+
+.layout-general-header {
+  margin-top: var(--indent-s);
+  margin-bottom: var(--indent-s);
+}
+
+.layout-general-content {}

@@ -1,0 +1,60 @@
+.typography-h1-banner-promo {
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+}
+
+.typography-h1-page-name {
+  font-size: var(--font-size-h2);
+}
+
+
+
+.typography-h2-poster {
+  font-size: var(--font-size-h1);
+  font-style: italic;
+}
+
+.typography-h2-section-name {
+  font-size: var(--font-size-h2);
+}
+
+.typography-h2-post-for-people {
+  font-size: var(--font-size-h3);
+}
+
+.typography-h2-num-card {
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+}
+
+.typography-h4-title {
+  font-size: var(--font-size-h4);
+  color: var(--font-color-secondary);
+}
+
+
+.typography-text-title {
+  font-size: var(--font-size-h4);
+  font-weight: bold;
+}
+
+.typography-text-definition {
+  font-size: calc(var(--font-size-base) + 4px);
+  text-align: justify;
+}
+
+.typography-subtext-about {
+  font-size: calc(var(--font-size-base) - 4px);
+  text-align: justify;
+}
+
+.typography-text-regular {
+  font-size: calc(var(--font-size-base) + 4px);
+  color: var(--font-colot-primary);
+}
+
+.typography-link-ext-start {
+  color: var(--font-color-link-ext);
+  text-decoration: underline;
+  font-size: calc(var(--font-size-base) - 4px);
+}

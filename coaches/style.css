@@ -1,0 +1,172 @@
+.coaches-advantages>.title {
+  text-align: center;
+  margin-bottom: var(--indent-section);
+}
+
+.coaches-advantages-cards {
+  --indent-between-card: var(--indent-l);
+  display: flex;
+  margin-left: var(--indent-xl);
+  margin-right: var(--indent-xl);
+}
+
+.coaches-advantages-card {
+  --w-h-num: 100px;
+  border: 1px solid var(--color-border-light);
+  padding: var(--indent-l) var(--indent-xs);
+  width: calc((100% - var(--indent-between-card) * 2) / 3);
+}
+
+.coaches-advantages-card:not(:first-child) {
+  margin-left: var(--indent-between-card);
+}
+
+.coaches-advantages-card>.num {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--w-h-num);
+  height: var(--w-h-num);
+  border-radius: 50%;
+  border: 3px solid var(--color-border-num);
+  text-align: center;
+  line-height: var(--w-h-num);
+  margin-bottom: var(--indent-xl);
+}
+
+.coaches-advantages-card>.title {
+  text-align: center;
+  height: 2em;
+  margin-bottom: var(--indent-xl);
+}
+
+.coaches-advantages-card>.content {
+  text-align: center;
+}
+
+.avatar-coach {
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ccc;
+  opacity: 0.8;
+}
+.coach-about {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.coach-about-content {
+  text-align: justify;
+  overflow: auto;
+  padding-top: var(--indent-xl);
+  padding-bottom: var(--indent-xl);
+  padding-right: 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.coach-about-content>div:not(:first-child) {
+  margin-top: var(--indent-s);
+}
+
+.coach-about-shadow-top, .coach-about-shadow-bottom {
+  height: var(--indent-xl);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.coach-about-shadow-top {
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0));
+  top: 0;
+}
+
+.coach-about-shadow-bottom {
+  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+  bottom: 0;
+}
+
+.act-link-btn-more {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: var(--font-color-secondary);
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition-property: background-color, box-shadow;
+  transition-duration: 300ms;
+}
+
+.act-link-btn-more:hover {
+  background-color: var(--font-colot-primary);
+  box-shadow: 0 0 10px #999;
+}
+
+
+.coaches-item {
+  text-align: center;
+  width: 100%;
+}
+
+.coaches-item:not(:first-child) {
+  margin-left: var(--indent-xl);
+}
+
+.coaches-item-avatar {
+  --size: 400px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.coaches-item-about {
+  height: 400px;
+}
+
+.coaches-item .columns {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--indent-xl);
+}
+
+.coaches-item .title {
+  height: 80px;
+}
+
+.coaches-item .first, .coaches-item .second  {
+  width: 100%;
+}
+
+.coaches-item .second {
+  margin-left: calc(var(--indent-xl) * 2);
+}
+
+.coaches-item .action {
+  margin-top: var(--indent-l);
+}
+
+
+.coaches-pos {
+  max-width: var(--content-txt-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--indent-section);
+}
+
+.coaches-list>.title {
+  text-align: center;
+}
+
+.coaches-list-line {
+  display: flex;
+  justify-content: center;
+}
+
+.coaches-list-line:not(:first-of-type) {
+  margin-top: calc(var(--indent-section) * 2);
+}
+
+.coaches-list-line:first-of-type {
+  margin-top: var(--indent-section);
+}
+
