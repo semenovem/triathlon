@@ -11,7 +11,7 @@ const imagemin = require('gulp-imagemin');
 const SOURCE = '_site';
 const TARGET = '_dist';
 
-gulp.task('build', ['clean-target', 'minify-css', 'minify-html', 'img']);
+gulp.task('build', ['clean-target', 'minify-css', /*'minify-html', */'img']);
 
 gulp.task('minify-css', () => (
   gulp.src(`${SOURCE}/**/*.css`)

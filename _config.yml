@@ -50,7 +50,7 @@ exclude: [
   '.idea/',
   'node_modules', '_scripts', '_dev',
   'README.md', 'DEV_GUIDE.md',
-  'gulpfile.js', 'package.json', 'package-lock.json',
+  'gulpfile.js', 'package.json', 'package-lock.json', 'yarn.lock',
   'LICENSE',
   '.editorconfig'
 ]
