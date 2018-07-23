@@ -6,7 +6,7 @@ const imagemin = require('gulp-imagemin');
 // const pngquant = require('imagemin-pngquant');
 
 // const dotenv = require('dotenv');
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
 const SOURCE = '_site';
 const TARGET = '_dist';
@@ -41,13 +41,13 @@ gulp.task('img', () => {
 });
 
 
-gulp.task('empty', () => {
-
-  dotenv.config();
-
-  console.log('1111');
-  console.log(process.env);
-});
+// gulp.task('empty', () => {
+//
+//   dotenv.config();
+//
+//   console.log('1111');
+//   console.log(process.env);
+// });
 
 /*
 https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html
