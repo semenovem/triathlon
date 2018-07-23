@@ -1,5 +1,6 @@
 :root {
-  --content-txt-max-width: 1200px;
+  --max-width-site: 1200px;
+  --max-width-content: 1000px;
 
   --font-family-first: triatlon-custom, sans-serif;
 

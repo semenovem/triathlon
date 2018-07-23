@@ -58,3 +58,7 @@
   text-decoration: underline;
   font-size: calc(var(--font-size-base) - 4px);
 }
+.typography-not-link-ext-start {
+  color: var(--font-color-link-ext);
+  font-size: calc(var(--font-size-base) - 4px);
+}

@@ -96,7 +96,7 @@
 .page-coach {
   --h-ava-about: 400px;
 
-  max-width: var(--content-txt-max-width);
+  max-width: var(--max-width-content);
   margin-left: auto;
   margin-right: auto;
 }
