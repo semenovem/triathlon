@@ -23,10 +23,10 @@
   margin-top: var(--indent-xl);
 }
 
-.about-triathlon .img{
+.about-triathlon .img {
   margin-left: 100px;
-  width: 426px;
-  height: 267px;
+  min-width: 426px;
+  min-height: 267px;
 }
 
 .about-triathlon-coaches {
