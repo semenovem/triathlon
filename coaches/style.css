@@ -6,8 +6,6 @@
 .coaches-advantages-cards {
   --indent-between-card: var(--indent-l);
   display: flex;
-  margin-left: var(--indent-xl);
-  margin-right: var(--indent-xl);
 }
 
 .coaches-advantages-card {
