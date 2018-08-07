@@ -24,7 +24,7 @@
 .coaches-item .columns {
   display: flex;
   justify-content: center;
-  margin-top: var(--indent-xl);
+  margin-top: var(--indent-block);
 }
 
 .coaches-item .title {
@@ -40,5 +40,5 @@
 }
 
 .coaches-item .action {
-  margin-top: var(--indent-l);
+  margin-top: var(--indent-el);
 }

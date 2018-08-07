@@ -1,11 +1,17 @@
-{%comment%}
-<!-- информация о тренере -->
-{%endcomment%}
+{%comment%}<!--
+ информация о тренере
 
-<div class="coach-about {{include.css}}">
-  <div class="coach-about-shadow-top"></div>
+@param String content
+@param String css
+@param css_typography
+-->{%endcomment%}
 
-  <div class="coach-about-content typography-coach">{{include.content}}</div>
+{%capture css_typography%}{{include.css_typography | default: 'typography-coach'}}{%endcapture%}
 
-  <div class="coach-about-shadow-bottom"></div>
+<div class="i-coach-about {{include.css}}">
+  <div class="i-coach-about-shadow-top hide"></div>
+
+  <div class="i-coach-about-content {{css_typography}}">{{include.content}}</div>
+
+  <div class="i-coach-about-shadow-bottom"></div>
 </div>

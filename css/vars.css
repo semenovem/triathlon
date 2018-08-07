@@ -1,6 +1,5 @@
 :root {
-  --max-width-site: 1200px;
-  --max-width-content: 1000px;
+  --max-width-content: 1200px;
 
   --font-family-first: triatlon-custom, sans-serif;
 
@@ -25,6 +24,8 @@
   --indent-m: 20px;
   --indent-l: 30px;
   --indent-xl: 40px;
+  --indent-xxl: 60px;
+  --indent-xxxl: 80px;
 
   --border-description: 1px solid #979797;
 

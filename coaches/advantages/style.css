@@ -1,6 +1,9 @@
+.coaches-advantages {
+  padding-top: var(--indent-m);
+}
 .coaches-advantages>.title {
   text-align: center;
-  margin-bottom: var(--indent-section);
+  margin-bottom: var(--indent-l);
 }
 
 .coaches-advantages-cards {

@@ -1,36 +1,42 @@
-.coach-about {
+.i-coach-about {
   overflow: hidden;
   position: relative;
   height: 100%;
 }
 
-.coach-about-content {
+.i-coach-about-content {
   text-align: justify;
   overflow: auto;
-  padding-top: var(--indent-xl);
+  padding-top: var(--indent-s);
   padding-bottom: var(--indent-xl);
   padding-right: 20px;
   box-sizing: border-box;
   height: 100%;
+  max-height: inherit;
 }
 
-.coach-about-content>div:not(:first-child) {
+.i-coach-about-content>div:not(:first-child) {
   margin-top: var(--indent-s);
 }
 
-.coach-about-shadow-top, .coach-about-shadow-bottom {
+.i-coach-about-shadow-top, .i-coach-about-shadow-bottom {
   height: var(--indent-xl);
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.coach-about-shadow-top {
+.i-coach-about-shadow-top {
   background: linear-gradient(#fff, rgba(255, 255, 255, 0));
   top: 0;
+  transition: opacity 100ms;
 }
 
-.coach-about-shadow-bottom {
+.i-coach-about-shadow-top.hide {
+  opacity: 0;
+}
+
+.i-coach-about-shadow-bottom {
   background: linear-gradient(rgba(255, 255, 255, 0), #fff);
   bottom: 0;
 }

@@ -1,0 +1,51 @@
+---
+---
+{%include coach/avatar/style.css%}
+{%include coach/about/style.css%}
+{%include student/item/style.css%}
+{%include act/link/btn/more/style.css%}
+
+.coach {
+  --h-ava-about: 400px;
+}
+
+.coach .title {
+  text-align: center;
+  margin-bottom: var(--indent-m);
+}
+
+.coach-post {
+  text-align: center;
+  padding-top: var(--indent-m);
+}
+
+.coach-ava-about {
+  display: flex;
+  align-items: center;
+  height: var(--h-ava-about);
+}
+
+.coach-ava-size {
+  --size: calc(var(--h-ava-about) - var(--indent-xl) * 2);
+  min-width: var(--size);
+  min-height: var(--size);
+  max-width: var(--size);
+  max-height: var(--size);
+}
+
+.coach-about {
+  margin-left: var(--indent-xl);
+}
+
+.coach-students {
+  margin-top: var(--indent-section);
+}
+
+.coach-terms-of-training {
+  margin-top: var(--indent-m);
+}
+
+.coach-action {
+  text-align: center;
+  margin-top: var(--indent-xl);
+}

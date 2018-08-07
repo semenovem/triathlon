@@ -4,10 +4,9 @@
 {%include act/link/btn/more/style.css%}
 
 .about-triathlon {
-  max-width: var(--max-width-content);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: var(--indent-section);
+  margin-left: var(--indent-xl);
+  margin-right: var(--indent-xl);
+  padding-top: var(--indent-m);
 }
 
 .about-triathlon>.title {
@@ -15,12 +14,11 @@
 }
 
 .about-triathlon>.line {
-  display:  flex;
-
+  display: flex;
 }
 
 .about-triathlon>.line:not(:first-child) {
-  margin-top: var(--indent-xl);
+  margin-top: var(--indent-l);
 }
 
 .about-triathlon .img {
@@ -30,15 +28,14 @@
 }
 
 .about-triathlon-coaches {
-  max-width: var(--max-width-site);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: var(--indent-section);
+  margin-top: var(--indent-xxl);
+  margin-left: var(--indent-xl);
+  margin-right: var(--indent-xl);
   text-align: center;
 }
 
 .about-triathlon-coaches .list {
-  margin-top: var(--indent-xl);
+  margin-top: var(--indent-l);
   position: relative;
 }
 
@@ -65,7 +62,7 @@
 }
 
 .about-triathlon-coaches .action {
-  margin-top: var(--indent-xl);
+  margin-top: var(--indent-l);
 }
 
 .about-triathlon-coach-avatar {
@@ -77,12 +74,6 @@
   margin-left: calc(var(--indent-xl) * 2);
 }
 
-.about-triathlon-coach-avatar:first-child {
-  margin-left: calc(var(--indent-xl) * 3);
+.about-triathlon-coaches .coaches a:not(:first-child) {
+  margin-left: calc(var(--indent-xl) * 2);
 }
-
-.about-triathlon-coach-avatar:last-child {
-  margin-right: calc(var(--indent-xl) * 3);
-}
-
-

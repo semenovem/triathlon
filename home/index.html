@@ -1,58 +1,22 @@
 ---
-layout: layout_adaptive
+layout: layout_responsive
 permalink: /
-current: HOME
+nav_light: HOME
 ---
 
 {%include slider/primary/index.html%}
 
-<section class="page-home-info">
-  <div class="typography-text-definition">
-    Азбука триатлона - дает возможность выбрать услугу для занятий триатлоном. Персональная тренировка, дистанционная
-    и тренировка с детским тренером. Вы получаете только профессиональные рекомендации по подготовке к триатлону так как в нашей команде работают тренеры высшей категории. Все что нужно это отправить заявку и мы свяжемся с вами.
-  </div>
-</section>
-
-<section class="page-home-composition">
-  <article>
-    <img src="{{site.baseurl}}/imgs/badges/swim.png" class="figure">
-    <a href="{{site.data.pages.SWIM.url | createURL}}" class="sign">Плавание</a>
-    <div class="description">Первый вид триатлона - это плавание в открытой воде свободным стилем, самым быстрым
-      считается плавание на груди - кроль. Как правило основная подготовка проходит в бассейне, где можно освоить все
-      навыки плавания, а после переходить на открытую воду</div>
-  </article>
-
-  <article class="indent-block-left">
-    <img src="{{site.baseurl}}/imgs/badges/bike.png" class="figure">
-    <a href="{{site.data.pages.BIKE.url | createURL}}" class="sign">Велосипед</a>
-    <div class="description">Самый длинный этап в триатлоне - велосипед. В условиях Российского климата тренировки по
-      велосипеду проводятся в 3-х вариантах - велотрек, велостанок и шоссе в тёплое время года. Плавная подготовка
-      на велостанке даст уверенность при выезде на шоссе и прохождения длительного велозаезда в триатлоне</div>
-  </article>
-
-  <article class="indent-block-left">
-    <img src="{{site.baseurl}}/imgs/badges/run.png" class="figure">
-    <a href="{{site.data.pages.RUNNING.url | createURL}}" class="sign">Бег</a>
-    <div class="description">Бег - финальный этап триатлона. Он заряжает позитивом и возможностью проводить тренировки
-      на свежем воздухе, например в парке. А так же для отработки технических моментов можно бегать в манеже и беговой дорожке
-    </div>
-  </article>
-</section>
-
-<div class="page-home-posters">
-  <section class="page-home-posters-row">
-    {%include poster/section/coaching/index.html css='page-home-posters-item indent-block-right'%}
-    {%include poster/section/reports_on_competition/index.html css='page-home-posters-item'%}
-  </section>
-  <section class="page-home-posters-row">
-    {%include poster/section/students/index.html css='page-home-posters-item indent-block-right'%}
-    {%include poster/section/calendar/index.html css='page-home-posters-item'%}
-  </section>
+<div class="home-info typography-text-definition">
+Азбука триатлона - дает возможность выбрать услугу для занятий триатлоном. Персональная тренировка, дистанционная и тренировка с детским тренером. Вы получаете только профессиональные рекомендации по подготовке к триатлону так как в нашей команде работают тренеры высшей категории. Все что нужно это отправить заявку и мы свяжемся с вами.
 </div>
 
-<section class="page-home-last-news">
+{%include_relative composition/index.html%}
+
+{%include_relative tile/index.html%}
+
+<section class="home-last-news">
   <h2 class="typography-h2-section-name">Последние новости</h2>
-  {%include last_news/widget/index.html css='page-home-last-news-size'%}
+  {%include last_news/widget/index.html css='home-last-news-size'%}
 
   {%
     include act/link/btn/more/index.html

@@ -1,2 +1,71 @@
 ---
 ---
+
+{%include act/link/btn/more/style.css%}
+
+.contacts {
+  padding-top: var(--indent-m);
+  margin-left: var(--indent-xxxl);
+  margin-right: var(--indent-xxxl);
+}
+
+.contacts .title {
+  text-align: center;
+}
+
+.contacts .action {
+  text-align: center;
+  margin-top: var(--indent-xl);
+}
+
+.contacts-info {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: var(--indent-xl);
+}
+
+.contacts-info .schedule {
+  margin-left: var(--indent-xxxl);
+}
+
+.contacts-info-connect {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.contacts-info-connect>* {
+  margin-top: var(--indent-s);
+}
+
+.contacts-info-connect .social {
+  display: flex;
+}
+
+
+.contacts-info-social {
+  display: inline-block;
+  margin-left: var(--indent-s);
+}
+
+
+.contacts-form {
+  text-align: center;
+  margin-top: var(--indent-xl);
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-form input, textarea {
+  width: 500px;
+  margin-top: var(--indent-m);
+}
+
+.contacts-form textarea {
+  height: 100px;
+}
+

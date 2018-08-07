@@ -1,6 +1,12 @@
 ---
-layout: layout_adaptive
-current: PRICES
+layout: layout_responsive
+nav_light: PRICES
 ---
 
-PRICES
+<h1 class="typography-page-name prices-title">Цены</h1>
+
+<div class="prices-coaches">
+  {%for coach in site.coach%}
+    {%include_relative item/index.html coach=coach%}
+  {%endfor%}
+</div>

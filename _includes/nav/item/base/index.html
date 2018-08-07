@@ -5,7 +5,7 @@
 
 -->{%endcomment%}
 
-{%capture selected%}{%if page.current == include.page_name%} selected{%endif%}{%endcapture%}
-<a href="{{site.data.pages[include.page_name].url | createURL}}" class="{{include.css | append: selected}}">
-    {{site.data.pages[include.page_name].nav_item_name | hardSpace}}
+{%capture selected%}{%if page.nav_light == include.page_name%} selected{%endif%}{%endcapture%}
+<a href="{{site.data.pages[include.page_name].url | urlOnSite}}" class="{{include.css | append: selected}}">
+  {{site.data.pages[include.page_name].nav_item_name | hardSpace}}
 </a>

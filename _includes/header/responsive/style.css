@@ -1,0 +1,41 @@
+{%include logo/primary/style.css%}
+{%include nav/item/header/style.css%}
+{%include contact/phone/primary/style.css%}
+{%include contact/social/primary/style.css%}
+
+.i-header-responsive {
+  max-width: var(--max-width-content);
+  font-size: var(--font-size-base);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.i-header-responsive-logo {
+  min-width: 155px;
+}
+
+.i-header-responsive-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 140%;
+}
+
+.i-header-responsive-items>* {
+  margin-left: 40px;
+}
+
+.i-header-responsive-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.i-header-responsive-contact-social {
+  margin-top: 10px;
+}
+
+

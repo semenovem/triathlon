@@ -1,13 +1,26 @@
+.typography-page-name {
+  font-size: var(--font-size-h2);
+  text-align: center;
+}
+
+.typography-title-another-page {
+  font-size: var(--font-size-h3);
+}
+
+.typography-title-secondary-info {
+  font-size: var(--font-size-h4);
+}
+
+.typography-link-inside-text {
+  text-decoration: underline;
+  color: var(--font-colot-primary);
+}
+
+
 .typography-h1-banner-promo {
   font-size: var(--font-size-h2);
   font-weight: bold;
 }
-
-.typography-h1-page-name {
-  font-size: var(--font-size-h2);
-}
-
-
 
 .typography-h2-poster {
   font-size: var(--font-size-h1);
@@ -16,10 +29,6 @@
 
 .typography-h2-section-name {
   font-size: var(--font-size-h2);
-}
-
-.typography-h2-post-for-people {
-  font-size: var(--font-size-h3);
 }
 
 .typography-h2-num-card {
@@ -48,6 +57,11 @@
   text-align: justify;
 }
 
+.typography-training-program-example {
+  font-size: calc(var(--font-size-base));
+  text-align: justify;
+}
+
 .typography-text-regular {
   font-size: calc(var(--font-size-base) + 4px);
   color: var(--font-colot-primary);
@@ -61,4 +75,8 @@
 .typography-not-link-ext-start {
   color: var(--font-color-link-ext);
   font-size: calc(var(--font-size-base) - 4px);
+}
+.typography-link-contact {
+  font-size: calc(var(--font-size-base) + 2px);
+  color: var(--font-colot-primary);
 }

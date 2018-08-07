@@ -42,7 +42,7 @@
   },
   "INDIVIDUAL_TRAINING": {
     "url": "individual_training",
-    "nav_item_name": "Индивидуальные тренировки"
+    "nav_item_name": "ТРЕНИРОВКИ"
   },
   "TRAINING_SESSIONS": {
     "url": "training_sessions",
@@ -75,5 +75,9 @@
   "STUDENTS": {
     "url": "students",
     "nav_item_name": "Воспитанники"
+  },
+  "RECORDING_TRAINING": {
+    "url": "recording_training",
+    "nav_item_name": "ЗАПИСЬ НА ТРЕНИРОВКУ"
   }
 }

@@ -1,11 +1,11 @@
 {%include last_news/item/style.css%}
 
-.last-news {
+.i-last-news {
   width: 100%;
   white-space: nowrap;
 }
 
-.last-news-item {
+.i-last-news-item {
   height: 100%;
   display: inline-block;
 }

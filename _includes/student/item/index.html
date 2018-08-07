@@ -2,14 +2,14 @@
 
 {%capture avatar%}{{student.avatars[0] | default: 'imgs/coaches/default_avatar.png'}}{%endcapture%}
 
-<div class="student-item {{include.css}}">
-  <div class="student-item-avatar">
+<div class="i-student-item {{include.css}}">
+  <div class="i-student-item-avatar">
     <img src="{{avatar | urlOnSite}}">
   </div>
-  <div class="student-item-info">
-    <div class="student-item-fio">{{student.fio}}</div>
-    <div class="student-item-about typography-subtext-about">{{student.about}}</div>
-    <div class="student-item-starts">
+  <div class="i-student-item-info">
+    <div class="i-student-item-fio">{{student.fio}}</div>
+    <div class="i-student-item-about typography-subtext-about">{{student.about}}</div>
+    <div class="i-student-item-starts">
       {%for race in student.races%}
 
         {%if race.url%}
@@ -24,7 +24,7 @@
       {%endfor%}
     </div>
   </div>
-  <div class="student-item-sport-logos">
+  <div class="i-student-item-sport-logos">
     {%for race in student.races%}
       {%assign src=site.data.logo_of_races[race.logo].logo%}
       {%if src%}

@@ -1,0 +1,29 @@
+{%include nav/item/footer/style.css%}
+
+.i-footer-responsive {
+  background-color: #F2F4F5;
+  width: 100%;
+  padding-top: var(--indent-m);
+  padding-bottom: var(--indent-m);
+}
+
+.i-footer-responsive .content {
+  max-width: var(--max-width-content);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.i-footer-responsive .social {
+  border-top: 1px #D0D6DA solid;
+  text-align: right;
+  padding-top: var(--indent-xs);
+}
+
+.i-footer-responsive .nav {
+  display: flex;
+}
+
+.i-footer-responsive .nav>div {
+  display: flex;
+  flex-direction: column
+}

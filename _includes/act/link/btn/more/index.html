@@ -1,10 +1,13 @@
-{%comment%}
-<!-- ссылка как кнопка -->
-{%endcomment%}
+{%comment%}<!--
+ ссылка как кнопка
+
+ @param String css
+ @param String text
+-->{%endcomment%}
 
 <a
   href="{{include.url | urlOnSite}}"
-  class="act-link-btn-more {{include.css}}"
+  class="i-act-link-btn-more {{include.css}}"
 >
-    {{include.text}}
+  {{include.text}}
 </a>

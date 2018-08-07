@@ -3,11 +3,8 @@
 {%include_relative advantages/style.css%}
 {%include_relative item/style.css%}
 
-.coaches-pos {
-  max-width: var(--max-width-content);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: var(--indent-section);
+.coaches-list {
+  margin-top: var(--indent-xxxl);
 }
 
 .coaches-list>.title {
@@ -19,11 +16,11 @@
   justify-content: center;
 }
 
-.coaches-list-line:not(:first-of-type) {
-  margin-top: calc(var(--indent-section) * 2);
+.coaches-list-line:not(:first-child) {
+  margin-top: var(--indent-xxxl);
 }
 
 .coaches-list-line:first-of-type {
-  margin-top: var(--indent-section);
+  margin-top: var(--indent-l);
 }
 

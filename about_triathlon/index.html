@@ -1,10 +1,18 @@
 ---
-layout: layout_adaptive
-current: ABOUT_TRIATHLON
+layout: layout_responsive
+nav_light: ABOUT_TRIATHLON
 ---
 
+<!--
+
+ставим стандартный слайдер
+текст объединяем
+
+список тренеров - оставляем
+-->
+
 <section class="about-triathlon">
-  <h1 class="typography-h1-page-name title">О Триатлоне</h1>
+  <h1 class="typography-page-name title">О Триатлоне</h1>
 
   <div class="line">
     <div class="description">
@@ -26,17 +34,19 @@ current: ABOUT_TRIATHLON
     </div>
     <img src="{{'imgs/about_triathlon/02.png' | urlOnSite}}" class="img">
   </div>
-
 </section>
 
 
 <section class="about-triathlon-coaches">
-  <h1 class="typography-h1-page-name title">Тренерский состав</h1>
+  <h2 class="typography-title-another-page title">Тренерский состав</h2>
 
   <div class="list">
     <div class="coaches">
+      <div class="first"></div>
       {%for coach in site.coach%}
-        {% include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar'%}
+        <a href="{{'coach/' | append: coach.coach_id | urlOnSite}}/">
+          {%include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar'%}
+        </a>
       {%endfor%}
     </div>
 
@@ -52,4 +62,3 @@ current: ABOUT_TRIATHLON
   %}
 
 </section>
-

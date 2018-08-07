@@ -1,51 +1,50 @@
-.student-item {
+.i-student-item {
   display: flex;
   align-items: center;
 }
 
-.student-item:not(:first-child) {
+.i-student-item:not(:first-child) {
   margin-top: var(--indent-block);
 }
 
-.student-item-avatar {
+.i-student-item-avatar {
   width: 100px;
   min-width: 100px;
 }
 
-.student-item-avatar>img {
+.i-student-item-avatar>img {
   width: 100%;
   border-radius: 50%;
   opacity: 0.7;
 }
 
-.student-item-fio {}
+.i-student-item-fio {}
 
-.student-item-about {
-}
+.i-student-item-about {}
 
-.student-item-info {
+.i-student-item-info {
   margin-left: var(--indent-m);
   flex-grow: 1;
 }
 
-.student-item-starts {
+.i-student-item-starts {
   overflow: hidden;
 }
 
-.student-item-starts>a {
+.i-student-item-starts>a {
   display: block;
 }
 
-.student-item-sport-logos {
+.i-student-item-sport-logos {
   opacity: 0.5;
 }
 
-.student-item-sport-logos>img {
+.i-student-item-sport-logos>img {
   max-height: 40px;
   max-width: 150px;
   min-width: 70px;
 }
 
-.student-item-sport-logos>img:not(:first-child) {
+.i-student-item-sport-logos>img:not(:first-child) {
   margin-left: var(--indent-xs);
 }

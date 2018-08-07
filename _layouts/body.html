@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
 
-    <title>{{page.title}}</title>
+  <title>{{page.title}}</title>
 
-    <meta name="description" content="{{page.meta}} | {{ page.keywords | join:' | ' }}">
+  <meta name="description" content="{{page.meta}} | {{ page.keywords | join:' | ' }}">
 
-    <link rel="icon" type="image/svg/jpg" href="{{site.baseurl}}/icons/fav.jpg" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/vars.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/indent.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/typography.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/typography_coach.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/layout_adaptive.css" />
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/{{page.layout}}.css" />
+  <link rel="icon" type="image/svg/jpg" href="{{site.baseurl}}/icons/fav.jpg" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/vars.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/indent.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/typography.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/typography_coach.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/layout_responsive.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/forms.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/{{page.layout}}.css" />
 
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{page.path | remove:'index.html'}}style.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{page.path | remove:'index.html'}}style.css" />
 
-    <script async src="{{site.baseurl}}/{{page.path | remove:'index.html'}}script.js"></script>
+  <script async src="{{site.baseurl}}/{{page.path | remove:'index.html'}}script.js"></script>
+
+  {%if page.layout == 'coach'%}
+    <script defer src="{{'js/' | append:'coach.js' | urlOnSite}}"></script>
+  {%endif%}
 </head>
 <body>
 {{content}}
 
 {%if jekyll.environment == '_DEV'%}
-<!-- debug info -->
-{%include debug/panel/index.html%}
+  <!-- debug info -->
+  {%include debug/panel/index.html%}
 {%endif%}
 </body>
 </html>

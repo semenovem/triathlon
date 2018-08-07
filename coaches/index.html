@@ -1,11 +1,11 @@
 ---
-layout: layout_adaptive
-current: COACHES
+layout: layout_responsive
+nav_light: COACHES
 ---
-{%include_relative advantages/index.html css='coaches-pos'%}
+{%include_relative advantages/index.html%}
 
-<section class="coaches-list coaches-pos">
-  <h1 class="typography-h1-page-name title">Тренерский состав</h1>
+<section class="coaches-list">
+  <h1 class="typography-page-name title">Тренерский состав</h1>
 
   <div class="coaches-list-line">
     {%for it in site.coach%}
@@ -59,3 +59,6 @@ current: COACHES
 
 </section>
 
+<!--
+  добавляем фотографии тренеров
+-->

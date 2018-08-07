@@ -1,6 +1,29 @@
 ---
-layout: layout_adaptive
-current: PLACES
+layout: layout_responsive
+nav_light: PLACES
 ---
 
-PLACES
+<div class="places">
+  <h1 class="typography-page-name places-title">Места проведения персональных тренировок</h1>
+
+  <div id="map" class="places-map"></div>
+
+  <div class="places-list">
+    {%for item in site.data.places%}
+      {%assign place=item[1]%}
+
+      {%include_relative item/index.html place=place%}
+    {%endfor%}
+  </div>
+
+  <div class="places-action">
+    {%include act/link/btn/more/index.html
+    css=''
+    url=site.data.pages.INDIVIDUAL_TRAINING.url
+    text='ПОДРОБНЕЕ О ТРЕНИРОВКАХ'
+    %}
+  </div>
+</div>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

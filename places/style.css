@@ -1,3 +1,31 @@
 ---
 ---
+
+{%include act/link/btn/more/style.css%}
+{%include_relative item/style.css%}
+
+.places {
+  padding-top: var(--indent-m);
 }
+
+.places-title {
+  text-align: center;
+}
+
+.places-map {
+  height: 600px;
+  margin-top: var(--indent-l);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.places-action {
+  text-align: center;
+  margin-top: var(--indent-xxxl);
+}
+
+.places-list {
+  margin-top: var(--indent-xxxl);
+  margin-left: var(--indent-xl);
+  margin-right: var(--indent-xl);
+}
+

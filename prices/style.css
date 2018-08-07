@@ -1,2 +1,23 @@
 ---
 ---
+
+{%include act/link/btn/more/style.css%}
+{%include coach/avatar/style.css%}
+{%include_relative item/style.css%}
+
+.prices-title {
+  text-align: center;
+  padding-top: var(--indent-m);
+}
+
+.prices-coaches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--indent-l);
+}
+
+.prices-coaches>* {
+  margin-left: var(--indent-s);
+  margin-right: var(--indent-s);
+}

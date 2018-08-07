@@ -1,7 +1,15 @@
+.typography-coach .fio {
+  margin-bottom: var(--indent-m);
+}
+
 .typography-coach .ul {
   list-style: none;
-  padding-left: var(--indent-m);
   font-weight: normal;
+  padding-left: 0;
+}
+
+.typography-coach .ul .ul {
+  padding-left: var(--indent-m);
 }
 
 .typography-coach .ul.about>li:not(:first-child) {
