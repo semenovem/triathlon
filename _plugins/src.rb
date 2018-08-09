@@ -2,7 +2,7 @@ module Jekyll
   module AssetFilter
     def urlOnSite(url)
       if (url)
-        return ("/triathlon/" + url).gsub(/\/{2,}/, "/")
+        return ("/" + url).gsub(/\/{2,}/, "/")
       end
     end
 
