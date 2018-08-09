@@ -7,7 +7,7 @@ BRANCH='gh-pages'
 COMMIT=$(git rev-parse HEAD)
 
 ### сборка проекта
-npm run-script build
+#npm run-script build
 
 
 ### переключиться на ветку gh-pages
