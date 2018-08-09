@@ -1,8 +1,3 @@
-.coaches-advantages>.title {
-  text-align: center;
-  margin-bottom: var(--indent-section);
-}
-
 .coaches-advantages-cards {
   --indent-between-card: var(--indent-l);
   display: flex;
@@ -41,49 +36,56 @@
   text-align: center;
 }
 
-.avatar-coach {
+.i-avatar-coach {
   border-radius: 50%;
   box-shadow: 0 0 10px #ccc;
   opacity: 0.8;
 }
-.coach-about {
+
+.i-coach-about {
   overflow: hidden;
   position: relative;
   height: 100%;
 }
 
-.coach-about-content {
+.i-coach-about-content {
   text-align: justify;
   overflow: auto;
-  padding-top: var(--indent-xl);
+  padding-top: var(--indent-s);
   padding-bottom: var(--indent-xl);
   padding-right: 20px;
   box-sizing: border-box;
   height: 100%;
+  max-height: inherit;
 }
 
-.coach-about-content>div:not(:first-child) {
+.i-coach-about-content>div:not(:first-child) {
   margin-top: var(--indent-s);
 }
 
-.coach-about-shadow-top, .coach-about-shadow-bottom {
+.i-coach-about-shadow-top, .i-coach-about-shadow-bottom {
   height: var(--indent-xl);
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.coach-about-shadow-top {
+.i-coach-about-shadow-top {
   background: linear-gradient(#fff, rgba(255, 255, 255, 0));
   top: 0;
+  transition: opacity 100ms;
 }
 
-.coach-about-shadow-bottom {
+.i-coach-about-shadow-top.hide {
+  opacity: 0;
+}
+
+.i-coach-about-shadow-bottom {
   background: linear-gradient(rgba(255, 255, 255, 0), #fff);
   bottom: 0;
 }
 
-.act-link-btn-more {
+.i-act-link-btn-more {
   display: inline-block;
   border-radius: 3px;
   background-color: var(--font-color-secondary);
@@ -96,8 +98,8 @@
   transition-duration: 300ms;
 }
 
-.act-link-btn-more:hover {
-  background-color: var(--font-colot-primary);
+.i-act-link-btn-more:hover {
+  background-color: var(--font-color-primary);
   box-shadow: 0 0 10px #999;
 }
 
@@ -124,7 +126,7 @@
 .coaches-item .columns {
   display: flex;
   justify-content: center;
-  margin-top: var(--indent-xl);
+  margin-top: var(--indent-block);
 }
 
 .coaches-item .title {
@@ -140,15 +142,12 @@
 }
 
 .coaches-item .action {
-  margin-top: var(--indent-l);
+  margin-top: var(--indent-el);
 }
 
 
-.coaches-pos {
-  max-width: var(--max-width-content);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: var(--indent-section);
+.coaches-list {
+  margin-top: var(--indent-xxxl);
 }
 
 .coaches-list>.title {
@@ -160,11 +159,11 @@
   justify-content: center;
 }
 
-.coaches-list-line:not(:first-of-type) {
-  margin-top: calc(var(--indent-section) * 2);
+.coaches-list-line:not(:first-child) {
+  margin-top: var(--indent-xxxl);
 }
 
 .coaches-list-line:first-of-type {
-  margin-top: var(--indent-section);
+  margin-top: var(--indent-l);
 }
 

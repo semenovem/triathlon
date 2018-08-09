@@ -1,1 +1,15 @@
+.individual-training {}
+
+.individual-training-title {
+  text-align: center;
+  padding-top: var(--indent-m);
+  margin-bottom: var(--indent-l);
+}
+
+.individual-training-week {
+
+}
+
+.individual-training-day {
+
 }

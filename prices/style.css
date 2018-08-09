@@ -1,0 +1,103 @@
+.i-act-link-btn-more {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: var(--font-color-secondary);
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition-property: background-color, box-shadow;
+  transition-duration: 300ms;
+}
+
+.i-act-link-btn-more:hover {
+  background-color: var(--font-color-primary);
+  box-shadow: 0 0 10px #999;
+}
+
+.i-avatar-coach {
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ccc;
+  opacity: 0.8;
+}
+
+.i-coach-about {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.i-coach-about-content {
+  text-align: justify;
+  overflow: auto;
+  padding-top: var(--indent-s);
+  padding-bottom: var(--indent-xl);
+  padding-right: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: inherit;
+}
+
+.i-coach-about-content>div:not(:first-child) {
+  margin-top: var(--indent-s);
+}
+
+.i-coach-about-shadow-top, .i-coach-about-shadow-bottom {
+  height: var(--indent-xl);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.i-coach-about-shadow-top {
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0));
+  top: 0;
+  transition: opacity 100ms;
+}
+
+.i-coach-about-shadow-top.hide {
+  opacity: 0;
+}
+
+.i-coach-about-shadow-bottom {
+  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+  bottom: 0;
+}
+
+
+.prices-item {
+  width: 280px;
+  margin-bottom: var(--indent-xl);
+
+  /*border: 1px solid gold;*/
+}
+
+.prices-item-avatar {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prices-item-price {
+  height: 400px;
+}
+
+.prices-item-action {
+  text-align: center;
+  margin-top: var(--indent-m);
+}
+
+
+.prices-coaches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--indent-l);
+}
+
+.prices-coaches>* {
+  margin-left: var(--indent-s);
+  margin-right: var(--indent-s);
+}

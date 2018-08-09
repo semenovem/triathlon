@@ -27,16 +27,14 @@
         <div class="post">Условия тренировок</div>
       </div>
 
-      {%include coach/terms_of_training/index.html css='coaches-item-about' content=coach.price%}
+      {%include coach/price/index.html css='coaches-item-about' content=coach.price%}
     </div>
     {%endif%}
   </div>
 
-  {%capture url%}{{site.data.pages.COACH.url}}/{{coach.coach_id}}{%endcapture%}
-
   {%include act/link/btn/more/index.html
     css='action'
-    url=url
+    url=coach.url
     text='ПОДРОБНЕЕ'
   %}
 </div>
