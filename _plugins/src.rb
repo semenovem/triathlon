@@ -6,10 +6,8 @@ module Jekyll
       end
     end
 
-    def phoneFormat(phone)
-      if (phone)
-        return phone.gsub(/\s/, "")
-      end
+    def srcDeepImg(path_l, path_r)
+      return (path_l + "/" + path_r).gsub(/index\.html/, "").gsub(/\/{2,}/, "/")
     end
   end
 end

@@ -4,13 +4,9 @@
 {%include act/link/btn/more/style.css%}
 
 .contacts {
-  padding-top: var(--indent-m);
+  margin-top: var(--indent-m);
   margin-left: var(--indent-xxxl);
   margin-right: var(--indent-xxxl);
-}
-
-.contacts .title {
-  text-align: center;
 }
 
 .contacts .action {

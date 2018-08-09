@@ -21,8 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "/triathlon" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username:
+github_username:
 
 contact_phone: +7 912 123 45 00
 contact_email: test@test.ru
@@ -58,7 +58,8 @@ exclude: [
 
 collections:
   coach:
-    layout: coach
+    output: true
+  report:
     output: true
 
 
@@ -69,3 +70,9 @@ defaults:
     values:
       layout: coach
       nav_light: COACHES
+  - scope:
+      path: ""
+      type: report
+    values:
+      layout: report
+      nav_light: REPORTS

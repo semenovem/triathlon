@@ -1,0 +1,67 @@
+---
+layout: layout_responsive
+nav_light: REPORTS
+---
+
+<h1 class="typography-page-name">Отчеты о прошедших соревнованиях</h1>
+
+<div class="reports-years">
+  <a href="" class="typography-text-title">2016</a>
+  -
+  <a href="" class="typography-text-title">2017</a>
+  -
+  <a href="" class="typography-text-title">2018</a>
+</div>
+
+
+
+<br>
+картинка
+<br>
+кто участвовал
+<br>
+описание события/соревнования
+<br>
+ссылки на сайты
+<br>
+описание участия
+
+<br>
+<br>
+<br>
+
+<table style="border: 1px #ccc solid;">
+  {% for item in site.report %}
+  <tr class="color: gold;">
+    <td style="border: 1px #ccc solid;">{{ item.name }}</td>
+    <td style="border: 1px #ccc solid;">{{ item.description }}</td>
+
+    {%capture url%}{{ item.url | urlOnSite }}{%endcapture%}
+
+    <td style="border: 1px #ccc solid;"><a href="{{url}}">{{url}}</a></td>
+  </tr>
+  {% endfor %}
+
+</table>
+
+<br>
+<br>
+<br>
+
+<!--<textarea style="width: 90%; height: 700px;">-->
+    {%for report in site.report%}
+
+      <table>
+        {%for key in report%}
+          <tr>
+            <td>{{key}}</td>
+            <td class="d-tr-td-content">
+              <textarea rows="5">{{report[key]}}</textarea>
+            </td>
+          </tr>
+        {%endfor%}
+      </table>
+
+    {%endfor%}
+
+<!--</textarea>-->

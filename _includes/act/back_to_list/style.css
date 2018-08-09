@@ -1,0 +1,25 @@
+.act-back-to-list {
+  background-color: rgba(216, 216, 216, 0.28);
+  padding: 10px 20px;
+  display: flex;
+}
+
+.act-back-to-list>a {
+  display: flex;
+  align-items: center;
+  color: var(--font-color-primary);
+  transition: color 300ms;
+}
+
+.act-back-to-list>a:hover {
+  color: var(--font-color-secondary);
+}
+
+.act-back-to-list>a img {
+  width: 24px;
+
+  margin-right: var(--indent-m);
+  transform: scale(-1,1);
+}
+
+

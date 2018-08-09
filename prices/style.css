@@ -5,11 +5,6 @@
 {%include coach/avatar/style.css%}
 {%include_relative item/style.css%}
 
-.prices-title {
-  text-align: center;
-  padding-top: var(--indent-m);
-}
-
 .prices-coaches {
   display: flex;
   flex-wrap: wrap;

@@ -28,8 +28,8 @@
     "url": "prices",
     "nav_item_name": "ЦЕНЫ"
   },
-  "REPORTS_ON_COMPETITION": {
-    "url": "reports_on_competition",
+  "REPORTS": {
+    "url": "reports",
     "nav_item_name": "ОТЧЕТЫ О ПРОШЕДШИХ СОРЕВНОВАНИЯХ"
   },
   "FEEDBACK": {

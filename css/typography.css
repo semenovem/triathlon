@@ -1,7 +1,28 @@
+/* название страницы. вверху в начале h1 */
 .typography-page-name {
   font-size: var(--font-size-h2);
   text-align: center;
+  margin-top: var(--indent-xl);
+  margin-bottom: var(--indent-l);
+  color: var(--font-color-primary);
 }
+
+/* оглавление страницы тренера|события*/
+.typography-item-title {
+  font-size: var(--font-size-h3);
+  color: var(--font-color-primary);
+  text-align: center;
+  margin-bottom: var(--indent-m);
+}
+
+/* внешние ссылки в тексте. базовый размер шрифта */
+.typography-external-link {
+  color: var(--font-color-link-ext);
+  text-decoration: underline;
+  font-size: var(--font-size-base);
+}
+
+
 
 .typography-title-another-page {
   font-size: var(--font-size-h3);
@@ -13,7 +34,7 @@
 
 .typography-link-inside-text {
   text-decoration: underline;
-  color: var(--font-colot-primary);
+  color: var(--font-color-primary);
 }
 
 
@@ -64,7 +85,7 @@
 
 .typography-text-regular {
   font-size: calc(var(--font-size-base) + 4px);
-  color: var(--font-colot-primary);
+  color: var(--font-color-primary);
 }
 
 .typography-link-ext-start {
@@ -78,5 +99,5 @@
 }
 .typography-link-contact {
   font-size: calc(var(--font-size-base) + 2px);
-  color: var(--font-colot-primary);
+  color: var(--font-color-primary);
 }

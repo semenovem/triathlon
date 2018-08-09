@@ -4,25 +4,21 @@
 {%include coach/about/style.css%}
 {%include student/item/style.css%}
 {%include act/link/btn/more/style.css%}
+{%include act/back_to_list/style.css%}
 
 .coach {
   --h-ava-about: 400px;
 }
 
-.coach .title {
-  text-align: center;
-  margin-bottom: var(--indent-m);
-}
-
 .coach-post {
-  text-align: center;
-  padding-top: var(--indent-m);
+  margin-top: var(--indent-m);
 }
 
 .coach-ava-about {
   display: flex;
   align-items: center;
   height: var(--h-ava-about);
+  margin-top: var(--indent-m);
 }
 
 .coach-ava-size {

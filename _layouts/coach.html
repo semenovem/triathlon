@@ -1,16 +1,22 @@
 ---
 layout: layout_responsive
 ---
-{%assign js = 'js/page_coach.js'%}
-<div class="coach">
-  <h2 class="typography-page-name title coach-post">{{page.post}}</h2>
 
+<h1 class="typography-page-name">Тренеры</h1>
+
+{%include act/back_to_list/index.html css='' url=site.data.pages.COACHES.url text='назад к списку тренеров'%}
+
+<div class="coach">
   <section class="coach-ava-about">
     {%include coach/avatar/index.html
-      css='coach-ava-size'
-      avatars=page.avatars
+        css='coach-ava-size'
+        avatars=page.avatars
     %}
-    {%capture content%}<div class="fio typography-text-definition">{{page.fio}}</div>{{page.about}}{%endcapture%}
+    {%capture content%}
+      <h3 class="typography-text-definition">{{page.post}}</h3>
+      <div class="fio typography-text-definition">{{page.fio}}</div>
+      {{page.about}}
+    {%endcapture%}
     {%include coach/about/index.html css='coach-about' content=content%}
   </section>
 

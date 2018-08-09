@@ -10,12 +10,23 @@
   }
 
 </style>
+
+
 <section class="i-debug-panel"><div>
 
 
-  <h3>page</h3>
+  <textarea rows="5">{{site.static_files}}
+
+    {% assign image_files = site.static_files | where: "image", true %}
+    {% for myimage in site.static_files %}
+      {{ myimage.path }}
+    {% endfor %}
+
+  </textarea>
+
+  <h3>site</h3>
     <table>
-      {%for key in page%}
+      {%for key in site%}
       <tr>
         <td>{{key}}</td>
         <td class="d-tr-td-content">

@@ -32,11 +32,9 @@
     {%endif%}
   </div>
 
-  {%capture url%}{{site.data.pages.COACH.url}}/{{coach.coach_id}}{%endcapture%}
-
   {%include act/link/btn/more/index.html
     css='action'
-    url=url
+    url=coach.url
     text='ПОДРОБНЕЕ'
   %}
 </div>

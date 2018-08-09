@@ -31,7 +31,7 @@
   width: 13px;
   height: 13px;
   margin: 0 4px;
-  background-color: var(--font-colot-primary);
+  background-color: var(--font-color-primary);
 }
 
 .i-slider-primary-poster-pointers > span.selected {

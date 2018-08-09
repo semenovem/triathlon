@@ -26,6 +26,10 @@
   {%if page.layout == 'coach'%}
     <script defer src="{{'js/' | append:'coach.js' | urlOnSite}}"></script>
   {%endif%}
+
+  {%if page.layout == 'report'%}
+    <script defer src="{{'js/' | append:'report.js' | urlOnSite}}"></script>
+  {%endif%}
 </head>
 <body>
 {{content}}

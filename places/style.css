@@ -4,14 +4,6 @@
 {%include act/link/btn/more/style.css%}
 {%include_relative item/style.css%}
 
-.places {
-  padding-top: var(--indent-m);
-}
-
-.places-title {
-  text-align: center;
-}
-
 .places-map {
   height: 600px;
   margin-top: var(--indent-l);

@@ -1,0 +1,19 @@
+{%comment%}<!--
+
+назад к списку
+
+@param String css
+@param String url
+@param String text
+
+-->{%endcomment%}
+
+{%capture text%}{{include.text | default: 'назад к списку'}}{%endcapture%}
+
+<div class="act-back-to-list">
+  <a href="{{include.url | urlOnSite}}">
+    <img src="{{'icons/back_to_list_running_men.svg' | urlOnSite}}">
+    <span>{{text}}</span>
+  </a>
+  <div></div>
+</div>

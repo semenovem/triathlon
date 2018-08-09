@@ -6,11 +6,7 @@
 .about-triathlon {
   margin-left: var(--indent-xl);
   margin-right: var(--indent-xl);
-  padding-top: var(--indent-m);
-}
-
-.about-triathlon>.title {
-  text-align: center;
+  margin-top: var(--indent-m);
 }
 
 .about-triathlon>.line {
