@@ -2,6 +2,8 @@
   border-radius: 50%;
   box-shadow: 0 0 10px #ccc;
   opacity: 0.8;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .i-coach-about {
@@ -11,7 +13,6 @@
 }
 
 .i-coach-about-content {
-  text-align: justify;
   overflow: auto;
   padding-top: var(--indent-s);
   padding-bottom: var(--indent-xl);
@@ -21,8 +22,12 @@
   max-height: inherit;
 }
 
+.i-coach-about-content-default {
+  text-align: justify;
+}
+
 .i-coach-about-content>div:not(:first-child) {
-  margin-top: var(--indent-s);
+  /*margin-top: var(--indent-s);*/
 }
 
 .i-coach-about-shadow-top, .i-coach-about-shadow-bottom {
@@ -175,7 +180,7 @@
 }
 
 .coach-terms-of-training {
-  margin-top: var(--indent-m);
+  margin-top: var(--indent-xl);
 }
 
 .coach-action {

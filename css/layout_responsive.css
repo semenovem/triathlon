@@ -123,10 +123,26 @@
   margin-right: auto;
 }
 
-.i-footer-responsive .social {
+.i-footer-responsive-social {
   border-top: 1px #D0D6DA solid;
   text-align: right;
   padding-top: var(--indent-xs);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.i-footer-responsive-partners {
+  margin-right: var(--indent-xl);
+}
+
+.i-footer-responsive-partner {
+  margin-left: var(--indent-s);
+}
+
+.i-footer-responsive-partners-logo {
+  height: 25px;
 }
 
 .i-footer-responsive .nav {

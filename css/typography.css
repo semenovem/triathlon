@@ -5,6 +5,7 @@
   margin-top: var(--indent-xl);
   margin-bottom: var(--indent-l);
   color: var(--font-color-primary);
+  font-weight: bold;
 }
 
 /* оглавление страницы тренера|события*/
@@ -21,6 +22,37 @@
   text-decoration: underline;
   font-size: var(--font-size-base);
 }
+.typography-external-link:hover {
+  color: var(--font-color-secondary);
+}
+
+/* название статьи / небольшой заголовок к тексту */
+.typography-title-of-article {
+  font-size: var(--font-size-h4);
+  color: var(--font-color-primary);
+  margin-bottom: var(--indent-m);
+}
+
+/* текст стоимости на странице ЦЕНЫ */
+.typography-text-prices-cost {
+  font-size: calc(var(--font-size-base) - 2px);
+  color: var(--font-color-primary);
+}
+
+/* Личные данные тренеров/воспитанников, показываемые отдельно от текста */
+.typography-people-block {
+  font-size: calc(var(--font-size-base) + 4px);
+  color: var(--font-color-primary);
+  font-weight: bold;
+}
+/* Личные данные тренеров/воспитанников, показываемые в тексте */
+.typography-people-inline {
+  font-size: var(--font-size-base);
+  color: var(--font-color-primary);
+  font-weight: bold;
+}
+
+
 
 
 

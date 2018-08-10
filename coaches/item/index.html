@@ -18,7 +18,7 @@
         <div class="fio">{{coach.fio}}</div>
       </div>
 
-      {%include coach/about/index.html css='coaches-item-about' content=coach.about%}
+      {%include coach/about/index.html css='coaches-item-about' content=coach.about css_typography=''%}
     </div>
 
     {%if include.is_extended == 'y'%}
@@ -27,7 +27,7 @@
         <div class="post">Условия тренировок</div>
       </div>
 
-      {%include coach/price/index.html css='coaches-item-about' content=coach.price%}
+      {%include coach/about/index.html css='coaches-item-about' content=coach.coaching css_typography=''%}
     </div>
     {%endif%}
   </div>

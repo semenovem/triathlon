@@ -20,73 +20,8 @@
   border-radius: 50%;
   box-shadow: 0 0 10px #ccc;
   opacity: 0.8;
-}
-
-.i-coach-about {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-}
-
-.i-coach-about-content {
-  text-align: justify;
-  overflow: auto;
-  padding-top: var(--indent-s);
-  padding-bottom: var(--indent-xl);
-  padding-right: 20px;
-  box-sizing: border-box;
-  height: 100%;
-  max-height: inherit;
-}
-
-.i-coach-about-content>div:not(:first-child) {
-  margin-top: var(--indent-s);
-}
-
-.i-coach-about-shadow-top, .i-coach-about-shadow-bottom {
-  height: var(--indent-xl);
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.i-coach-about-shadow-top {
-  background: linear-gradient(#fff, rgba(255, 255, 255, 0));
-  top: 0;
-  transition: opacity 100ms;
-}
-
-.i-coach-about-shadow-top.hide {
-  opacity: 0;
-}
-
-.i-coach-about-shadow-bottom {
-  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
-  bottom: 0;
-}
-
-
-.prices-item {
-  width: 280px;
-  margin-bottom: var(--indent-xl);
-
-  /*border: 1px solid gold;*/
-}
-
-.prices-item-avatar {
-  height: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.prices-item-price {
-  height: 400px;
-}
-
-.prices-item-action {
-  text-align: center;
-  margin-top: var(--indent-m);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
@@ -97,7 +32,41 @@
   margin-top: var(--indent-l);
 }
 
-.prices-coaches>* {
-  margin-left: var(--indent-s);
-  margin-right: var(--indent-s);
+.prices-item {
+  width: 200px;
+  height: 490px;
+  margin-left: var(--indent-m);
+  margin-right: var(--indent-m);
+  margin-bottom: var(--indent-xxxl);
+  position: relative;
 }
+
+.prices-item-title {
+  width: 300px;
+}
+
+.prices-item-action {
+  text-align: center;
+  margin-top: var(--indent-m);
+  position: absolute;
+  bottom: 0;
+}
+
+.prices-item-values {
+  margin-top: var(--indent-m);
+  position: absolute;
+  top: 210px;
+  width: 100%;
+}
+
+.prices-item-values>div {
+  text-align: right;
+  padding-right: var(--indent-l);
+  height: 1.5em;
+
+  border-bottom: 1px #efefef solid;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
