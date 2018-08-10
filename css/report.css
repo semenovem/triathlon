@@ -61,10 +61,12 @@
   display: flex;
   justify-content: space-between;
   margin-top: var(--indent-m);
+  margin-bottom: var(--indent-xxl);
 }
 
 .report-members {
   text-align: center;
+  min-width: 300px;
 }
 
 .report-members .title {
@@ -73,6 +75,16 @@
 
 .report-members-avatar {
   height: 180px;
+}
+
+.report-promo {
+  max-width: 50%;
+  max-height: 200px;
+}
+
+.report-promo-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
