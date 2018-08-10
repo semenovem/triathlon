@@ -19,16 +19,17 @@
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/forms.css" />
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/{{page.layout}}.css" />
 
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{page.path | remove:'index.html'}}style.css" />
+  <link rel="stylesheet" type="text/css"
+        href="{{site.baseurl}}/{{page.path | remove:'index.html' | remove:'index.md'}}style.css" />
 
-  <script async src="{{site.baseurl}}/{{page.path | remove:'index.html'}}script.js"></script>
+  <script async src="{{site.baseurl}}/{{page.path | remove:'index.html' | remove:'index.md'}}script.js"></script>
 
   {%if page.layout == 'coach'%}
-    <script defer src="{{'js/' | append:'coach.js' | urlOnSite}}"></script>
+    <script defer src="{{'js/' | append:'coach.js' | relative_url}}"></script>
   {%endif%}
 
   {%if page.layout == 'report'%}
-    <script defer src="{{'js/' | append:'report.js' | urlOnSite}}"></script>
+    <script defer src="{{'js/' | append:'report.js' | relative_url}}"></script>
   {%endif%}
 </head>
 <body>

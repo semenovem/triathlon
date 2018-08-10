@@ -1,5 +1,5 @@
 <header class="i-header-responsive {{include.css}}">
-  <a class="i-header-responsive-logo" href="{{site.data.pages.HOME.url | urlOnSite}}">
+  <a class="i-header-responsive-logo" href="{{site.data.pages.HOME.url | relative_url}}">
     {%include logo/primary/index.html%}
   </a>
   <div class="i-header-responsive-items">
@@ -8,7 +8,7 @@
     {%include nav/item/header/index.html page_name='COACHES'%}
     {%include nav/item/header/index.html page_name='PLACES'%}
     {%include nav/item/header/index.html page_name='PRICES'%}
-    {%include nav/item/header/index.html page_name='INDIVIDUAL_TRAINING'%}
+    {%include nav/item/header/index.html page_name='COACHING'%}
     {%include nav/item/header/index.html page_name='REPORTS'%}
     {%include nav/item/header/index.html page_name='CONTACTS'%}
   </div>

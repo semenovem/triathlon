@@ -3,6 +3,7 @@
 
 const places = {
   _elCntMapId: 'map',
+  _srcScriptApiMap: 'https://api-maps.yandex.ru/2.1/?lang=ru_RU',
   _map: null,
   _sports: {
     run: 'бег',
@@ -14,16 +15,33 @@ const places = {
   _coaches: `{%capture coaches%}{%include_relative get_is_enabled_coaches.html%}{%endcapture%}{{coaches | delAllSpace}}`,
 
   init() {
-    // if (!window.ymaps) {
-    //   return;
-    // }
-    const wait = () => ymaps.ready(this._init.bind(this));
+    new Promise((resolve, reject) => {
+      const el = document.createElement('SCRIPT');
 
-    if (document.readyState === 'complete') {
-      wait();
-    } else {
-      document.addEventListener('DOMContentLoaded', wait);
-    }
+      el.src = this._srcScriptApiMap;
+      el.type = 'text/javascript';
+      el.onload = resolve;
+      el.onerror = reject;
+
+      document.querySelector('head').appendChild(el);
+    })
+      .catch(e => {
+        throw e;
+      })
+      .then(() => {
+        const wait = () => window.ymaps.ready(this._init.bind(this));
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', wait);
+        } else {
+          wait();
+        }
+      })
+      .catch(e => {
+        console.error(e);
+
+        // todo handle error
+      })
   },
 
   createMap() {
@@ -66,7 +84,7 @@ const places = {
         iconContent: placemark.sign
       }, {
         iconLayout: 'default#imageWithContent',
-        iconImageHref: `/triathlon/${placemark.icon}`,
+        iconImageHref: `/${placemark.icon}`,
         iconImageSize: [50, 50],
         iconImageOffset: [0, -50],
         iconContentOffset: [0, 21],

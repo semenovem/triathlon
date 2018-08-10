@@ -9,6 +9,6 @@
 {%capture avatar%}{{include.avatars[0] | default: 'imgs/coaches/avatar.svg'}}{%endcapture%}
 
 <img
-  src="{{avatar | urlOnSite}}"
+  src="{{avatar | relative_url}}"
   class="i-avatar-coach {{include.css}}"
 >

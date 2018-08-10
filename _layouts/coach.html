@@ -13,8 +13,8 @@ layout: layout_responsive
         avatars=page.avatars
     %}
     {%capture content%}
-      <h3 class="typography-text-definition">{{page.post}}</h3>
-      <div class="fio typography-text-definition">{{page.fio}}</div>
+      <h4 class="typography-people-block">{{page.post}}</h4>
+      <div class="typography-people-block fio">{{page.fio}}</div>
       {{page.about}}
     {%endcapture%}
     {%include coach/about/index.html css='coach-about' content=content%}
@@ -44,15 +44,15 @@ layout: layout_responsive
 
   {%if on%}
     <section class="coach-students">
-      <h3 class="typography-title-secondary-info title">Воспитанники</h3>
+      <h3 class="typography-title-of-article">Воспитанники</h3>
       {{output}}
     </section>
   {%endif%}
 
   <section class="coach-terms-of-training">
-    <h3 class="typography-title-secondary-info title">Условия, время, места, стоимость тренировок</h3>
+    <h3 class="typography-title-of-article">Условия, время, места, стоимость тренировок</h3>
     <div class="typography-coach">
-      {{page.price}}
+      {{page.coaching}}
     </div>
   </section>
 
@@ -60,7 +60,7 @@ layout: layout_responsive
   <div class="coach-action">
     {%include act/link/btn/more/index.html
       css=''
-      url=site.data.pages.INDIVIDUAL_TRAINING.url
+      url=site.data.pages.COACHING.url
       text='НАЧАТЬ ТРЕНИРОВАТЬСЯ ИНДИВИДУАЛЬНО'
     %}
   </div>

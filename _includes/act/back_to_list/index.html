@@ -11,8 +11,8 @@
 {%capture text%}{{include.text | default: 'назад к списку'}}{%endcapture%}
 
 <div class="act-back-to-list">
-  <a href="{{include.url | urlOnSite}}">
-    <img src="{{'icons/back_to_list_running_men.svg' | urlOnSite}}">
+  <a href="{{include.url | relative_url}}">
+    <img src="{{'icons/back_to_list_running_men.svg' | relative_url}}">
     <span>{{text}}</span>
   </a>
   <div></div>

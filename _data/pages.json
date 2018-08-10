@@ -1,6 +1,6 @@
 {
   "HOME": {
-    "url": "",
+    "url": "/",
     "nav_item_name": "ГЛАВНАЯ",
     "title": "Азбука Триатлона"
   },
@@ -40,8 +40,8 @@
     "url": "contacts",
     "nav_item_name": "КОНТАКТЫ"
   },
-  "INDIVIDUAL_TRAINING": {
-    "url": "individual_training",
+  "COACHING": {
+    "url": "coaching",
     "nav_item_name": "ТРЕНИРОВКИ"
   },
   "TRAINING_SESSIONS": {
@@ -79,5 +79,10 @@
   "RECORDING_TRAINING": {
     "url": "recording_training",
     "nav_item_name": "ЗАПИСЬ НА ТРЕНИРОВКУ"
+  },
+  "PARTNERS": {
+    "url": "partners",
+    "nav_item_name": "ПАРНЕРЫ",
+    "name": "Партнеры"
   }
 }

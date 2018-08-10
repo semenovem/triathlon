@@ -3,7 +3,6 @@
 
 {%include act/link/btn/more/style.css%}
 {%include coach/avatar/style.css%}
-{%include_relative item/style.css%}
 
 .prices-coaches {
   display: flex;
@@ -12,7 +11,41 @@
   margin-top: var(--indent-l);
 }
 
-.prices-coaches>* {
-  margin-left: var(--indent-s);
-  margin-right: var(--indent-s);
+.prices-item {
+  width: 200px;
+  height: 490px;
+  margin-left: var(--indent-m);
+  margin-right: var(--indent-m);
+  margin-bottom: var(--indent-xxxl);
+  position: relative;
 }
+
+.prices-item-title {
+  width: 300px;
+}
+
+.prices-item-action {
+  text-align: center;
+  margin-top: var(--indent-m);
+  position: absolute;
+  bottom: 0;
+}
+
+.prices-item-values {
+  margin-top: var(--indent-m);
+  position: absolute;
+  top: 210px;
+  width: 100%;
+}
+
+.prices-item-values>div {
+  text-align: right;
+  padding-right: var(--indent-l);
+  height: 1.5em;
+
+  border-bottom: 1px #efefef solid;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
