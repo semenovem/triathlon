@@ -1,6 +1,8 @@
 ---
 ---
 
+{% include_relative item/style.css %}
+
 .reports {
 
 }

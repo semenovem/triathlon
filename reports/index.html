@@ -17,23 +17,20 @@ nav_light: REPORTS
   {% endfor %}
 </div>
 
+{% assign reports = site.report | reverse%}
 
 
+{% assign cur_year = '2017' %}
 
-<textarea style="width: 700px; height: 500px;">
+<div class="reports">
+  {% for report in reports_all %}
+    {% include_relative item/index.html css='' report=report %}
+  {% endfor %}
+</div>
 
-  {%capture years%}
-    {%for report in site.report%}
-      {{report.date | slice:0, 4}}
-    {%endfor%}
-  {%endcapture%}
 
-  {{years | remove: ' '}}
-
-</textarea>
 
 <table style="border: 1px #ccc solid;">
-  {% assign reports_all = site.report | reverse%}
   {% for item in reports_all %}
   <tr class="color: gold;">
     <td style="border: 1px #ccc solid;">{{ item.name }}</td>
