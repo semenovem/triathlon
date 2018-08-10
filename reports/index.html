@@ -19,27 +19,10 @@ nav_light: REPORTS
 
 {% assign reports = site.report | reverse%}
 
-
 {% assign cur_year = '2017' %}
 
 <div class="reports">
-  {% for report in reports_all %}
+  {% for report in reports %}
     {% include_relative item/index.html css='' report=report %}
   {% endfor %}
 </div>
-
-
-
-<table style="border: 1px #ccc solid;">
-  {% for item in reports_all %}
-  <tr class="color: gold;">
-    <td style="border: 1px #ccc solid;">{{ item.name }}</td>
-    <td style="border: 1px #ccc solid;">{{ item.date }}</td>
-
-    {%capture url%}{{ item.url | relative_url }}{%endcapture%}
-
-    <td style="border: 1px #ccc solid;"><a href="{{url}}">{{url}}</a></td>
-  </tr>
-  {% endfor %}
-
-</table>

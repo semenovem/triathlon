@@ -4,7 +4,11 @@
 {% include_relative item/style.css %}
 
 .reports {
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: var(--indent-l);
+  justify-content: space-between;
 }
 
 .reports-years {
