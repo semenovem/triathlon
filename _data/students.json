@@ -306,6 +306,27 @@
     ]
   },
 
+  "novitskii_anton": {
+    "fio": "Новицкий Антон",
+    "about": "",
+    "avatars": [
+      "imgs/students/novitskii_anton/avatar.png"
+    ],
+    "coaches": [
+      "goldovskii_kirill_mikhailovich",
+    ],
+    "races": [
+      {
+        "title": "...",
+        "url": "http://www.racetecresults.com/MyResults.aspx?uid=17067-79-6-17749"
+      },
+      {
+        "title": "...",
+        "url": "http://ap.ironman.com/triathlon/coverage/athlete-tracker.aspx?bidid=183&rd=2018-06-03&race=IMsubicbay"
+      }
+    ]
+  },
+
 
 
   "tmp": {
