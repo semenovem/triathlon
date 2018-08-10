@@ -1,0 +1,34 @@
+{% comment %}
+
+@param report {}
+@param css String
+
+{% endcomment %}
+{% assign report = include.report %}
+
+<div class="reports-item {{include.css}}">
+
+  <div class="typography-title-of-article reports-item-name">{{ report.name }}</div>
+  <div class="typography-title-of-article reports-item-date">{{ report.date | slice:0,10 }}</div>
+
+  <a href="{{ report.url | relative_url }}">
+    <div class="reports-item-preview"
+         style="background-image: url('{{ report.url | srcDeepImg: report.preview[0] | relative_url }}');"
+    >
+    </div>
+  </a>
+
+  <div class="reports-item-intro">
+    {{ report.intro }}...
+  </div>
+
+  <div class="reports-item-act">
+    {% include act/link/btn/more/index.html
+      css=''
+      url=report.url
+      text='ПОДРОБНЕЕ'
+    %}
+  </div>
+
+
+</div>

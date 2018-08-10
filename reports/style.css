@@ -1,7 +1,66 @@
+.i-act-link-btn-more {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: var(--font-color-secondary);
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition-property: background-color, box-shadow;
+  transition-duration: 300ms;
+}
+
+.i-act-link-btn-more:hover {
+  background-color: var(--font-color-primary);
+  box-shadow: 0 0 10px #999;
+}
+
+
+.reports-item {
+  text-align: center;
+  min-width: 45%;
+  max-width: 45%;
+  margin-bottom: var(--indent-xxxl);
+}
+
+.reports-item-name {
+  height: 60px;
+}
+
+.reports-item-date {}
+
+.reports-item-preview {
+  height: 300px;
+  margin-top: var(--indent-s);
+
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.reports-item-preview-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.reports-item-intro {
+  margin-top: var(--indent-m);
+  text-align: left;
+  text-indent: 20px;
+}
+
+.reports-item-act {
+  text-align: center;
+  margin-top: var(--indent-m);
+}
 
 
 .reports {
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: var(--indent-l);
+  justify-content: space-between;
 }
 
 .reports-years {
