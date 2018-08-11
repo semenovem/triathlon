@@ -69,21 +69,16 @@
   min-width: 300px;
 }
 
-.report-members .title {
-
-}
-
 .report-members-avatar {
   height: 180px;
 }
 
 .report-promo {
-  max-width: 50%;
-  max-height: 200px;
+  margin-left: var(--indent-xl);
+  height: 300px;
 }
 
 .report-promo-img {
-  max-width: 100%;
   max-height: 100%;
 }
 
