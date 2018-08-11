@@ -21,14 +21,14 @@ layout: layout_responsive
       >
         {{ page.event_site }}
       </a>
-    {% endcapture %}xss
+    {% endcapture %}
     {% include icon_text/index.html css='report-meta' content=event_site icon='icons/external_link.svg' %}
   {% endif %}
 
 
   <div class="report-begin">
     <div class="report-members">
-      <div class="title typography-text-definition">Участвовал</div>
+      <div class="typography-title-of-article">Участвовал</div>
       {% for coach_id in page.members %}
         {% assign members = site.coach | where:'coach_id', coach_id %}
 
