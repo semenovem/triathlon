@@ -76,3 +76,8 @@ defaults:
     values:
       layout: report
       nav_light: REPORTS
+
+# hash commit, for prevent caching file resource
+short_hash_commit:
+
+#end

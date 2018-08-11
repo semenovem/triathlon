@@ -5,10 +5,13 @@
 
 BRANCH='gh-pages'
 COMMIT=$(git rev-parse HEAD)
+SMALL_HASH_COMMIT=${COMMIT:0:6}
+FILE='_config.yml'
+
+find $FILE -type f -exec sed -i "" "s/short_hash_commit:.*/short_hash_commit: $SMALL_HASH_COMMIT/" {} \;
 
 ### сборка проекта
 npm run-script build
-
 
 ### переключиться на ветку gh-pages
 if git checkout ${BRANCH} ; then
