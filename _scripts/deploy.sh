@@ -14,6 +14,8 @@ find $FILE -type f -exec sed -i "" "s/short_hash_commit:.*/short_hash_commit: $S
 ### сборка проекта
 npm run-script build
 
+git checkout -- _config.yml
+
 ### переключиться на ветку gh-pages
 if git checkout ${BRANCH} ; then
   echo ok
