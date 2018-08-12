@@ -15,7 +15,7 @@
 <section class="i-debug-panel"><div>
 
 
-  <textarea rows="5">{{site.static_files}}
+  <textarea rows="5" style="width: 700px; height: 500px;">
 
     {% assign image_files = site.static_files | where: "image", true %}
     {% for myimage in site.static_files %}
@@ -24,6 +24,7 @@
 
   </textarea>
 
+  {% comment %}}
   <h3>site</h3>
     <table>
       {%for key in site%}
@@ -36,6 +37,8 @@
       {%endfor%}
     </table>
   <br>
+  {% endcomment %}
+
 
 
   {%comment%}

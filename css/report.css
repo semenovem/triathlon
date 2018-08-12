@@ -4,6 +4,7 @@
 {%include act/back_to_list/style.css%}
 {%include icon_text/style.css%}
 {%include coach/avatar/style.css%}
+{% include scroll/x/photos/style.css %}
 
 .report {
   margin-top: var(--indent-m);
@@ -44,6 +45,10 @@
 
 .report-promo-img {
   max-height: 100%;
+}
+
+.report-block-with-photos {
+  height: 200px;
 }
 
 

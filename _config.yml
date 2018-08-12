@@ -78,6 +78,6 @@ defaults:
       nav_light: REPORTS
 
 # hash commit, for prevent caching file resource
-short_hash_commit:
+short_hash_commit: 81a568
 
 #end
