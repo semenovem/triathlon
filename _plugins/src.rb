@@ -26,7 +26,7 @@ module Jekyll
 
 
 
-    #
+    # make definition type args
     def src_add_path (path, name_files)
       result = []
 
