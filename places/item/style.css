@@ -26,6 +26,17 @@
 }
 
 .places-item-img {
-  width: 200px;
-  text-align: center;
+  min-width: 250px;
+  max-width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.places-item-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

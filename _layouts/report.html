@@ -38,9 +38,14 @@ layout: layout_responsive
       {% endfor %}
     </div>
 
-    <div class="report-promo">
-      <img src="{{ page.url | srcDeepImg: page.promo[0] | relative_url }}" class="report-promo-img">
-    </div>
+    {% assign img_src = page.url | srcDeepImg: page.preview[0] | relative_url %}
+    {% assign link = report.url | relative_url %}
+
+    {% include img_fit/text_fit/index.html
+        css='report-promo'
+        img_src=img_src
+        text=page.text_on_top
+    %}
   </div>
 
   {{ content }}

@@ -5,6 +5,7 @@
 {%include icon_text/style.css%}
 {%include coach/avatar/style.css%}
 {% include scroll/x/photos/style.css %}
+{% include img_fit/text_fit/style.css %}
 
 .report {
   margin-top: var(--indent-m);
@@ -41,10 +42,7 @@
 .report-promo {
   margin-left: var(--indent-xl);
   height: 300px;
-}
-
-.report-promo-img {
-  max-height: 100%;
+  flex-grow: 1;
 }
 
 .report-block-with-photos {
