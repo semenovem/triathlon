@@ -6,7 +6,7 @@ nav_light: REPORTS
 <h1 class="typography-page-name">Отчеты о прошедших соревнованиях</h1>
 
 <!-- todo сделать выборку годов, в которых есть отчеты -->
-{% assign years = '2017' | split: ',' %}
+{% assign years = '2017,2018' | split: ',' %}
 
 <div class="reports-years">
   {% for year in years %}
