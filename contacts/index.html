@@ -1,6 +1,49 @@
 ---
-layout: general
-current: CONTACTS
+layout: layout_responsive
+nav_light: CONTACTS
 ---
 
-CONTACTS
+<h1 class="typography-page-name">Контакты</h1>
+
+<div class="contacts">
+  <div class="contacts-info">
+    <div class="contacts-info-connect">
+      <a class="typography-link-contact" href="tel:{{site.contact_phone}}">
+        {{site.contact_phone}}
+      </a>
+
+      <a class="typography-link-contact" href="mailto:{{site.contact_email}}">{{site.contact_email}}</a>
+
+      <div class="social typography-link-contact">
+        <span>Соцсети:</span>
+        {%include contact/social/primary/index.html css='contacts-info-social'%}
+      </div>
+    </div>
+
+    <div class="schedule">
+      c 9:00 до 21:00
+      <br>
+      Можно писать в мессенджерах WhatsApp
+      <br>
+    </div>
+  </div>
+
+  <div class="contacts-form">
+    <h3 class="typography-text-title title">
+      Отправить вопрос или записаться на тренировку<br>также можно через форму
+    </h3>
+
+    <input placeholder="Ваш email или телефон" class="forms-field">
+    <input placeholder="Как вас зовут ?" class="forms-field">
+    <textarea placeholder="Сообщение" class="forms-field"></textarea>
+  </div>
+
+  <div class="action">
+    {%
+      include act/link/btn/more/index.html
+        css=''
+        url=''
+        text='ОТПРАВИТЬ'
+    %}
+  </div>
+</div>

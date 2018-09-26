@@ -1,0 +1,52 @@
+---
+---
+
+{%include act/back_to_list/style.css%}
+{%include icon_text/style.css%}
+{%include coach/avatar/style.css%}
+{% include scroll/x/photos/style.css %}
+{% include img_fit/text_fit/style.css %}
+
+.report {
+  margin-top: var(--indent-m);
+}
+
+.report-name:before {
+  content: "— —  ";
+}
+
+.report-name:after {
+  content: "  — —";
+}
+
+.report-meta {
+  margin-top: var(--indent-xs);
+}
+
+.report-begin {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--indent-m);
+  margin-bottom: var(--indent-xxl);
+}
+
+.report-members {
+  text-align: center;
+  min-width: 300px;
+}
+
+.report-members-avatar {
+  height: 180px;
+}
+
+.report-promo {
+  margin-left: var(--indent-xl);
+  height: 300px;
+  flex-grow: 1;
+}
+
+.report-block-with-photos {
+  height: 200px;
+}
+
+

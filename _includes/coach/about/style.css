@@ -1,0 +1,45 @@
+.i-coach-about {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.i-coach-about-content {
+  overflow: auto;
+  padding-top: var(--indent-s);
+  padding-bottom: var(--indent-xl);
+  padding-right: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: inherit;
+}
+
+.i-coach-about-content-default {
+  text-align: justify;
+}
+
+.i-coach-about-content>div:not(:first-child) {
+  /*margin-top: var(--indent-s);*/
+}
+
+.i-coach-about-shadow-top, .i-coach-about-shadow-bottom {
+  height: var(--indent-xl);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.i-coach-about-shadow-top {
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0));
+  top: 0;
+  transition: opacity 100ms;
+}
+
+.i-coach-about-shadow-top.hide {
+  opacity: 0;
+}
+
+.i-coach-about-shadow-bottom {
+  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+  bottom: 0;
+}

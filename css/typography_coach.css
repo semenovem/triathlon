@@ -1,0 +1,50 @@
+.typography-coach .fio {
+  margin-bottom: var(--indent-m);
+}
+
+.typography-coach .ul {
+  list-style: none;
+  font-weight: normal;
+  padding-left: 0;
+}
+
+.typography-coach .ul .ul {
+  padding-left: var(--indent-m);
+}
+
+.typography-coach .ul.about>li:not(:first-child) {
+  margin-top: var(--indent-xs);
+}
+
+.typography-coach .about {
+  font-weight: normal;
+  font-size: var(--font-size-base);
+}
+
+.typography-coach .bold {
+  font-weight: bold;
+}
+
+.typography-coach .indent-top-s {
+  padding-top: var(--indent-s);
+}
+
+.typography-coach .students {
+  font-size: calc(var(--font-size-base) - 2px);
+}
+
+.typography-coach ul>li.empty {
+  height: 1em;
+}
+
+
+
+.typography-coach .price {
+  font-weight: normal;
+  font-size: var(--font-size-base);
+}
+
+.typography-coach .ul.price>li:not(:first-child) {
+  margin-top: var(--indent-xs);
+}
+

@@ -1,0 +1,35 @@
+{%assign student = include.student%}
+
+{%capture avatar%}{{student.avatars[0] | default: 'imgs/coaches/default_avatar.png'}}{%endcapture%}
+
+<div class="i-student-item {{include.css}}">
+  <div class="i-student-item-avatar">
+    <img src="{{avatar | relative_url}}">
+  </div>
+  <div class="i-student-item-info">
+    <div class="i-student-item-fio">{{student.fio}}</div>
+    <div class="i-student-item-about typography-subtext-about">{{student.about}}</div>
+    <div class="i-student-item-starts">
+      {%for race in student.races%}
+
+        {%if race.url%}
+          <a href="{{race.url}}" target="_blank" rel="noopener" class="typography-link-ext-start">
+            {{race.title}}
+          </a>
+        {%continue%}
+        {%endif%}
+
+        <div class="typography-not-link-ext-start">{{race.title}}</div>
+
+      {%endfor%}
+    </div>
+  </div>
+  <div class="i-student-item-sport-logos">
+    {%for race in student.races%}
+      {%assign src=site.data.logo_of_races[race.logo].logo%}
+      {%if src%}
+        <img src="{{src | relative_url}}">
+      {%endif%}
+    {%endfor%}
+  </div>
+</div>

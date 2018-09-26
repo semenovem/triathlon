@@ -1,0 +1,37 @@
+{% comment %}
+
+@param report {}
+@param css String
+
+{% endcomment %}
+{% assign report = include.report %}
+
+<div class="reports-item {{include.css}}">
+
+  <div class="typography-title-of-article reports-item-name">{{ report.name }}</div>
+  <div class="typography-title-of-article reports-item-date">{{ report.date | slice:0,10 }}</div>
+
+  {% assign img_src = report.url | srcDeepImg: report.preview[0] | relative_url %}
+  {% assign link = report.url | relative_url %}
+
+  {% include img_fit/text_fit/index.html
+      css='reports-item-preview'
+      img_src=img_src
+      text=report.text_on_top
+      link=link
+  %}
+
+  <div class="reports-item-intro">
+    {{ report.intro }}...
+  </div>
+
+  <div class="reports-item-act">
+    {% include act/link/btn/more/index.html
+      css=''
+      url=report.url
+      text='ПОДРОБНЕЕ'
+    %}
+  </div>
+
+
+</div>

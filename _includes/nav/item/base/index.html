@@ -1,8 +1,11 @@
-{%comment%}
-определим текущий выбранный элемент
-{%endcomment%}
+{%comment%}<!--
 
-{%capture selected%}{%if page.current == include.page_name%} selected{%endif%}{%endcapture%}
-<a href="{{site.data.pages[include.page_name].url | createURL}}" class="{{include.css | append: selected}}">
-    {{site.data.pages[include.page_name].nav_item_name | hardSpace}}
+определим текущий выбранный элемент
+@param String page_name
+
+-->{%endcomment%}
+
+{%capture selected%}{%if page.nav_light == include.page_name%} selected{%endif%}{%endcapture%}
+<a href="{{site.data.pages[include.page_name].url | relative_url}}" class="{{include.css | append: selected}}">
+  {{site.data.pages[include.page_name].nav_item_name | hardSpace}}
 </a>

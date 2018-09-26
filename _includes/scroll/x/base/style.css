@@ -1,0 +1,23 @@
+.i-scroll-x {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.i-scroll-x-arrow-left {
+  transform: scale(-1, 1);
+  margin-right: var(--indent-m);
+}
+
+.i-scroll-x-arrow-right {
+  margin-left: var(--indent-m);
+}
+
+.i-scroll-x-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
+}

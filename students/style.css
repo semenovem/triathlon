@@ -1,0 +1,8 @@
+---
+---
+
+{%include student/item/style.css%}
+
+.students-item {
+  height: 100px;
+}

@@ -5,10 +5,13 @@ const del = require('del');
 const imagemin = require('gulp-imagemin');
 // const pngquant = require('imagemin-pngquant');
 
+// const dotenv = require('dotenv');
+// import dotenv from 'dotenv';
+
 const SOURCE = '_site';
 const TARGET = '_dist';
 
-gulp.task('build', ['clean-target', 'minify-css', 'minify-html', 'img']);
+gulp.task('build', ['clean-target', 'minify-css', /*'minify-html', */'img']);
 
 gulp.task('minify-css', () => (
   gulp.src(`${SOURCE}/**/*.css`)
@@ -23,8 +26,8 @@ gulp.task('minify-html', () => (
 ));
 
 gulp.task('transfer-assets', () => (
-  gulp.src(`${SOURCE}/assets/**/*`)
-    .pipe(gulp.dest(`${TARGET}/assets/`))
+  gulp.src(`${SOURCE}/**/*`)
+    .pipe(gulp.dest(`${TARGET}/`))
 ));
 
 gulp.task('clean-target', () => {
@@ -36,6 +39,15 @@ gulp.task('img', () => {
     .pipe(imagemin())
     .pipe(gulp.dest(TARGET));
 });
+
+
+// gulp.task('empty', () => {
+//
+//   dotenv.config();
+//
+//   console.log('1111');
+//   console.log(process.env);
+// });
 
 /*
 https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html

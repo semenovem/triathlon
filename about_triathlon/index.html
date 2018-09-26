@@ -1,6 +1,64 @@
 ---
-layout: general
-current: ABOUT_TRIATHLON
+layout: layout_responsive
+nav_light: ABOUT_TRIATHLON
 ---
 
-about_triathlon
+<!--
+
+ставим стандартный слайдер
+текст объединяем
+
+список тренеров - оставляем
+-->
+
+<h1 class="typography-page-name">О Триатлоне</h1>
+
+<section class="about-triathlon">
+  <div class="line">
+    <div class="description">
+      Триатлон – это гонка состоящая из трех этапов плавание, велогонка и бег которые сменяют друг друга и этим он привлекает все больше любителей спорта которые хотят преодолеть триатлон в зависимости от подготовки от спринтерской дистанции до железной IRONMAN.
+    </div>
+    <img src="{{'imgs/about_triathlon/00.png' | relative_url}}" class="img">
+  </div>
+
+  <div class="line">
+    <div class="description">
+      Триатлон преодолело уже десятки тысяч человек всем мире. Так же он набирает все больше и больше популярность в России, как для взрослых и особенно детей.
+    </div>
+    <img src="{{'imgs/about_triathlon/01.png' | relative_url}}" class="img">
+  </div>
+
+  <div class="line">
+    <div class="description">
+      Совершенствуя, каждый вид триатлона вы приобретаете выносливость, силу, гибкость, ловкость, но и то же время путешествуете и расширяете горизонты своего привычного жизненного ритма.
+    </div>
+    <img src="{{'imgs/about_triathlon/02.png' | relative_url}}" class="img">
+  </div>
+</section>
+
+
+<section class="about-triathlon-coaches">
+  <h2 class="typography-title-another-page title">Тренерский состав</h2>
+
+  <div class="list">
+    <div class="coaches">
+      <div class="first"></div>
+      {%for coach in site.coach%}
+        <a href="{{'coach/' | append: coach.coach_id | relative_url}}/">
+          {%include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar'%}
+        </a>
+      {%endfor%}
+    </div>
+
+    <div class="shadow-left"></div>
+    <div class="shadow-right"></div>
+  </div>
+
+  {%
+    include act/link/btn/more/index.html
+    css='action'
+    url=site.data.pages.COACHES.url
+    text='ВЫБРАТЬ ТРЕНЕРА'
+  %}
+
+</section>

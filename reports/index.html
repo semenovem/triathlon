@@ -1,0 +1,28 @@
+---
+layout: layout_responsive
+nav_light: REPORTS
+---
+
+<h1 class="typography-page-name">Отчеты о прошедших соревнованиях</h1>
+
+<!-- todo сделать выборку годов, в которых есть отчеты -->
+{% assign years = '2017,2018' | split: ',' %}
+
+<div class="reports-years">
+  {% for year in years %}
+    <a href="" class="typography-text-title">{{year}}</a>
+    {% if forloop.rindex0 > 0 %}
+      —
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% assign reports = site.report | reverse%}
+
+{% assign cur_year = '2017' %}
+
+<div class="reports">
+  {% for report in reports %}
+    {% include_relative item/index.html css='' report=report %}
+  {% endfor %}
+</div>

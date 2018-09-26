@@ -19,17 +19,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/triathlon" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username:
+github_username:
 
 contact_phone: +7 912 123 45 00
+contact_email: test@test.ru
 
 contact_social_facebook: https://facebook.com
-contact_social_instagram: https://instagram.com
-contact_social_youtube: https://youtube.com
-
+contact_social_instagram: https://www.instagram.com/triatlon_goldnik
+contact_social_youtube: https://www.youtube.com/channel/UCUXyZhKmxe-21xOnhqbWFjg
 
 
 # Build settings
@@ -48,23 +48,36 @@ kramdown:
 
 # Exclude from processing.
 exclude: [
-  './README.md', './DEV_GUIDE.md',
-  './.idea/',
-  './node_modules', './scripts', './_dev',
-  './gulpfile.js', './package.json', './package-lock.json',
-  'LICENSE'
+  '.idea/',
+  'node_modules', '_scripts', '_dev',
+  'README.md', 'DEV_GUIDE.md',
+  'gulpfile.js', 'package.json', 'package-lock.json', 'yarn.lock',
+  'LICENSE',
+  '.editorconfig'
 ]
 
 collections:
-  news:
-    foo: bar
+  coach:
     output: true
-#    permalink: /news/:path/
+  report:
+    output: true
 
 
 defaults:
   - scope:
       path: ""
-      type: news
+      type: coach
     values:
-      layout: new
+      layout: coach
+      nav_light: COACHES
+  - scope:
+      path: ""
+      type: report
+    values:
+      layout: report
+      nav_light: REPORTS
+
+# hash commit, for prevent caching file resource
+short_hash_commit:
+
+#end

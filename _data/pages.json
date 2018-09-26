@@ -1,6 +1,6 @@
 {
   "HOME": {
-    "url": "",
+    "url": "/",
     "nav_item_name": "ГЛАВНАЯ",
     "title": "Азбука Триатлона"
   },
@@ -11,6 +11,10 @@
   "COACHES": {
     "url": "coaches",
     "nav_item_name": "ТРЕНЕРЫ"
+  },
+  "COACH": {
+    "url": "coach",
+    "nav_item_name": "СТРАНИЦА ТРЕНЕРА"
   },
   "PLACES": {
     "url": "places",
@@ -24,8 +28,8 @@
     "url": "prices",
     "nav_item_name": "ЦЕНЫ"
   },
-  "REPORTS_ON_COMPETITION": {
-    "url": "reports_on_competition",
+  "REPORTS": {
+    "url": "reports",
     "nav_item_name": "ОТЧЕТЫ О ПРОШЕДШИХ СОРЕВНОВАНИЯХ"
   },
   "FEEDBACK": {
@@ -36,9 +40,9 @@
     "url": "contacts",
     "nav_item_name": "КОНТАКТЫ"
   },
-  "INDIVIDUAL_TRAINING": {
-    "url": "individual_training",
-    "nav_item_name": "Индивидуальные тренировки"
+  "COACHING": {
+    "url": "coaching",
+    "nav_item_name": "ТРЕНИРОВКИ"
   },
   "TRAINING_SESSIONS": {
     "url": "training_sessions",
@@ -68,8 +72,17 @@
     "url": "calendar",
     "nav_item_name": "Календарь"
   },
-  "APPRENTICES": {
-    "url": "apprentices",
+  "STUDENTS": {
+    "url": "students",
     "nav_item_name": "Воспитанники"
   },
+  "RECORDING_TRAINING": {
+    "url": "recording_training",
+    "nav_item_name": "ЗАПИСЬ НА ТРЕНИРОВКУ"
+  },
+  "PARTNERS": {
+    "url": "partners",
+    "nav_item_name": "ПАРНЕРЫ",
+    "name": "Партнеры"
+  }
 }

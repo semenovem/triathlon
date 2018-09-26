@@ -1,5 +1,5 @@
 (function(w) {
-    var EL_SLIDER_SELECTOR = '.slider-primary';
+    var EL_SLIDER_SELECTOR = '.i-slider-primary';
     var d = w.document;
 
     getElSlider()

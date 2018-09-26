@@ -1,4 +1,4 @@
-.debug-panel {
+.i-debug-panel {
   position: fixed;
   z-index: 100;
   background-color: #fff;
@@ -24,7 +24,7 @@
   opacity: .3;
 }
 
-.debug-panel:hover {
+.i-debug-panel:hover {
   transform: translateX(0);
   opacity: 1;
 }

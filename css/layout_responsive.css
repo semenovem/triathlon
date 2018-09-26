@@ -1,0 +1,66 @@
+---
+---
+{%include header/responsive/style.css%}
+{%include footer/responsive/style.css%}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--font-family-first);
+  color: var(--font-color-primary);
+  font-size: var(--font-size-base);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+input, textarea {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+img {
+  max-height: 100%;
+}
+
+.layout-responsive-wrap {
+  flex: 1 0 auto;
+}
+
+.layout-responsive-footer {
+  flex: 0 0 auto;
+  margin-top: calc(var(--indent-xl) * 2);
+}
+
+.layout-responsive-header {
+  margin-top: var(--indent-s);
+  margin-left: var(--indent-m);
+  margin-right: var(--indent-m);
+}
+
+.layout-responsive-content {
+  max-width: var(--max-width-content);
+  min-width: var(--max-width-content);
+  margin-top: var(--indent-m);
+}
+
+.layout-responsive-header, .layout-responsive-footer, .layout-responsive-content {
+  margin-left: auto;
+  margin-right: auto;
+}

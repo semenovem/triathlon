@@ -1,10 +1,13 @@
-{%comment%}
-<!-- ссыкла как кнопка -->
-{%endcomment%}
+{%comment%}<!--
+ ссылка как кнопка
+
+ @param String css
+ @param String text
+-->{%endcomment%}
 
 <a
-  href="{{include.url | createURL}}"
-  class="act-link-btn-more {{include.css}}"
+  href="{{include.url | relative_url}}"
+  class="i-act-link-btn-more {{include.css}}"
 >
-    {{include.children}}
+  {{include.text}}
 </a>

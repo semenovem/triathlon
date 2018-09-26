@@ -1,7 +1,7 @@
-.act-link-btn-more {
+.i-act-link-btn-more {
   display: inline-block;
   border-radius: 3px;
-  background-color: var(--font-color-second);
+  background-color: var(--font-color-secondary);
   font-size: 20px;
   color: #fff;
   padding: 15px 25px;
@@ -11,7 +11,7 @@
   transition-duration: 300ms;
 }
 
-.act-link-btn-more:hover {
-  background-color: var(--font-color-first);
+.i-act-link-btn-more:hover {
+  background-color: var(--font-color-primary);
   box-shadow: 0 0 10px #999;
 }

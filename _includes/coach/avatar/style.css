@@ -1,0 +1,7 @@
+.i-avatar-coach {
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ccc;
+  opacity: 0.8;
+  max-width: 100%;
+  max-height: 100%;
+}

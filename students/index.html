@@ -1,0 +1,14 @@
+---
+layout: layout_responsive
+nav_light: STUDENTS
+---
+
+<div class="typography-page-name">Воспитанники</div>
+
+<div class="list">
+  {%for it in site.data.students%}
+    {%assign student=it[1]%}
+
+      {%include student/item/index.html student=student css='students-item'%}
+  {%endfor%}
+</div>

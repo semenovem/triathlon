@@ -1,3 +1,26 @@
 ---
 ---
+{%include_relative advantages/style.css%}
+{%include_relative item/style.css%}
+
+.coaches-list {
+  margin-top: var(--indent-xxxl);
 }
+
+.coaches-list>.title {
+  text-align: center;
+}
+
+.coaches-list-line {
+  display: flex;
+  justify-content: center;
+}
+
+.coaches-list-line:not(:first-child) {
+  margin-top: var(--indent-xxxl);
+}
+
+.coaches-list-line:first-of-type {
+  margin-top: var(--indent-l);
+}
+

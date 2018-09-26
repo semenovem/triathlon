@@ -1,0 +1,30 @@
+---
+---
+
+.coaching {}
+
+
+.coaching-intro {
+  margin-bottom: var(--indent-xl);
+}
+
+.coaching-program-item ul{
+  list-style: none;
+}
+
+.coaching-program-item .day:not(:first-child) {
+  margin-top: var(--indent-l);
+}
+
+.coaching-day {
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.coaching-description {
+  white-space: pre;
+}
+
+.coaching-intro-list {
+  list-style: none;
+}

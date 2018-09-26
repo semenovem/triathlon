@@ -10,25 +10,35 @@
   }
 
 </style>
-<section class="debug-panel"><div>
 
 
-  <h3>site.news</h3>
-    {{site.news.size}}
+<section class="i-debug-panel"><div>
 
-    {%assign gist = site.news[1000]%}
+
+  <textarea rows="5" style="width: 700px; height: 500px;">
+
+    {% assign image_files = site.static_files | where: "image", true %}
+    {% for myimage in site.static_files %}
+      {{ myimage.path }}
+    {% endfor %}
+
+  </textarea>
+
+  {% comment %}}
+  <h3>site</h3>
     <table>
-      {%for key in gist%}
+      {%for key in site%}
       <tr>
         <td>{{key}}</td>
         <td class="d-tr-td-content">
-          <textarea rows="5">{{gist[key]}}</textarea>
+          <textarea rows="5">{{page[key]}}</textarea>
         </td>
       </tr>
       {%endfor%}
     </table>
-
   <br>
+  {% endcomment %}
+
 
 
   {%comment%}
