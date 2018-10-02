@@ -1,9 +1,9 @@
 ---
 ---
 
-{%include act/back_to_list/style.css%}
-{%include icon_text/style.css%}
-{%include coach/avatar/style.css%}
+{% include act/back_to_list/style.css %}
+{% include icon_text/style.css %}
+{% include coach/avatar/style.css %}
 {% include scroll/x/photos/style.css %}
 {% include img_fit/text_fit/style.css %}
 

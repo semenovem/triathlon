@@ -1,15 +1,15 @@
 <!--file-dec-->
-{%comment%}<!--
+{% comment %}<!--
 @param coach данные тренера
 @param css
 @param is_extended = 'y' расширенный вывод
--->{%endcomment%}
+-->{% endcomment %}
 
-{%assign coach = include.coach%}
+{% assign coach = include.coach %}
 
 <div class="coaches-item">
 
-  {%include coach/avatar/index.html avatars=coach.avatars css='coaches-item-avatar'%}
+  {% include coach/avatar/index.html avatars=coach.avatars css='coaches-item-avatar'%}
 
   <div class="columns">
     <div class="first">
@@ -18,21 +18,21 @@
         <div class="fio">{{coach.fio}}</div>
       </div>
 
-      {%include coach/about/index.html css='coaches-item-about' content=coach.about css_typography=''%}
+      {% include coach/about/index.html css='coaches-item-about' content=coach.about css_typography=''%}
     </div>
 
-    {%if include.is_extended == 'y'%}
+    {% if include.is_extended == 'y'%}
     <div class="second">
       <div class="title typography-text-title">
         <div class="post">Условия тренировок</div>
       </div>
 
-      {%include coach/about/index.html css='coaches-item-about' content=coach.coaching css_typography=''%}
+      {% include coach/about/index.html css='coaches-item-about' content=coach.coaching css_typography=''%}
     </div>
-    {%endif%}
+    {% endif %}
   </div>
 
-  {%include act/link/btn/more/index.html
+  {% include act/link/btn/more/index.html
     css='action'
     url=coach.url
     text='ПОДРОБНЕЕ'

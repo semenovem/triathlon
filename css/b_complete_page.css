@@ -1,7 +1,7 @@
 ---
 ---
-{%include header/responsive/style.css%}
-{%include footer/responsive/style.css%}
+{% include header/responsive/style.css %}
+{% include footer/responsive/style.css %}
 
 html,
 body {

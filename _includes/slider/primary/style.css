@@ -1,5 +1,5 @@
-{%include css/btn_reset.css%}
-{%include act/link/btn/more/style.css%}
+{% include css/btn_reset.css %}
+{% include act/link/btn/more/style.css %}
 
 .i-slider-primary {
   height: 600px;

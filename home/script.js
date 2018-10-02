@@ -1,3 +1,3 @@
 ---
 ---
-{%include slider/primary/script.js%}
+{% include slider/primary/script.js %}

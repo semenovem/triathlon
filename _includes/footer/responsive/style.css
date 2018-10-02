@@ -1,4 +1,4 @@
-{%include nav/item/footer/style.css%}
+{% include nav/item/footer/style.css %}
 
 .i-footer-responsive {
   background-color: #F2F4F5;

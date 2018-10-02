@@ -1,5 +1,5 @@
 <style>
-  {%include debug/panel/style.css%}
+  {% include debug/panel/style.css %}
 
   .d-tr-td-content {
     width: 100%;
@@ -27,46 +27,46 @@
   {% comment %}}
   <h3>site</h3>
     <table>
-      {%for key in site%}
+      {% for key in site %}
       <tr>
         <td>{{key}}</td>
         <td class="d-tr-td-content">
           <textarea rows="5">{{page[key]}}</textarea>
         </td>
       </tr>
-      {%endfor%}
+      {% endfor %}
     </table>
   <br>
   {% endcomment %}
 
 
 
-  {%comment%}
+  {% comment %}
   <h2>page</h2>
   <table>
-    {%for key in page%}
+    {% for key in page %}
     <tr>
       <td>{{key}}</td>
       <td class="d-tr-td-content">
         <textarea rows="2">{{page[key]}}</textarea>
       </td>
     </tr>
-    {%endfor%}
+    {% endfor %}
   </table>
-  {%endcomment%}
+  {% endcomment %}
 
 
 
 
 
-  {%comment%}
+  {% comment %}
   <br><hr>
   <h2>site</h2>
     size site.posts: {{site.posts | size}}
   <br>
 
   <table>
-    {%for key in site%}
+    {% for key in site %}
 
       <tr>
         <td>{{key}}</td>
@@ -74,9 +74,9 @@
           <textarea rows="">{{site[key]}}</textarea>
         </td>
       </tr>
-    {%endfor%}
+    {% endfor %}
   </table>
-  {%endcomment%}
+  {% endcomment %}
 
 
 </div></section>

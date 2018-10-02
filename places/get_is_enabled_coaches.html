@@ -1,5 +1,5 @@
-{%for c in site.coach%}
-  {%if c.is_enabled%}
+{% for c in site.coach %}
+  {% if c.is_enabled %}
     [{{c.fio | replace:' ', '_'}}: {{c.places | join:','}}]
-  {%endif%}
-{%endfor%}
+  {% endif %}
+{% endfor %}

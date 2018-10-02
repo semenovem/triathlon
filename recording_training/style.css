@@ -1,6 +1,6 @@
 ---
 ---
-{%include act/link/btn/more/style.css%}
+{% include act/link/btn/more/style.css %}
 
 .recording-training-title {
   text-align: center;

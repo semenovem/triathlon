@@ -1,7 +1,7 @@
-{%include logo/primary/style.css%}
-{%include nav/item/header/style.css%}
-{%include contact/phone/primary/style.css%}
-{%include contact/social/primary/style.css%}
+{% include logo/primary/style.css %}
+{% include nav/item/header/style.css %}
+{% include contact/phone/primary/style.css %}
+{% include contact/social/primary/style.css %}
 
 .i-header-responsive {
   max-width: var(--max-width-content);

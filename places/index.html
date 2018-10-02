@@ -9,15 +9,15 @@ nav_light: PLACES
   <div id="map" class="places-map"></div>
 
   <div class="places-list">
-    {%for item in site.data.places%}
-      {%assign place=item[1]%}
+    {% for item in site.data.places %}
+      {% assign place=item[1]%}
 
-      {%include_relative item/index.html place=place%}
-    {%endfor%}
+      {% include_relative item/index.html place=place %}
+    {% endfor %}
   </div>
 
   <div class="places-action">
-    {%include act/link/btn/more/index.html
+    {% include act/link/btn/more/index.html
     css=''
     url=site.data.pages.COACHING.url
     text='ПОДРОБНЕЕ О ТРЕНИРОВКАХ'

@@ -1,8 +1,8 @@
 ---
 ---
 
-{%include act/link/btn/more/style.css%}
-{%include coach/avatar/style.css%}
+{% include act/link/btn/more/style.css %}
+{% include coach/avatar/style.css %}
 
 .prices-coaches {
   display: flex;

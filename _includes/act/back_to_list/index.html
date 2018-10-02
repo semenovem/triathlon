@@ -1,4 +1,4 @@
-{%comment%}<!--
+{% comment %}<!--
 
 назад к списку
 
@@ -6,9 +6,9 @@
 @param String url
 @param String text
 
--->{%endcomment%}
+-->{% endcomment %}
 
-{%capture text%}{{include.text | default: 'назад к списку'}}{%endcapture%}
+{% capture text %}{{include.text | default: 'назад к списку'}}{% endcapture %}
 
 <div class="act-back-to-list">
   <a href="{{include.url | relative_url}}">

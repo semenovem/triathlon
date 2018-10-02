@@ -1,4 +1,4 @@
-{%include last_news/item/style.css%}
+{% include last_news/item/style.css %}
 
 .i-last-news {
   width: 100%;

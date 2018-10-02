@@ -1,10 +1,10 @@
 ---
 ---
-{%include coach/avatar/style.css%}
-{%include coach/about/style.css%}
-{%include student/item/style.css%}
-{%include act/link/btn/more/style.css%}
-{%include act/back_to_list/style.css%}
+{% include coach/avatar/style.css %}
+{% include coach/about/style.css %}
+{% include student/item/style.css %}
+{% include act/link/btn/more/style.css %}
+{% include act/back_to_list/style.css %}
 
 .coach {
   --h-ava-about: 400px;

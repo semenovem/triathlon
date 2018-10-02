@@ -1,6 +1,6 @@
 ---
 ---
 
-{%include coach/about/script.js%}
+{% include coach/about/script.js %}
 
 coachAbout.init();

@@ -20,10 +20,10 @@ nav_light: PRICES
   </div>
 
 
-  {%for coach in site.coach%}
-    {%assign price=coach.price%}
+  {% for coach in site.coach %}
+    {% assign price=coach.price %}
 
-    {%if forloop.index==4%}
+    {% if forloop.index==4 %}
       <div class="prices-item prices-item-title">
         <div class="prices-item-avatar-empty"></div>
         <div class="prices-item-values">
@@ -35,11 +35,11 @@ nav_light: PRICES
           <div class="">Группа детей</div>
         </div>
       </div>
-    {%endif%}
+    {% endif %}
 
     <div class="prices-item">
       <a href="{{'coach/' | append: coach.coach_id | relative_url}}/">
-        {%include coach/avatar/index.html avatars=coach.avatars css=''%}
+        {% include coach/avatar/index.html avatars=coach.avatars css=''%}
       </a>
 
       <div class="prices-item-values">
@@ -52,11 +52,11 @@ nav_light: PRICES
       </div>
 
       <div class="prices-item-action">
-        {%include act/link/btn/more/index.html
+        {% include act/link/btn/more/index.html
         css='prices-item-action'
         url=site.data.pages.RECORDING_TRAINING.url
         text='ЗАПИСАТЬСЯ'%}
       </div>
     </div>
-  {%endfor%}
+  {% endfor %}
 </div>

@@ -1,6 +1,6 @@
-{%include coach/avatar/style.css%}
-{%include coach/about/style.css%}
-{%include act/link/btn/more/style.css%}
+{% include coach/avatar/style.css %}
+{% include coach/about/style.css %}
+{% include act/link/btn/more/style.css %}
 
 .coaches-item {
   text-align: center;

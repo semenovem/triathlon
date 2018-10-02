@@ -1,8 +1,8 @@
 ---
 ---
 
-{%include act/link/btn/more/style.css%}
-{%include_relative item/style.css%}
+{% include act/link/btn/more/style.css %}
+{% include_relative item/style.css %}
 
 .places-map {
   height: 600px;

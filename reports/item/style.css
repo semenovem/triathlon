@@ -1,5 +1,5 @@
-{%include act/link/btn/more/style.css%}
-{%include img_fit/text_fit/style.css%}
+{% include act/link/btn/more/style.css %}
+{% include img_fit/text_fit/style.css %}
 
 .reports-item {
   text-align: center;

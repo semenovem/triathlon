@@ -1,12 +1,12 @@
 ---
 ---
-{%include slider/primary/style.css%}
+{% include slider/primary/style.css %}
 
-{%include last_news/widget/style.css%}
-{%include act/link/btn/more/style.css%}
+{% include last_news/widget/style.css %}
+{% include act/link/btn/more/style.css %}
 
-{%include_relative composition/style.css%}
-{%include_relative tile/style.css%}
+{% include_relative composition/style.css %}
+{% include_relative tile/style.css %}
 
 .home-info {
   max-width: var(--max-width-content);

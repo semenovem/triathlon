@@ -1,7 +1,7 @@
 ---
 ---
-{%include_relative advantages/style.css%}
-{%include_relative item/style.css%}
+{% include_relative advantages/style.css %}
+{% include_relative item/style.css %}
 
 .coaches-list {
   margin-top: var(--indent-xxxl);
