@@ -17,12 +17,11 @@
   <link rel="stylesheet" type="text/css" href="{{ '/css/fonts.css' | relative_url | add_hash }}" />
   <link rel="stylesheet" type="text/css" href="{{ '/css/typography.css' | relative_url | add_hash }}" />
   <link rel="stylesheet" type="text/css" href="{{ '/css/typography_coach.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/layout_responsive.css' | relative_url | add_hash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/b_complete_page.css' | relative_url | add_hash }}" />
   <link rel="stylesheet" type="text/css" href="{{ '/css/forms.css' | relative_url | add_hash }}" />
   <link rel="stylesheet" type="text/css"
     href="{{ '/css/' | append: page.layout | append: '.css' | relative_url | add_hash }}"
   />
-
   <link rel="stylesheet" type="text/css"
     href="{{page.path | remove:'index.html' | remove:'index.md' | append:'style.css' | relative_url | add_hash }}"
   />
@@ -33,11 +32,9 @@
   <script async
           src="{{page.path | remove:'index.html' | remove:'index.md' | append: 'script.js' | relative_url | add_hash }}"
   ></script>
-
   {%if page.layout == 'coach'%}
     <script defer src="{{'js/' | append:'coach.js' | relative_url | add_hash}}"></script>
   {%endif%}
-
   {%if page.layout == 'report'%}
     <script defer src="{{'js/' | append:'report.js' | relative_url | add_hash}}"></script>
   {%endif%}
