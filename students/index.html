@@ -7,7 +7,7 @@ nav_light: STUDENTS
 
 <div class="list">
   {% for it in site.data.students %}
-    {% assign student=it[1]%}
+    {% assign student=it[1] %}
 
       {% include student/item/index.html student=student css='students-item' %}
   {% endfor %}

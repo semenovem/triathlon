@@ -23,7 +23,7 @@ layout: b_complete_page
 
   {% capture output %}
     {% for it in site.data.students %}
-      {% assign student=it[1]%}
+      {% assign student=it[1] %}
       {% assign use='n' %}
       {% for coach in student.coaches %}
         {% if coach==page.coach_id %}

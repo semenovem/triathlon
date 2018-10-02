@@ -10,7 +10,7 @@ nav_light: PLACES
 
   <div class="places-list">
     {% for item in site.data.places %}
-      {% assign place=item[1]%}
+      {% assign place=item[1] %}
 
       {% include_relative item/index.html place=place %}
     {% endfor %}
