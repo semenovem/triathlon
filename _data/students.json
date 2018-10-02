@@ -15,11 +15,6 @@
         "url": "https://iron-star.com/results/ironstar-113-kazan-2017/result/",
         "logo": "iron-star.com",
         "coach": "nikulshin_aleksandr_viktrovich"
-      },
-      {
-        "title": "___",
-        "url": "triathlon.org/athletes/results/50028/alexey_kalistratov",
-        "logo": "triathlon.org"
       }
     ]
   },
@@ -138,7 +133,9 @@
   "obukhov_nikita_urevich": {
     "fio": "Обухов Никита",
     "about": "Мастер спорта по триатлону",
-    "avatars": [],
+    "avatars": [
+      "imgs/coaches/obukhov_nikita_urevich/avatar.png"
+    ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
     ],
@@ -323,25 +320,6 @@
       {
         "title": "Ironman Филлипины группа 15 местов в группе 30-34 ",
         "url": "http://m.ap.ironman.com/triathlon/coverage/athlete-tracker.aspx?bidid=183&rd=2018-06-03&race=IMsubicbay"
-      }
-    ]
-  },
-
-
-
-  "tmp": {
-    "fio": "",
-    "about": "",
-    "avatars": [],
-    "coaches": [
-      "name coach"
-    ],
-    "races": [
-      {
-        "title": "Победитель Ironstar Kazan 2017",
-        "url": "https://iron-star.com/results/ironstar-113-kazan-2017/result/",
-        "logo": "iron-star.com",
-        "coach": "nikulshin_aleksandr_viktrovich"
       }
     ]
   }
