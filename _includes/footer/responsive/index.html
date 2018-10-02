@@ -14,6 +14,7 @@
         {% include nav/item/footer/index.html page_name='REPORTS'%}
       </div>
       <div class="indent-el-right">
+        {% include nav/item/footer/index.html page_name='STUDENTS'%}
         {% include nav/item/footer/index.html page_name='PARTNERS'%}
       </div>
     </div>
@@ -24,13 +25,17 @@
            class="i-footer-responsive-partner"
            target="_blank" rel="noopener">
           <img src="{{'imgs/partners/adidas_logo.svg' | relative_url}}"
-               class="i-footer-responsive-partners-logo">
+               class="i-footer-responsive-partners-logo"
+                alt="Логотип Adidas"
+          >
         </a>
         <a href=""
            class="i-footer-responsive-partner"
            target="_blank" rel="noopener">
           <img src="{{'imgs/partners/endurance_logo.svg' | relative_url}}"
-               class="i-footer-responsive-partners-logo">
+               class="i-footer-responsive-partners-logo"
+               alt="Логотип endurance"
+          >
         </a>
       </div>
       {% include contact/social/primary/index.html css=''%}
