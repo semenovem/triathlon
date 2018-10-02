@@ -33,7 +33,8 @@ exclude: [
   'README.md', 'DEV_GUIDE.md',
   'gulpfile.js', 'package.json', 'package-lock.json', 'yarn.lock',
   'LICENSE',
-  '.editorconfig'
+  '.editorconfig',
+  'CNAME'
 ]
 
 collections:
