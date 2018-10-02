@@ -45,7 +45,7 @@ nav_light: ABOUT_TRIATHLON
       <div class="first"></div>
       {% for coach in site.coach %}
         <a href="{{'coach/' | append: coach.coach_id | relative_url}}/">
-          {% include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar'%}
+          {% include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar' %}
         </a>
       {% endfor %}
     </div>

@@ -39,7 +39,7 @@ nav_light: PRICES
 
     <div class="prices-item">
       <a href="{{'coach/' | append: coach.coach_id | relative_url}}/">
-        {% include coach/avatar/index.html avatars=coach.avatars css=''%}
+        {% include coach/avatar/index.html avatars=coach.avatars css='' %}
       </a>
 
       <div class="prices-item-values">
@@ -55,7 +55,7 @@ nav_light: PRICES
         {% include act/link/btn/more/index.html
         css='prices-item-action'
         url=site.data.pages.RECORDING_TRAINING.url
-        text='ЗАПИСАТЬСЯ'%}
+        text='ЗАПИСАТЬСЯ' %}
       </div>
     </div>
   {% endfor %}

@@ -32,17 +32,17 @@
   <script async
           src="{{page.path | remove:'index.html' | remove:'index.md' | append: 'script.js' | relative_url | add_hash }}"
   ></script>
-  {% if page.layout == 'coach'%}
+  {% if page.layout == 'coach' %}
     <script defer src="{{'js/' | append:'coach.js' | relative_url | add_hash}}"></script>
   {% endif %}
-  {% if page.layout == 'report'%}
+  {% if page.layout == 'report' %}
     <script defer src="{{'js/' | append:'report.js' | relative_url | add_hash}}"></script>
   {% endif %}
 </head>
 <body>
 {{content}}
 
-{% if jekyll.environment == '_DEV'%}
+{% if jekyll.environment == '_DEV' %}
   <!-- debug info -->
   {% include debug/panel/index.html %}
 {% endif %}
