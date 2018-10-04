@@ -1,15 +1,15 @@
 {% assign item=include.item %}
 {% assign css=include.css %}
 
-<div class="i-last-news-item {{include.css}}">
-  <a class="" href="{{item.url | relative_url}}">
-    <img src="{{item.url | remove:'index.html' | relative_url}}poster.jpg">
+<div class="i-last-news-item {{ include.css }}">
+  <a class="" href="{{ item.url | relative_url }}">
+    <img src="{{ item.url | remove:'index.html' | relative_url }}poster.jpg">
   </a>
 
   <div class="i-last-news-item-sign-pos">
     <div class="i-last-news-item-sign">
-      <div class="name">{{item.name}}</div>
-      <div class="date">{{item.date | date: '%d-%m-%Y'}}</div>
+      <div class="name">{{ item.name }}</div>
+      <div class="date">{{ item.date | date: '%d-%m-%Y'}}</div>
     </div>
   </div>
 </div>

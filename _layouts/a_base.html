@@ -1,58 +1,166 @@
-<!DOCTYPE html>
-<html lang="ru-RU">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{page.meta}} | {{ page.keywords | join:' | ' }}">
+---
+layout: a_tpl
+---
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">{% include logo/primary/index.html %}</a>
 
-  <meta name="robots" content="noindex,nofollow">
-
-  <title>{{page.title}}</title>
-
-  <link rel="icon" type="image/svg/jpg" href="{{ '/icons/fav.jpg' | relative_url}}" />
-
-  <link rel="stylesheet" href="{{ 'libs/bootstrap.min.css' | relative_url }}">
-  <link rel="stylesheet" type="text/css" href="{{ '/css/vars.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/indent.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/fonts.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/typography.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/typography_coach.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/a_base.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/forms.css' | relative_url | add_hash }}" />
-  <link rel="stylesheet" type="text/css"
-    href="{{ '/css/' | append: page.layout | append: '.css' | relative_url | add_hash }}"
-  />
-  <link rel="stylesheet" type="text/css"
-    href="{{page.path | remove:'index.html' | remove:'index.md' | append:'style.css' | relative_url | add_hash }}"
-  />
-
-  <script src="{{ 'libs/jquery-3.3.1.slim.min.js' | relative_url }}"></script>
-  <script src="{{ 'libs/popper.min.js' | relative_url }}"></script>
-  <script src="{{ 'libs/bootstrap.min.js' | relative_url }}"></script>
-  <script async
-          src="{{page.path | remove:'index.html' | remove:'index.md' | append: 'script.js' | relative_url | add_hash }}"
-  ></script>
-  {% if page.layout == 'coach' %}
-    <script defer src="{{'js/' | append:'coach.js' | relative_url | add_hash}}"></script>
-  {% endif %}
-  {% if page.layout == 'report' %}
-    <script defer src="{{'js/' | append:'report.js' | relative_url | add_hash}}"></script>
-  {% endif %}
-</head>
-<body>
-  <div class="layout-responsive-wrap">
-    {% include header/responsive/index.html css='layout-responsive-header' %}
-
-    <div class="layout-responsive-content">
-      {{content}}
+    <div class="collapse navbar-collapse justify-content-md-center" id="header-navbar">
+      <div class="navbar-nav">
+        <div class="nav-item">{% include nav/item/header/index.html page_name='HOME' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='ABOUT_TRIATHLON' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='COACHES' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='PLACES' %}</div>
+        <!--<li class="nav-item">{% include nav/item/header/index.html page_name='PRICES' %}</li>-->
+        <!--<li class="nav-item">{% include nav/item/header/index.html page_name='COACHING' %}</li>-->
+        <!--<li class="nav-item">{% include nav/item/header/index.html page_name='REPORTS' %}</li>-->
+        <!--<li class="nav-item">{% include nav/item/header/index.html page_name='CONTACTS' %}</li>-->
+      </div>
     </div>
+
+    <div class="d-flex flex-column">
+      {% include contact/phone/primary/index.html %}
+      {% include contacts/social/one/index.html social=site.contacts.social css='0000' %}
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 
-  {% include footer/responsive/index.html css='layout-responsive-footer' %}
+</nav>
 
-{% if jekyll.environment == '_DEV' %}
+<main class="container-fluid <!--layout-responsive-wrap-->">{{ content }}</main>
+
+
+<!--{ % include footer/responsive/index.html css='layout-responsive-footer' %}-->
+
+
+
+
+
+
+
+{% if jekyll.environment == '__DEV' %}
   <!-- debug info -->
-  {% include debug/panel/index.html %}
+  <div class="i-debug-panel"><div>
+
+
+    {% comment %}}
+    <textarea rows="5" style="width: 700px; height: 500px;">
+
+      {% assign image_files = site.static_files | where: "image", true %}
+      {% for myimage in site.static_files %}
+        {{ myimage.path }}
+      {% endfor %}
+
+    </textarea>
+    {% endcomment %}
+
+
+
+    <h3>site</h3>
+    <table>
+      {% for key in site.contacts.social %}
+      <tr>
+        <td>{{ key }}</td>
+        <td class="d-tr-td-content">
+          <textarea rows="5">{{ site.contacts.social[key]}}</textarea>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+
+
+
+
+    {% comment %}
+    <h2>page</h2>
+    <table>
+      {% for key in page %}
+      <tr>
+        <td>{{ key }}</td>
+        <td class="d-tr-td-content">
+          <textarea rows="2">{{ page[key]}}</textarea>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endcomment %}
+
+
+
+
+
+    {% comment %}
+    <br><hr>
+    <h2>site</h2>
+    size site.posts: {{ site.posts | size }}
+    <br>
+
+    <table>
+      {% for key in site %}
+
+      <tr>
+        <td>{{ key }}</td>
+        <td class="d-tr-td-content">
+          <textarea rows="">{{ site[key]}}</textarea>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% endcomment %}
+
+
+  </div></div>
+
+
+
+
+<style>
+  .i-debug-panel {
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+
+    color: #444444;
+    padding: 5px 10px;
+    font-size: 12px;
+
+    overflow: auto;
+
+    right: 0;
+    bottom: 30px;
+
+    width: 50%;
+    height: 400px;
+
+    box-shadow: 0 0 30px #000;
+
+    transform: translateX(calc(100% - 30px));
+    transition-property: transform, opacity;
+    transition-duration: 600ms;
+
+    opacity: .3;
+  }
+
+  .i-debug-panel:hover {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+
+  .d-tr-td-content {
+    width: 100%;
+  }
+
+  .d-tr-td-content>textarea {
+    width: 100%;
+  }
+
+</style>
+
+
 {% endif %}
-</body>
-</html>
+

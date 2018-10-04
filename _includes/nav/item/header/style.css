@@ -1,17 +1,19 @@
 .i-nav-item-header {
-    font-family: var(--font-family-first);
-    color: var(--font-color-primary);
-    font-size: var(--font-size-base);
-    font-weight: bold;
-    transition-property: color;
-    transition-duration: 300ms;
+  font-family: var(--font-family-first);
+  color: var(--font-color-primary);
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  transition-property: color;
+  transition-duration: 300ms;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .i-nav-item-header:hover {
-    color: var(--font-color-secondary);
+  color: var(--font-color-secondary);
 }
 
 .i-nav-item-header.selected {
-    color: var(--font-color-secondary);
-    cursor: default;
+  color: var(--font-color-secondary);
+  cursor: default;
 }

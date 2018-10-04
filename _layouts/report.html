@@ -7,11 +7,11 @@ layout: a_base
 {% include act/back_to_list/index.html css='' url=site.data.pages.REPORTS.url text='назад к списку отчетов' %}
 
 <div class="report">
-  <h2 class="typography-item-title report-name">{{page.name}}</h2>
+  <h2 class="typography-item-title report-name">{{ page.name }}</h2>
 
   {% include icon_text/index.html css='' content=page.location icon='icons/location.svg' %}
 
-  {% capture date %}{{page.date | date_to_long_string}}{% endcapture %}
+  {% capture date %}{{ page.date | date_to_long_string }}{% endcapture %}
   {% include icon_text/index.html css='report-meta' content=date icon='icons/calendar.svg' %}
 
   {% if page.event_site %}

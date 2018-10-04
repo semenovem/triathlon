@@ -11,8 +11,8 @@ const places = {
     swim: 'плавание',
   },
 
-  _items: `{{site.data.places | replace: '=>',':'}}`,
-  _coaches: `{% capture coaches %}{% include_relative get_is_enabled_coaches.html %}{% endcapture %}{{coaches | delAllSpace}}`,
+  _items: `{{ site.data.places | replace: '=>',':'}}`,
+  _coaches: `{% capture coaches %}{% include_relative get_is_enabled_coaches.html %}{% endcapture %}{{ coaches | delAllSpace }}`,
 
   init() {
     new Promise((resolve, reject) => {

@@ -1,0 +1,27 @@
+{% comment %}<!--
+
+соцсети
+
+@param css String
+@param social { instagram: { url: String; alt: String; }; youtube: { url: String; alt: String; }; }
+-->{% endcomment %}
+
+
+<div class="i-contacts-social-one {{ include.css }}">
+  {% if include.social.instagram %}
+    <a href="{{ include.social.instagram.url }}" target="_blank" rel="noopener">
+      <img src="{{ '/icons/instagram.svg' | relative_url }}"
+           class="i-contacts-social-one-size"
+           alt="{{ include.social.instagram.alt }}"/>
+    </a>
+  {% endif %}
+
+  {% if include.social.instagram %}
+    <a href="{{ include.social.youtube.url }}" target="_blank" rel="noopener">
+      <img src="{{ '/icons/youtube.svg' | relative_url }}"
+           class="i-contacts-social-one-size"
+           alt="{{ include.social.youtube.url }}">
+    </a>
+  {% endif %}
+</div>
+

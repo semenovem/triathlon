@@ -13,9 +13,9 @@ layout: a_base
         avatars=page.avatars
     %}
     {% capture content %}
-      <h4 class="typography-people-block">{{page.post}}</h4>
-      <div class="typography-people-block fio">{{page.fio}}</div>
-      {{page.about}}
+      <h4 class="typography-people-block">{{ page.post }}</h4>
+      <div class="typography-people-block fio">{{ page.fio }}</div>
+      {{ page.about }}
     {% endcapture %}
     {% include coach/about/index.html css='coach-about' content=content %}
   </section>
@@ -45,14 +45,14 @@ layout: a_base
   {% if on %}
     <section class="coach-students">
       <h3 class="typography-title-of-article">Воспитанники</h3>
-      {{output}}
+      {{ output }}
     </section>
   {% endif %}
 
   <section class="coach-terms-of-training">
     <h3 class="typography-title-of-article">Условия, время, места, стоимость тренировок</h3>
     <div class="typography-coach">
-      {{page.coaching}}
+      {{ page.coaching }}
     </div>
   </section>
 

@@ -38,17 +38,17 @@ nav_light: PRICES
     {% endif %}
 
     <div class="prices-item">
-      <a href="{{'coach/' | append: coach.coach_id | relative_url}}/">
+      <a href="{{'coach/' | append: coach.coach_id | relative_url }}/">
         {% include coach/avatar/index.html avatars=coach.avatars css='' %}
       </a>
 
       <div class="prices-item-values">
-        <div class="">{{price.plan_on_month}}</div>
-        <div class="">{{price.personal_coaching}}</div>
-        <div class="">{{price.video_analysis_coaching}}</div>
-        <div class="">{{price.oneline_consultation}}</div>
-        <div class="">{{price.personal_coaching_for_technics}}</div>
-        <div class="">{{price.group_kids_coaching}}</div>
+        <div class="">{{ price.plan_on_month }}</div>
+        <div class="">{{ price.personal_coaching }}</div>
+        <div class="">{{ price.video_analysis_coaching }}</div>
+        <div class="">{{ price.oneline_consultation }}</div>
+        <div class="">{{ price.personal_coaching_for_technics }}</div>
+        <div class="">{{ price.group_kids_coaching }}</div>
       </div>
 
       <div class="prices-item-action">

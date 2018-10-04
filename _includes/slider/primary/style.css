@@ -9,7 +9,7 @@
 .i-slider-primary-poster {
   width: 100%;
   height: 100%;
-  background-image: url("{{site.baseurl}}/imgs/slider_001.jpg");
+  background-image: url("{{ site.baseurl }}/imgs/slider_001.jpg");
   background-size: cover;
   background-position: 50% 50%;
   position: absolute;
@@ -67,9 +67,9 @@
 }
 
 .i-slider-primary-arrow-left {
-  background-image: url("{{site.baseurl}}/icons/ic_keyboard_arrow_left_white_24px.svg");
+  background-image: url("{{ site.baseurl }}/icons/ic_keyboard_arrow_left_white_24px.svg");
 }
 
 .i-slider-primary-arrow-right {
-  background-image: url("{{site.baseurl}}/icons/ic_keyboard_arrow_right_white_24px.svg");
+  background-image: url("{{ site.baseurl }}/icons/ic_keyboard_arrow_right_white_24px.svg");
 }

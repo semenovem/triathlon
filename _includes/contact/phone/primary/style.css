@@ -6,7 +6,7 @@
     font-size: 12px;
 
     background-color: #D8D8D8;
-    background-image: url("{{'icons/ic_call_black_24px.svg' | relative_url}}");
+    background-image: url("{{'icons/ic_call_black_24px.svg' | relative_url }}");
     background-repeat: no-repeat;
     background-size: 17px;
     background-position: 5px 50%;

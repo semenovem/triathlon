@@ -6,7 +6,7 @@
 {% endcomment %}
 {% assign report = include.report %}
 
-<div class="reports-item {{include.css}}">
+<div class="reports-item {{ include.css }}">
 
   <div class="typography-title-of-article reports-item-name">{{ report.name }}</div>
   <div class="typography-title-of-article reports-item-date">{{ report.date | slice:0,10 }}</div>

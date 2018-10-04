@@ -1,17 +1,17 @@
 .i-nav-item-footer {
-    font-family: var(--font-family-first);
-    color: var(--font-color-primary);
-    font-size: 12px;
-    font-weight: bold;
-    transition-property: color;
-    transition-duration: 300ms;
+  font-family: var(--font-family-first);
+  color: var(--font-color-primary);
+  font-size: 12px;
+  font-weight: bold;
+  transition-property: color;
+  transition-duration: 300ms;
 }
 
 .i-nav-item-footer:hover {
-    color: var(--font-color-secondary);
+  color: var(--font-color-secondary);
 }
 
 .i-nav-item-footer.selected {
-    color: var(--font-color-secondary);
-    cursor: default;
+  color: var(--font-color-secondary);
+  cursor: default;
 }
