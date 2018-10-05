@@ -7,6 +7,9 @@
 -->{% endcomment %}
 
 {% capture selected %}{% if page.nav_light == include.page_name %} selected{% endif %}{% endcapture %}
-<a href="{{ site.data.pages[include.page_name].url | relative_url }}" class="{{ include.css | append: selected }}">
+<a
+  href="{{ site.data.pages[include.page_name].url | relative_url }}"
+  class="{{ include.css | append: selected }}"
+>
   {{ site.data.pages[include.page_name].nav_item_name | hardSpace }}
 </a>

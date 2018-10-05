@@ -1,11 +1,11 @@
 ---
 ---
-{% include header/responsive/style.css %}
-{% include footer/responsive/style.css %}
 
 {% include logo/primary/style.css %}
 {% include contacts/social/one/style.css %}
+
 {% include nav/item/header/style.css %}
+{% include nav/item/footer/style.css %}
 
 {% include contact/phone/primary/style.css %}
 
@@ -19,4 +19,36 @@ body {
   font-family: var(--font-family-first);
   color: var(--font-color-primary);
   font-size: var(--font-size-base);
+}
+
+.g-max-width-content {
+  max-width: var(--max-width-content);
+}
+
+.i-footer-responsive {
+  opacity: 0;
+  animation-name: bla;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bla {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.footer-partners {
+  height: 25px;
+}
+
+.footer-partners img {
+  height: 100%;
 }

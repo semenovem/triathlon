@@ -9,12 +9,21 @@
   font-weight: bold;
   line-height: 25px;
   letter-spacing: 1px;
+
+  height: 60px;
+}
+
+.i-logo-primary img {
+  height: 100%;
 }
 
 .i-logo-primary-name {
   text-align: center;
 }
 
-@media (min-width: 576px) {
 
+@media (max-width: 768px) {
+  .i-logo-primary {
+    max-height: 40px;
+  }
 }
