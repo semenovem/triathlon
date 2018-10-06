@@ -1,16 +1,11 @@
 
 baseurl: ""
-url: "https://triathlon.com"
-
-# @deprecated
-contact_phone: +7 912 123 45 00
-contact_email: test@test.ru
-contact_social_facebook: https://facebook.com
-contact_social_instagram: https://www.instagram.com/triatlon_goldnik
-contact_social_youtube: https://www.youtube.com/channel/UCUXyZhKmxe-21xOnhqbWFjg
+url: "https://azbukatriathlona.com"
 
 # контакты
 contacts:
+  phone: +7 926 333 28 99
+  email: test@test.ru
   social:
     instagram:
       url: https://www.instagram.com/triatlon_goldnik
@@ -18,9 +13,6 @@ contacts:
     youtube:
       url: https://www.youtube.com/channel/UCUXyZhKmxe-21xOnhqbWFjg
       alt: Мой канал на youtube
-
-  phone: +7 912 123 45 00
-  email: test@test.ru
 
 github: https://github.com/semenovem/triathlon
 

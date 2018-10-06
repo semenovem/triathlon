@@ -21,7 +21,7 @@
 .about-triathlon-promo {
   height: var(--h-promo);
   z-index: -1;
-  background-image: url("{{ '/imgs/slider/001.png' | relative_url }}");
+  background-image: url("{{ '/imgs/promo_wide/001.png' | relative_url }}");
   background-size: cover;
   background-repeat: no-repeat;
   position: sticky;

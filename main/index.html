@@ -2,16 +2,35 @@
 layout: a_base
 permalink: /
 nav_light: MAIN
-title: Азбука Триатлона Кирилл Голдовский
+title: Академия Триатлона Кирилл Голдовский
 
 css_main: mt-0
 ---
 
-{% include slider/promo/index.html items='' %}
+{% capture sliderItems %}
+  <img class="d-block w-100" src="/imgs/promo_wide/000.jpg" alt="First slide">
+  <div class="carousel-caption d-none d-md-block">
+    <h5>test</h5>
+    <p>test</p>
+  </div>
+  ------
+  <img class="d-block w-100" src="/imgs/promo_wide/002.jpg" alt="Second slide">
+  ------
+  <img class="d-block w-100" src="/imgs/promo_wide/003.png" alt="Third slide">
+  ------
+  <img class="d-block w-100" src="/imgs/promo_wide/000.jpg" alt="fourth slide">
+{% endcapture %}
+
+{% assign sliderItems = sliderItems | split:"------" %}
+
+{% include slider/promo/index.html css='' items=sliderItems %}
+
 
 <div class="container-fluid g-max-width-content mt-3 mt-lg-5">
   <p class="typo-intro text-justify anims-fade-move">
-      Азбука триатлона - дает возможность выбрать услугу для занятий триатлоном. Персональная тренировка, дистанционная и тренировка с детским тренером. Вы получаете только профессиональные рекомендации по подготовке к триатлону так как в нашей команде работают тренеры высшей категории. Все что нужно это отправить заявку и мы свяжемся с вами.
+    Академия Триатлона - дает возможность выбрать услугу для занятий триатлоном. Персональная тренировка,
+    дистанционная и тренировка
+    с детским тренером. Вы получаете только профессиональные рекомендации по подготовке к триатлону так как в нашей команде работают тренеры высшей категории. Все что нужно это отправить заявку и мы свяжемся с вами.
   </p>
 
   {% include_relative composition/index.html %}
