@@ -1,6 +1,7 @@
 .i-nav-item-header {
   font-family: var(--font-family-first);
-  color: var(--font-color-primary);
+  color: white;
+
   font-size: calc(var(--font-size-base) - 2px);
   font-weight: bold;
   transition-property: color;

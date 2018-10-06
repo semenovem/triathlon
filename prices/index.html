@@ -38,7 +38,7 @@ nav_light: PRICES
     {% endif %}
 
     <div class="prices-item">
-      <a href="{{'coach/' | append: coach.coach_id | relative_url }}/">
+      <a href="{{ 'coach/' | append: coach.coach_id | relative_url }}/">
         {% include coach/avatar/index.html avatars=coach.avatars css='' %}
       </a>
 

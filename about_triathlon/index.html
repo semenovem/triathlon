@@ -18,21 +18,21 @@ nav_light: ABOUT_TRIATHLON
     <div class="description">
       Триатлон – это гонка состоящая из трех этапов плавание, велогонка и бег которые сменяют друг друга и этим он привлекает все больше любителей спорта которые хотят преодолеть триатлон в зависимости от подготовки от спринтерской дистанции до железной IRONMAN.
     </div>
-    <img src="{{'imgs/about_triathlon/00.png' | relative_url }}" class="img">
+    <img src="{{ 'imgs/about_triathlon/00.png' | relative_url }}" class="img">
   </div>
 
   <div class="line">
     <div class="description">
       Триатлон преодолело уже десятки тысяч человек всем мире. Так же он набирает все больше и больше популярность в России, как для взрослых и особенно детей.
     </div>
-    <img src="{{'imgs/about_triathlon/01.png' | relative_url }}" class="img">
+    <img src="{{ 'imgs/about_triathlon/01.png' | relative_url }}" class="img">
   </div>
 
   <div class="line">
     <div class="description">
       Совершенствуя, каждый вид триатлона вы приобретаете выносливость, силу, гибкость, ловкость, но и то же время путешествуете и расширяете горизонты своего привычного жизненного ритма.
     </div>
-    <img src="{{'imgs/about_triathlon/02.png' | relative_url }}" class="img">
+    <img src="{{ 'imgs/about_triathlon/02.png' | relative_url }}" class="img">
   </div>
 </section>
 
@@ -44,7 +44,7 @@ nav_light: ABOUT_TRIATHLON
     <div class="coaches">
       <div class="first"></div>
       {% for coach in site.coach %}
-        <a href="{{'coach/' | append: coach.coach_id | relative_url }}/">
+        <a href="{{ 'coach/' | append: coach.coach_id | relative_url }}/">
           {% include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar' %}
         </a>
       {% endfor %}

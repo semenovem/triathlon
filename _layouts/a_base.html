@@ -3,13 +3,13 @@ layout: a_tpl
 ---
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid g-max-width-content">
-      <a class="navbar-brand" href="/main">{% include logo/primary/index.html %}</a>
+      <a class="navbar-brand" href="/main">{% include logo/index.html %}</a>
 
       <div class="collapse navbar-collapse w-100" id="header-navbar">
         <div class="navbar-nav d-flex flex-wrap justify-content-around">
-          <div class="nav-item">{% include nav/item/header/index.html page_name='HOME' %}</div>
+          <div class="nav-item">{% include nav/item/header/index.html page_name='MAIN' %}</div>
           <div class="nav-item">{% include nav/item/header/index.html page_name='ABOUT_TRIATHLON' %}</div>
           <div class="nav-item">{% include nav/item/header/index.html page_name='COACHES' %}</div>
           <div class="nav-item">{% include nav/item/header/index.html page_name='PLACES' %}</div>
@@ -18,13 +18,13 @@ layout: a_tpl
           <div class="nav-item">{% include nav/item/header/index.html page_name='REPORTS' %}</div>
           <div class="nav-item">{% include nav/item/header/index.html page_name='CONTACTS' %}</div>
 
-          <div class="nav-item d-lg-none">{% include contacts/social/one/index.html social=site.contacts.social css='0000' %}</div>
+          <div class="nav-item d-lg-none">{% include contacts/social/one/index.html social=site.contacts.social css='' %}</div>
         </div>
       </div>
 
       <div class="d-xs-none">
         <div class="d-flex flex-column">
-          {% include contact/phone/primary/index.html %}
+          {% include contacts/phone/one/index.html %}
           {% include contacts/social/one/index.html social=site.contacts.social css='d-none d-lg-block' %}
         </div>
       </div>
@@ -38,12 +38,12 @@ layout: a_tpl
 
 <main class="container-fluid p-0 {{ page.css_main }}">{{ content }}</main>
 
-<footer class="footer i-footer-responsive bg-light pt-3 pb-3 mt-4">
+<footer class="footer bg-light pt-3 pb-3 mt-4">
   <div class="container-fluid g-max-width-content">
     <nav class="nav mb-3">
       <div class="d-flex flex-row flex-wrap">
         <div class="mr-3 d-flex flex-column">
-          {% include nav/item/footer/index.html page_name='HOME' %}
+          {% include nav/item/footer/index.html page_name='MAIN' %}
           {% include nav/item/footer/index.html page_name='ABOUT_TRIATHLON' %}
           {% include nav/item/footer/index.html page_name='COACHES' %}
           {% include nav/item/footer/index.html page_name='PLACES' %}
@@ -67,14 +67,14 @@ layout: a_tpl
            class="mr-2"
            target="_blank" rel="noopener"
         >
-          <img src="{{'imgs/partners/adidas_logo.svg' | relative_url }}"
+          <img src="{{ 'imgs/partners/adidas_logo.svg' | relative_url }}"
                alt="Логотип Adidas"
           >
         </a>
         <a href=""
            target="_blank" rel="noopener"
         >
-          <img src="{{'imgs/partners/endurance_logo.svg' | relative_url }}"
+          <img src="{{ 'imgs/partners/endurance_logo.svg' | relative_url }}"
                alt="Логотип endurance"
           >
         </a>

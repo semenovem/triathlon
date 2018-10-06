@@ -1,0 +1,15 @@
+.i-contacts-phone-one {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .i-contacts-phone-one {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .i-contacts-phone-one {
+    font-size: 16px;
+  }
+}

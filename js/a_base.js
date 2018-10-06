@@ -7,6 +7,7 @@
 
   function handleReadyStateChange() {
     if (document.readyState === 'complete') {
+      document.removeEventListener('readystatechange', handleReadyStateChange);
       stickFooter();
     }
   }

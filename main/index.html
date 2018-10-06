@@ -1,6 +1,6 @@
 ---
 layout: a_base
-permalink___: /
+permalink: /
 nav_light: MAIN
 title: Азбука Триатлона Кирилл Голдовский
 
@@ -10,18 +10,19 @@ css_main: mt-0
 {% include slider/promo/index.html items='' %}
 
 <div class="container-fluid g-max-width-content mt-3 mt-lg-5">
-  <p class="text-justify">
+  <p class="typo-intro text-justify anims-fade-move">
       Азбука триатлона - дает возможность выбрать услугу для занятий триатлоном. Персональная тренировка, дистанционная и тренировка с детским тренером. Вы получаете только профессиональные рекомендации по подготовке к триатлону так как в нашей команде работают тренеры высшей категории. Все что нужно это отправить заявку и мы свяжемся с вами.
   </p>
 
   {% include_relative composition/index.html %}
+
+  {% include_relative tile/index.html %}
 </div>
 
+
+
+
 {% comment %}
-
-
-{% include_relative tile/index.html %}
-
 <section class="home-last-news">
   <h2 class="typography-h2-section-name">Последние новости</h2>
   {% include last_news/widget/index.html css='home-last-news-size' %}

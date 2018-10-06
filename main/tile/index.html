@@ -1,32 +1,41 @@
-<div class="home-tile">
-  <div class="home-tile-row">
-    <a href="{{ site.data.pages.COACHING.url | relative_url }}" class="home-tile-item">
-      <img src="{{'imgs/posters/coaching.jpg' | relative_url }}" alt="Тренировки">
-      <div class="interaction">
-        <h2 class="typography-h2-poster name">Тренировки</h2>
-      </div>
-    </a>
+<div class="row mt-5 ml-0 mr-0 main-tile anims-fade-move">
 
-    <a href="{{ site.data.pages.REPORTS.url | relative_url }}" class="home-tile-item">
-      <img src="{{'imgs/posters/reports.jpg' | relative_url }}" alt="Отчеты о соревнованиях">
-      <div class="interaction">
-        <h2 class="typography-h2-poster name">Отчеты о соревнованиях</h2>
+  <div class="col-xs-12 col-md-6 p-0 mb-2 mb-md-0 pr-md-1">
+    <a href="{{ site.data.pages.COACHING.url | relative_url }}">
+      <img src="{{ 'imgs/posters/coaching.jpg' | relative_url }}" alt="Тренировки">
+
+      <div class="title">
+        <h2 class="typo-tile-promo text">Тренировки</h2>
       </div>
     </a>
   </div>
 
-  <div class="home-tile-row">
-    <a href="{{ site.data.pages.STUDENTS.url | relative_url }}" class="home-tile-item">
-      <img src="{{'imgs/posters/students.jpg' | relative_url }}" alt="Воспитанники">
-      <div class="interaction">
-        <h2 class="typography-h2-poster name">Воспитанники</h2>
+  <div class="col-xs-12 col-md-6 p-0 pl-md-1">
+    <a href="{{ site.data.pages.REPORTS.url | relative_url }}">
+      <img src="{{ 'imgs/posters/reports.jpg' | relative_url }}" alt="Отчеты о соревнованиях">
+      <div class="title">
+        <h2 class="typo-tile-promo text">Отчеты о соревнованиях</h2>
       </div>
     </a>
+  </div>
 
-    <a href="{{ site.data.pages.CALENDAR .url | relative_url }}" class="home-tile-item">
-      <img src="{{'imgs/posters/calendar.jpg' | relative_url }}" alt="Календарь стартов">
-      <div class="interaction">
-        <h2 class="typography-h2-poster name">Календарь стартов</h2>
+  <div class="w-100 mt-2"></div>
+
+  <div class="col-xs-12 col-md-6 p-0 pr-md-1 mb-2 mb-md-0">
+    <a href="{{ site.data.pages.STUDENTS.url | relative_url }}">
+      <img src="{{ 'imgs/posters/students.jpg' | relative_url }}" alt="Воспитанники">
+      <div class="title">
+        <h2 class="typo-tile-promo text">Воспитанники</h2>
+      </div>
+    </a>
+  </div>
+
+
+  <div class="col-xs-12 col-md-6 pl-md-1 p-0">
+    <a href="{{ site.data.pages.CALENDAR .url | relative_url }}">
+      <img src="{{ 'imgs/posters/calendar.jpg' | relative_url }}" alt="Календарь стартов">
+      <div class="title">
+        <h2 class="typo-tile-promo text">Календарь стартов</h2>
       </div>
     </a>
   </div>

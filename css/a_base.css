@@ -1,13 +1,12 @@
 ---
 ---
 
-{% include logo/primary/style.css %}
+{% include logo/style.css %}
 {% include contacts/social/one/style.css %}
+{% include contacts/phone/one/style.css %}
 
 {% include nav/item/header/style.css %}
 {% include nav/item/footer/style.css %}
-
-{% include contact/phone/primary/style.css %}
 
 html,
 body {
@@ -25,11 +24,13 @@ body {
   max-width: var(--max-width-content);
 }
 
-.i-footer-responsive {
+.footer {
   opacity: 0;
   animation-name: bla;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+  width: 100%;
+  overflow: hidden;
 }
 
 @keyframes bla {

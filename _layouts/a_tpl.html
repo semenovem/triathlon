@@ -18,6 +18,7 @@
   <link rel="stylesheet" type="text/css" href="{{ '/css/typography.css' | relative_url | add_hash }}" />
   <link rel="stylesheet" type="text/css" href="{{ '/css/typography_coach.css' | relative_url | add_hash }}" />
   <link rel="stylesheet" type="text/css" href="{{ '/css/forms.css' | relative_url | add_hash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/anims.css' | relative_url | add_hash }}" />
   <link rel="stylesheet" type="text/css"
     href="{{ '/css/' | append: page.layout | append: '.css' | relative_url | add_hash }}"
   />
@@ -34,16 +35,17 @@
   <script defer src="{{ 'libs/bootstrap.min.js' | relative_url }}"></script>
 
   <script async src="{{ '/js/a_base.js' | relative_url | add_hash }}"></script>
+  <script async src="{{ '/js/anims.js' | relative_url | add_hash }}"></script>
 
   <script async
           src="{{ page.path | remove:'index.html' | remove:'index.md' | append: 'script.js' | relative_url | add_hash }}"
   ></script>
 
   {% if page.layout == 'coach' %}
-    <script defer src="{{'js/' | append:'coach.js' | relative_url | add_hash }}"></script>
+    <script defer src="{{ 'js/' | append:'coach.js' | relative_url | add_hash }}"></script>
   {% endif %}
   {% if page.layout == 'report' %}
-    <script defer src="{{'js/' | append:'report.js' | relative_url | add_hash }}"></script>
+    <script defer src="{{ 'js/' | append:'report.js' | relative_url | add_hash }}"></script>
   {% endif %}
 
 
