@@ -22,6 +22,8 @@ body {
 
 .g-max-width-content {
   max-width: var(--max-width-content);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {

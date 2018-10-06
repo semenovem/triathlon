@@ -13,6 +13,7 @@
   --font-size-base: 20px;
   --font-size-responsive: calc(var(--font-size-base) - 4px);
 
+  --font-size-h1: calc(var(--font-size-responsive) * 3);
 
   /* prev */
   --font-color-primary: #485F6E;
@@ -21,7 +22,6 @@
   --font-color-link-ext: #7396ad;
 
 
-  --font-size-h1: 64px;
   --font-size-h2: 48px;
   --font-size-h3: 36px;
   --font-size-h4: 28px;
@@ -57,20 +57,19 @@
 @media (min-width: 768px) {
   :root {
     --font-size-responsive: 2vw;
-    --font-rate-change: 2;
   }
 }
 
 /* lg */
 @media (min-width: 992px) {
   :root {
-    --font-rate-change: 3;
+    --font-size-responsive: 1.5vw;
   }
 }
 
 /* xl */
 @media (min-width: 1200px) {
   :root {
-    --font-rate-change: 4;
+    --font-size-responsive: 1.3vw;
   }
 }

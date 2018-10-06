@@ -1,6 +1,9 @@
 ---
 layout: a_base
 nav_light: ABOUT_TRIATHLON
+
+title: Азбука Триатлона Кирилл Голдовский
+css_main: mt-0 about-triathlon
 ---
 
 <!--
@@ -9,34 +12,45 @@ nav_light: ABOUT_TRIATHLON
 текст объединяем
 
 список тренеров - оставляем
+
+ = без картинок - текст смотрится не айс
 -->
 
-<h1 class="typography-page-name">О Триатлоне</h1>
+<div class="about-triathlon-promo d-flex justify-content-center align-items-center">
+  <h1 class="typo-page-name text-white anims-fade-move">О Триатлоне</h1>
+</div>
 
-<section class="about-triathlon">
-  <div class="line">
-    <div class="description">
-      Триатлон – это гонка состоящая из трех этапов плавание, велогонка и бег которые сменяют друг друга и этим он привлекает все больше любителей спорта которые хотят преодолеть триатлон в зависимости от подготовки от спринтерской дистанции до железной IRONMAN.
-    </div>
-    <img src="{{ 'imgs/about_triathlon/00.png' | relative_url }}" class="img">
+
+<div class="about-triathlon-content container-fluid p-0 pt-5 anims-fade-move" style="animation-delay: 0.3s">
+  <div class="row g-max-width-content">
+    <img src="{{ 'imgs/about_triathlon/00.png' | relative_url }}" class="col-12 col-lg-6 order-lg-last mb-3">
+
+    <div class="col-12 col-lg-6 typo-intro text-justify">Триатлон – это гонка состоящая из трех этапов плавание, велогонка и бег
+      которые
+      сменяют друг друга и этим он привлекает все больше любителей спорта которые хотят преодолеть триатлон в зависимости от подготовки от спринтерской дистанции до железной IRONMAN.</div>
   </div>
 
-  <div class="line">
-    <div class="description">
-      Триатлон преодолело уже десятки тысяч человек всем мире. Так же он набирает все больше и больше популярность в России, как для взрослых и особенно детей.
-    </div>
-    <img src="{{ 'imgs/about_triathlon/01.png' | relative_url }}" class="img">
+
+  <div class="row mt-5 g-max-width-content">
+    <img src="{{ 'imgs/about_triathlon/01.png' | relative_url }}" class="col-12 col-lg-6 order-lg-last mb-3">
+
+    <div class="col-12 col-lg-6 typo-intro text-justify">Триатлон преодолело уже десятки тысяч человек всем мире. Так же он
+      набирает все больше и больше популярность в России, как для взрослых и особенно детей..</div>
   </div>
 
-  <div class="line">
-    <div class="description">
-      Совершенствуя, каждый вид триатлона вы приобретаете выносливость, силу, гибкость, ловкость, но и то же время путешествуете и расширяете горизонты своего привычного жизненного ритма.
-    </div>
-    <img src="{{ 'imgs/about_triathlon/02.png' | relative_url }}" class="img">
+
+  <div class="row mt-5 g-max-width-content">
+    <img src="{{ 'imgs/about_triathlon/02.png' | relative_url }}" class="col-12 col-lg-6 order-lg-last mb-3">
+
+    <div class="col-12 col-lg-6 typo-intro text-justify">Совершенствуя, каждый вид триатлона вы приобретаете выносливость,
+      силу, гибкость, ловкость, но и то же время путешествуете и расширяете горизонты своего привычного жизненного ритма.</div>
   </div>
-</section>
+</div>
 
 
+
+
+{% comment %}
 <section class="about-triathlon-coaches">
   <h2 class="typography-title-another-page title">Тренерский состав</h2>
 
@@ -62,3 +76,4 @@ nav_light: ABOUT_TRIATHLON
   %}
 
 </section>
+{% endcomment %}

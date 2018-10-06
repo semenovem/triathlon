@@ -1,6 +1,8 @@
 ---
 ---
 
+{% include contacts/social/one/style.css %}
+
 {% include act/link/btn/more/style.css %}
 
 .contacts {
