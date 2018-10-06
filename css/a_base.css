@@ -1,0 +1,131 @@
+.i-logo {
+  display: inline-block;
+  height: 60px;
+}
+
+.i-logo img {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .i-logo {
+    max-height: 40px;
+  }
+}
+
+.i-contacts-social-one a:hover {
+  text-decoration: none;
+}
+
+.i-contacts-social-one-size {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+.i-contacts-phone-one {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .i-contacts-phone-one {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .i-contacts-phone-one {
+    font-size: 16px;
+  }
+}
+
+
+.i-nav-item-header {
+  font-family: var(--font-family-first);
+  color: white;
+
+  font-size: calc(var(--font-size-base) - 2px);
+  font-weight: bold;
+  transition-property: color;
+  transition-duration: 300ms;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.i-nav-item-header:hover {
+  color: var(--font-color-secondary);
+}
+
+.i-nav-item-header.selected {
+  color: var(--font-color-secondary);
+  cursor: default;
+}
+
+.i-nav-item-footer {
+  font-family: var(--font-family-first);
+  color: var(--font-color-primary);
+  font-size: 12px;
+  font-weight: bold;
+  transition-property: color;
+  transition-duration: 300ms;
+}
+
+.i-nav-item-footer:hover {
+  color: var(--font-color-secondary);
+}
+
+.i-nav-item-footer.selected {
+  color: var(--font-color-secondary);
+  cursor: default;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: var(--font-family-first);
+  color: var(--font-color-primary);
+  font-size: var(--font-size-base);
+}
+
+.g-max-width-content {
+  max-width: var(--max-width-content);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  opacity: 0;
+  animation-name: bla;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  width: 100%;
+  overflow: hidden;
+}
+
+@keyframes bla {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.footer-partners {
+  height: 25px;
+}
+
+.footer-partners img {
+  height: 100%;
+}

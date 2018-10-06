@@ -1,16 +1,27 @@
 :root {
+  --xs-max: 566;
+  --sm-max: 767;
+  --md-max: 991;
+  --lg-max: 1199;
+  --xl-min: 1200;
+
+
   --max-width-content: 1200px;
 
   --font-family-first: triatlon-custom, sans-serif;
 
+  --font-size-base: 20px;
+  --font-size-responsive: calc(var(--font-size-base) - 4px);
+
+  --font-size-h1: calc(var(--font-size-responsive) * 3);
+
+  /* prev */
   --font-color-primary: #485F6E;
   --font-color-secondary: #39c360;
 
   --font-color-link-ext: #7396ad;
 
-  --font-size-base: 20px;
 
-  --font-size-h1: 64px;
   --font-size-h2: 48px;
   --font-size-h3: 36px;
   --font-size-h4: 28px;
@@ -32,4 +43,33 @@
   --color-border-num: #979797;
 
   --color-border-light: #D8D8D8;
+}
+
+/* xs - above */
+
+/* sm */
+@media (min-width: 576px) {
+  :root {
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  :root {
+    --font-size-responsive: 2vw;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  :root {
+    --font-size-responsive: 1.5vw;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  :root {
+    --font-size-responsive: 1.3vw;
+  }
 }

@@ -1,4 +1,26 @@
-/* название страницы. вверху в начале h1 */
+.typo-intro {
+  font-size: var(--font-size-responsive);
+  font-weight: bold;
+}
+
+.typo-tile-promo {
+  font-size: var(--font-size-h1);
+  font-style: italic;
+  color: white;
+}
+
+/* название страницы. вверху в начале */
+.typo-page-name {
+  font-size: var(--font-size-h1);
+  color: var(--font-color-primary);
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* prev */
+/* название страницы. вверху в начале */
 .typography-page-name {
   font-size: var(--font-size-h2);
   text-align: center;
