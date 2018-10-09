@@ -72,7 +72,7 @@
 
 
 .i-scroll-x-photos-img {
-
+  height: 100%;
 }
 
 .i-scroll-x-photos-img:not(:first-child) {
