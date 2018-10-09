@@ -47,7 +47,7 @@
   font-size: calc(var(--font-size-base) - 2px);
   font-weight: bold;
   transition-property: color;
-  transition-duration: 300ms;
+  transition-duration: 200ms;
   padding-left: 8px;
   padding-right: 8px;
   display: inline-block;
@@ -92,6 +92,7 @@ body {
   font-family: var(--font-family-first);
   color: var(--font-color-primary);
   font-size: var(--font-size-base);
+  padding-top: var(--el-header-h);
 }
 
 .g-max-width-content {
@@ -100,11 +101,32 @@ body {
   margin-right: auto;
 }
 
+.g-btn {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: var(--font-color-secondary);
+  font-size: 20px;
+  color: #fff;
+  /*cursor: pointer;*/
+  font-weight: bold;
+  transition-property: background-color, box-shadow;
+  transition-duration: 200ms;
+}
+
+.g-btn:hover {
+  background-color: var(--font-color-primary);
+  color: #fff;
+  /*box-shadow: 0 0 10px #999;*/
+}
+
+
+
+
 .footer {
-  opacity: 0;
-  animation-name: bla;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  /*opacity: 0;*/
+  /*animation-name: bla;*/
+  /*animation-duration: 0.5s;*/
+  /*animation-fill-mode: forwards;*/
   width: 100%;
   overflow: hidden;
 }

@@ -1,23 +1,4 @@
-.partners {}
-
-.partners-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.partners-item:not(:first-child) {
-  margin-top: var(--indent-xl);
-}
-
 .partners-logo {
   width: 300px;
-}
-
-.partners-description {
-  text-align: left;
-  flex-grow: 1;
-  margin-left: var(--indent-xxxl);
-  margin-right: var(--indent-xxxl);
 }
 

@@ -13,29 +13,48 @@
   --font-size-base: 20px;
   --font-size-responsive: calc(var(--font-size-base) - 4px);
 
-  --font-size-h1: calc(var(--font-size-responsive) * 3);
+  --font-size-h1: calc(var(--font-size-responsive) * 2.2);
+  --font-size-h2: calc(var(--font-size-responsive) * 1.8);
+  --font-size-h3: calc(var(--font-size-responsive) * 1.5);
+  --font-size-h4: calc(var(--font-size-responsive) * 1.2);
 
-  /* prev */
+  /* for elements */
+  --el-header-h: 50px;
+
+  --el-slider-promo-h: 45vw;
+  --el-slider-promo-min-h: 200px;
+  --el-slider-promo-max-h: 50vh;
+
+  --el-bg-promo-h: 35vw;
+  --el-bg-promo-min-h: 200px;
+  --el-bg-promo-max-h: 40vh;
+
+  /* space */
+  --indent-xs-const: 4px;
+  --indent-s-const: 8px;
+  --indent-m-const: 16px;
+  --indent-l-const: 24px;
+  --indent-xl-const: 36px;
+  --indent-xxl-const: 48px;
+
+  --indent-xs: var(--indent-xs-const);
+  --indent-s: var(--indent-s-const);
+  --indent-m: var(--indent-m-const);
+  --indent-l: var(--indent-l-const);
+  --indent-xl: var(--indent-xl-const);
+  --indent-xxl: var(--indent-xxl-const);
+
+
+  /* prev old @deprecated */
   --font-color-primary: #485F6E;
   --font-color-secondary: #39c360;
 
   --font-color-link-ext: #7396ad;
 
 
-  --font-size-h2: 48px;
-  --font-size-h3: 36px;
-  --font-size-h4: 28px;
-
   --indent-el: 10px;
   --indent-block: 20px;
   --indent-section: 40px;
-
-  --indent-xs: 5px;
-  --indent-s: 10px;
-  --indent-m: 20px;
-  --indent-l: 30px;
-  --indent-xl: 40px;
-  --indent-xxl: 60px;
   --indent-xxxl: 80px;
 
   --border-description: 1px solid #979797;
@@ -57,6 +76,7 @@
 @media (min-width: 768px) {
   :root {
     --font-size-responsive: 2vw;
+    --el-header-h: 86px;
   }
 }
 
@@ -64,6 +84,13 @@
 @media (min-width: 992px) {
   :root {
     --font-size-responsive: 1.5vw;
+
+    --indent-xs:  calc(var(--indent-xs-const) + 1px);
+    --indent-s:   calc(var(--indent-s-const) + 2px);
+    --indent-m:   calc(var(--indent-m-const) + 3px);
+    --indent-l:   calc(var(--indent-l-const) + 4px);
+    --indent-xl:  calc(var(--indent-xl-const) + 5px);
+    --indent-xxl: calc(var(--indent-xxl-const) + 6px);
   }
 }
 

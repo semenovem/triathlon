@@ -103,24 +103,6 @@
   margin-left: var(--indent-xs);
 }
 
-.i-act-link-btn-more {
-  display: inline-block;
-  border-radius: 3px;
-  background-color: var(--font-color-secondary);
-  font-size: 20px;
-  color: #fff;
-  padding: 15px 25px;
-  cursor: pointer;
-  font-weight: bold;
-  transition-property: background-color, box-shadow;
-  transition-duration: 300ms;
-}
-
-.i-act-link-btn-more:hover {
-  background-color: var(--font-color-primary);
-  box-shadow: 0 0 10px #999;
-}
-
 .act-back-to-list {
   background-color: rgba(216, 216, 216, 0.28);
   padding: 10px 20px;
@@ -156,24 +138,17 @@
   margin-top: var(--indent-m);
 }
 
-.coach-ava-about {
-  display: flex;
-  align-items: center;
-  height: var(--h-ava-about);
-  margin-top: var(--indent-m);
-}
-
-.coach-ava-size {
+.coach-ava {
+  display: block;
   --size: calc(var(--h-ava-about) - var(--indent-xl) * 2);
   min-width: var(--size);
   min-height: var(--size);
   max-width: var(--size);
   max-height: var(--size);
+  margin: var(--indent-m) auto;
 }
 
-.coach-about {
-  margin-left: var(--indent-xl);
-}
+.coach-about {}
 
 .coach-students {
   margin-top: var(--indent-section);
