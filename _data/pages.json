@@ -1,8 +1,8 @@
 {
-  "HOME": {
+  "MAIN": {
     "url": "/",
     "nav_item_name": "ГЛАВНАЯ",
-    "title": "Азбука Триатлона"
+    "title": "Академия Триатлона"
   },
   "ABOUT_TRIATHLON": {
     "url": "about_triathlon",
@@ -82,7 +82,7 @@
   },
   "PARTNERS": {
     "url": "partners",
-    "nav_item_name": "ПАРНЕРЫ",
+    "nav_item_name": "ПАРТНЕРЫ",
     "name": "Партнеры"
   }
 }

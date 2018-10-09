@@ -1,63 +1,39 @@
 ---
 layout: a_base
 nav_light: COACHES
+
+css: mt-5
 ---
+
 {% include_relative advantages/index.html %}
 
-<h1 class="typography-page-name">Тренерский состав</h1>
-<section class="coaches-list">
+<section class="container-fluid coaches-list">
+  <h1 class="typo-page-name mt-5 mb-3">Тренерский состав</h1>
 
-  <div class="coaches-list-line">
-    {% for it in site.coach %}
-      {% if it.coach_id == 'nikulshin_aleksandr_viktrovich' %}
-        {% assign coach = it %}
-      {% endif %}
+  <div class="row">
+    {% assign ordered = site.coach | sort: 'orderPow', 'last' %}
+    {% for coach in ordered %}
+      <div class="coaches-item col">
+        <div class="inner">
+          <div class="avatar">
+            {% include coach/avatar/h.html avatars=coach.avatars css='' %}
+          </div>
+
+          <h4 class="title">
+            {{ coach.post }}<br>{{ coach.fio }}
+          </h4>
+          <div class="text typo-intro typography-coach">
+            {{ coach.about }}
+          </div>
+          <div class="excess">......</div>
+
+          <a href="{{ coach.url }}" class="act btn g-btn">ПОДРОБНЕЕ</a>
+        </div>
+      </div>
     {% endfor %}
-    {% include_relative item/index.html coach=coach is_extended='y' %}
   </div>
-
-  <div class="coaches-list-line">
-    {% for it in site.coach %}
-      {% if it.coach_id == 'goldovskii_kirill_mikhailovich' %}
-        {% assign coach = it %}
-      {% endif %}
-    {% endfor %}
-    {% include_relative item/index.html coach=coach is_extended=null %}
-
-    {% for it in site.coach %}
-      {% if it.coach_id == 'pakhomova_marina_sergeevna' %}
-        {% assign coach = it %}
-      {% endif %}
-    {% endfor %}
-    {% include_relative item/index.html coach=coach is_extended=null %}
-  </div>
-
-  <div class="coaches-list-line">
-    {% for it in site.coach %}
-      {% if it.coach_id == 'pylskii_urii' %}
-        {% assign coach = it %}
-      {% endif %}
-    {% endfor %}
-    {% include_relative item/index.html coach=coach is_extended=null %}
-
-    {% for it in site.coach %}
-      {% if it.coach_id == 'kalistratov_aleksei' %}
-        {% assign coach = it %}
-      {% endif %}
-    {% endfor %}
-    {% include_relative item/index.html coach=coach is_extended=null %}
-  </div>
-
-  <div class="coaches-list-line">
-    {% for it in site.coach %}
-      {% if it.coach_id == 'obukhov_nikita_urevich' %}
-        {% assign coach = it %}
-      {% endif %}
-    {% endfor %}
-    {% include_relative item/index.html coach=coach is_extended='y' %}
-  </div>
-
 </section>
+
 
 <!--
   добавляем фотографии тренеров

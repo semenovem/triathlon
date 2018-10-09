@@ -11,8 +11,8 @@ const places = {
     swim: 'плавание',
   },
 
-  _items: `{{site.data.places | replace: '=>',':'}}`,
-  _coaches: `{% capture coaches %}{% include_relative get_is_enabled_coaches.html %}{% endcapture %}{{coaches | delAllSpace}}`,
+  _items: `{{ site.data.places | replace: '=>',':'}}`,
+  _coaches: `{% capture coaches %}{% include_relative get_is_enabled_coaches.html %}{% endcapture %}{{ coaches | delAllSpace }}`,
 
   init() {
     new Promise((resolve, reject) => {
@@ -132,21 +132,18 @@ const places = {
 
   _createBaloonContent(p) {
     const sports = p.sports.map(s => this._sports[s]).join(',');
-    const coaches = p.coaches
-      .map(c => {
-        const fio = c.split('_').slice(0, 2);
-
-        fio[1] = `${fio[1][0]}.`;
-        return `<a href="coaches/" class="typography-link-inside-text">${fio.join(' ')}</a>`;
-      })
-      .join(', ');
+    // const coaches = p.coaches
+    //   .map(c => {
+    //     const fio = c.split('_').slice(0, 2);
+    //
+    //     fio[1] = `${fio[1][0]}.`;
+    //     return `<a href="coaches/" class="typography-link-inside-text">${fio.join(' ')}</a>`;
+    //   })
+    //   .join(', ');
 
     return `
       <div>${p.name}</div>
       <div>Виды спорта: ${sports}</div>
-      <br>
-      <div>Тренеры: ${coaches}</div>
-
     `.trim();
   },
 };

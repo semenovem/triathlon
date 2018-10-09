@@ -13,10 +13,17 @@ module Jekyll
     # add hash to the file name
     # @example file.css => file.css?81a568
     def add_hash(s)
+      t = Time.now()
       site = @context.registers[:site]
-      s + "?a" + site.config["short_hash_commit"].to_s.chomp("/")
+      s + "?a=" + (site.config["short_hash_commit"] ? site.config["short_hash_commit"].to_s.chomp("/") : t.to_i.to_s)
     end
 
+
+    # get css files page
+    def getIncludesCssFiles(a)
+      page = @context.registers[:page]
+      page["pIncludesCss"]
+    end
 
     #
     def src_get_path(src)

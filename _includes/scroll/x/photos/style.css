@@ -1,9 +1,0 @@
-{% include scroll/x/base/style.css %}
-
-.i-scroll-x-photos-img {
-
-}
-
-.i-scroll-x-photos-img:not(:first-child) {
-  margin-left: var(--indent-m);
-}

@@ -1,16 +1,18 @@
 ---
 layout: a_base
 nav_light: REPORTS
+
+css: pt-5 pb-5 container-fluid
 ---
 
-<h1 class="typography-page-name">Отчеты о прошедших соревнованиях</h1>
+<h1 class="typo-page-name">Отчеты о прошедших соревнованиях</h1>
 
 <!-- todo сделать выборку годов, в которых есть отчеты -->
 {% assign years = '2017,2018' | split: ',' %}
 
 <div class="reports-years">
   {% for year in years %}
-    <a href="" class="typography-text-title">{{year}}</a>
+    <a href="" class="typography-text-title">{{ year }}</a>
     {% if forloop.rindex0 > 0 %}
       —
     {% endif %}

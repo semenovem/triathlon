@@ -1,3 +1,3 @@
-{% include scroll/x/base/script.js %}
+{% include scroll/x/base/j.js %}
 
 const iScrollXPhotos = iScrollX;

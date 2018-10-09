@@ -1,0 +1,14 @@
+.i-logo {
+  display: inline-block;
+  height: 60px;
+}
+
+.i-logo img {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .i-logo {
+    max-height: 40px;
+  }
+}

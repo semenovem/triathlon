@@ -1,0 +1,31 @@
+---
+---
+
+{% include last_news/widget/style.css %}
+{% include act/link/btn/more/style.css %}
+{% include slider/promo/style.css %}
+
+{% include_relative composition/style.css %}
+{% include_relative tile/style.css %}
+
+.home-info {
+  max-width: var(--max-width-content);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--indent-section);
+}
+
+.home-last-news {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--indent-section);
+  max-width: var(--max-width-content);
+  text-align: center;
+}
+
+.home-last-news-size {
+  height: 250px;
+  margin-top: var(--indent-block);
+  margin-bottom: var(--indent-block);
+}

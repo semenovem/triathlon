@@ -1,14 +1,18 @@
 
 baseurl: ""
-url: "https://triathlon.com"
+url: "https://azbukatriathlona.com"
 
 # контакты
-contact_phone: +7 912 123 45 00
-contact_email: test@test.ru
-
-contact_social_facebook: https://facebook.com
-contact_social_instagram: https://www.instagram.com/triatlon_goldnik
-contact_social_youtube: https://www.youtube.com/channel/UCUXyZhKmxe-21xOnhqbWFjg
+contacts:
+  phone: +7 926 333 28 99
+  email: test@test.ru
+  social:
+    instagram:
+      url: https://www.instagram.com/triatlon_goldnik
+      alt: Мой instagram
+    youtube:
+      url: https://www.youtube.com/channel/UCUXyZhKmxe-21xOnhqbWFjg
+      alt: Мой канал на youtube
 
 github: https://github.com/semenovem/triathlon
 
@@ -33,8 +37,7 @@ exclude: [
   'README.md', 'DEV_GUIDE.md',
   'gulpfile.js', 'package.json', 'package-lock.json', 'yarn.lock',
   'LICENSE',
-  '.editorconfig',
-  'CNAME'
+  '.editorconfig'
 ]
 
 collections:
@@ -59,5 +62,7 @@ defaults:
 
 # hash commit, for prevent caching file resource
 short_hash_commit:
+
+array: []
 
 #end

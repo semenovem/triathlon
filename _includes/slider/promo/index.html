@@ -1,0 +1,38 @@
+{% comment %}<!--
+
+промо баннер
+
+@param css String
+@param items String HTML
+-->{% endcomment %}
+
+<div id="slider-promo" class="carousel slide slider-promo" data-ride="carousel">
+  {% if include.items.size > 1 %}
+    <ol class="carousel-indicators">
+      {% for it in include.items %}
+        <li data-target="#slider-promo"
+            data-slide-to="{{ forloop.index0 }}"
+            {% if forloop.first %} class="active"{% endif %}
+        ></li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+
+
+  <div class="carousel-inner slider-promo-inner {{ include.css }}">
+    {% for it in include.items %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        {{ it }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <a class="carousel-control-prev" href="#slider-promo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#slider-promo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

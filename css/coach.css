@@ -1,9 +1,8 @@
 ---
 ---
-{% include coach/avatar/style.css %}
+{% include coach/avatar/c.css %}
 {% include coach/about/style.css %}
 {% include student/item/style.css %}
-{% include act/link/btn/more/style.css %}
 {% include act/back_to_list/style.css %}
 
 .coach {
@@ -14,24 +13,17 @@
   margin-top: var(--indent-m);
 }
 
-.coach-ava-about {
-  display: flex;
-  align-items: center;
-  height: var(--h-ava-about);
-  margin-top: var(--indent-m);
-}
-
-.coach-ava-size {
+.coach-ava {
+  display: block;
   --size: calc(var(--h-ava-about) - var(--indent-xl) * 2);
   min-width: var(--size);
   min-height: var(--size);
   max-width: var(--size);
   max-height: var(--size);
+  margin: var(--indent-m) auto;
 }
 
-.coach-about {
-  margin-left: var(--indent-xl);
-}
+.coach-about {}
 
 .coach-students {
   margin-top: var(--indent-section);

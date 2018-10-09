@@ -1,0 +1,75 @@
+---
+layout: a_base
+permalink: /
+nav_light: MAIN
+title: Академия Триатлона Кирилл Голдовский
+
+css: mt-0
+---
+
+{% capture sliderItems %}
+  <img class="d-block w-100" src="/imgs/promo_wide/004.jpg" alt="First slide">
+  <div class="carousel-caption d-none d-md-block">
+    <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
+    <p>
+        <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | relative_url  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
+    </p>
+  </div>
+  ------
+  <img class="d-block w-100" src="/imgs/promo_wide/002.jpg" alt="Second slide">
+  <div class="carousel-caption d-none d-md-block">
+    <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
+    <p>
+      <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | relative_url  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
+    </p>
+  </div>
+  ------
+  <img class="d-block w-100" src="/imgs/promo_wide/005.jpeg" alt="Third slide">
+  <div class="carousel-caption d-none d-md-block">
+    <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
+    <p>
+      <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | relative_url  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
+    </p>
+  </div>
+{% endcapture %}
+
+{% assign sliderItems = sliderItems | split:"------" %}
+
+{% include slider/promo/index.html css='' items=sliderItems %}
+
+
+<div class="container-fluid g-max-width-content mt-3 mt-lg-5">
+  <p class="typo-intro text-justify anims-fade-move">
+    Академия Триатлона - дает возможность выбрать услугу для занятий триатлоном. Персональная тренировка,
+    дистанционная и тренировка
+    с детским тренером. Вы получаете только профессиональные рекомендации по подготовке к триатлону так как в нашей команде работают тренеры высшей категории. Все что нужно это отправить заявку и мы свяжемся с вами.
+  </p>
+
+  {% include_relative composition/index.html %}
+
+  {% include_relative tile/index.html %}
+</div>
+
+
+
+
+{% comment %}
+
+<!-- todo делать новости -->
+<section class="home-last-news">
+  <h2 class="typography-h2-section-name">Последние новости</h2>
+  {% include last_news/widget/index.html css='home-last-news-size' %}
+
+  {%
+    include act/link/btn/more/index.html
+      css=''
+      url=site.data.pages.NEWS.url
+      text='СМОТРЕТЬ ВСЕ НОВОСТИ'
+  %}
+</section>
+
+{% endcomment %}
+
+
+
+

@@ -1,4 +1,44 @@
-/* название страницы. вверху в начале h1 */
+.typo-intro {
+  font-size: var(--font-size-responsive);
+  font-weight: bold;
+}
+
+.typo-tile-promo {
+  font-size: var(--font-size-h1);
+  font-style: italic;
+  color: white;
+}
+
+/* надпись на промо банере */
+.typo-on-promo {
+  font-size: var(--font-size-h1);
+  font-weight: bold;
+}
+
+/* название страницы. вверху в начале */
+.typo-page-name {
+  font-size: var(--font-size-h1);
+  color: var(--font-color-primary);
+  font-weight: bold;
+  text-align: center;
+}
+
+.typo-title-h2 {
+  font-size: var(--font-size-h2);
+}
+
+.typo-title-h3 {
+  font-size: var(--font-size-h3);
+}
+
+.typo-h4 {
+  font-size: var(--font-size-h4);
+}
+
+
+
+/* prev */
+/* название страницы. вверху в начале */
 .typography-page-name {
   font-size: var(--font-size-h2);
   text-align: center;

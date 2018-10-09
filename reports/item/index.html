@@ -6,7 +6,7 @@
 {% endcomment %}
 {% assign report = include.report %}
 
-<div class="reports-item {{include.css}}">
+<div class="reports-item {{ include.css }}">
 
   <div class="typography-title-of-article reports-item-name">{{ report.name }}</div>
   <div class="typography-title-of-article reports-item-date">{{ report.date | slice:0,10 }}</div>
@@ -17,7 +17,7 @@
   {% include img_fit/text_fit/index.html
       css='reports-item-preview'
       img_src=img_src
-      text=report.text_on_top
+      text=report.textOnTop
       link=link
   %}
 
@@ -26,12 +26,6 @@
   </div>
 
   <div class="reports-item-act">
-    {% include act/link/btn/more/index.html
-      css=''
-      url=report.url
-      text='ПОДРОБНЕЕ'
-    %}
+    <a href="{{ report.url | relative_url }}" class="btn g-btn">ПОДРОБНЕЕ</a>
   </div>
-
-
 </div>

@@ -2,7 +2,7 @@
 ---
 
 {% include act/link/btn/more/style.css %}
-{% include coach/avatar/style.css %}
+{% include coach/avatar/c.css %}
 
 .prices-coaches {
   display: flex;
