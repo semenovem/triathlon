@@ -6,8 +6,8 @@
   font-weight: bold;
   transition-property: color;
   transition-duration: 200ms;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: inline-block;
   max-width: 100%;
 }

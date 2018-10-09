@@ -5,4 +5,5 @@
 
 .students-item {
   height: 100px;
+  overflow: auto;
 }
