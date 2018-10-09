@@ -14,18 +14,18 @@
   <link rel="icon" type="image/svg/jpg" href="/icons/fav.jpg" />
 
   <link rel="stylesheet" href="/libs/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/vars.css?a=bfae04" />
-  <link rel="stylesheet" type="text/css" href="/css/indent.css?a=bfae04" />
-  <link rel="stylesheet" type="text/css" href="/css/fonts.css?a=bfae04" />
-  <link rel="stylesheet" type="text/css" href="/css/typography.css?a=bfae04" />
-  <link rel="stylesheet" type="text/css" href="/css/typography_coach.css?a=bfae04" />
-  <link rel="stylesheet" type="text/css" href="/css/forms.css?a=bfae04" />
-  <link rel="stylesheet" type="text/css" href="/css/anims.css?a=bfae04" />
+  <link rel="stylesheet" type="text/css" href="/css/vars.css?a=d97023" />
+  <link rel="stylesheet" type="text/css" href="/css/indent.css?a=d97023" />
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css?a=d97023" />
+  <link rel="stylesheet" type="text/css" href="/css/typography.css?a=d97023" />
+  <link rel="stylesheet" type="text/css" href="/css/typography_coach.css?a=d97023" />
+  <link rel="stylesheet" type="text/css" href="/css/forms.css?a=d97023" />
+  <link rel="stylesheet" type="text/css" href="/css/anims.css?a=d97023" />
   <link rel="stylesheet" type="text/css"
-    href="/css/a_base.css?a=bfae04"
+    href="/css/a_base.css?a=d97023"
   />
   <link rel="stylesheet" type="text/css"
-    href="/coaching/style.css?a=bfae04"
+    href="/coaching/style.css?a=d97023"
   />
 
   
@@ -34,11 +34,11 @@
   <script defer src="/libs/popper.min.js"></script>
   <script defer src="/libs/bootstrap.min.js"></script>
 
-  <script async src="/js/a_base.js?a=bfae04"></script>
-  <script async src="/js/anims.js?a=bfae04"></script>
+  <script async src="/js/a_base.js?a=d97023"></script>
+  <script async src="/js/anims.js?a=d97023"></script>
 
   <script async
-          src="/coaching/script.js?a=bfae04"
+          src="/coaching/script.js?a=d97023"
   ></script>
 
   
@@ -105,17 +105,7 @@
 </a>
 
 </div>
-          <div class="nav-item">
-
-
-<a
-  href="/prices"
-  class="i-nav-item-header text-truncate"
->
-  ЦЕНЫ
-</a>
-
-</div>
+          <!--<div class="nav-item">{ % include nav/item/header/index.html page_name='PRICES' %}</div>-->
           <div class="nav-item">
 
 
@@ -211,7 +201,7 @@
   </nav>
 </header>
 
-<main class=""><h1 class="typography-page-name">Индивидульные тренировка</h1>
+<main class="container pt-5 pb-5"><h1 class="typo-page-name mb-5">Индивидульные тренировка</h1>
 
 <div class="coaching-intro">
   <div class="typography-title-of-article">Как проходит персональная тренировка?</div>
@@ -232,7 +222,7 @@
 
 <div class="coaching-program-item">
   <ul class="day">
-  <li class="typography-text-definition">
+  <li class="typography-text-definition day-name">
     Понедельник
 
   </li>
@@ -284,7 +274,7 @@
 </ul>
 
   <ul class="day">
-  <li class="typography-text-definition">
+  <li class="typography-text-definition day-name">
     Вторник
   </li>
   <li>
@@ -314,103 +304,124 @@
   </li>
 </ul>
 
-
-
-</div>
-
-
-
-<div class="coaching-program-item">
-  <div class="coaching-day typography-text-definition">
+  <ul class="day">
+  <li class="typography-text-definition day-name">
     Среда
-  </div>
-  <div class="coaching-description">
-    ▪Утро плавание - 1000 м
-    100 кроль
-    100 м кроль колобашкой. ( отдыха нет просто остановка и берёте и оставляете колобашку)
-    Основное с колобашкой начало гребка.
-    Кролем касаться бедра большим пальцем )
-    400 ноги с доской. ( 75 средне -25 ускорение )
+  </li>
+  <li>
+    <ul>
+      <li>
+        Утро: плавание 1000 м
+        <ul>
+          <li>100 м кроль колобашкой. ( отдыха нет просто остановка и берёте и оставляете колобашку)</li>
+          <li>Основное с колобашкой начало гребка</li>
+          <li>Кролем касаться бедра большим пальцем )</li>
+          <li>400 ноги с доской ( 75 средне -25 ускорение )</li>
+        </ul>
+      </li>
 
-    ▪Вечер -вело силовое.
-    Через -20-30 минут после велотрек.
-    Бег - 6 км по велокольцу. ( в одну сторону 3 км спокойной начать пульс 135 и развернуться 3 км обратно 140  ) ( основное включать стопу и таз что бы работал ) ( ритм 180 )
-    Растяжка 5 мин.
-  </div>
-</div>
+      <li>Вечер: вело силовое</li>
+      <li>
+        <ul class="evening">
+          <li>Через -20-30 минут после велотрек.</li>
+          <li>Бег - 6 км по велокольцу. (в одну сторону 3 км спокойной начать пульс 135 и развернуться 3 км обратно 140) (основное включать стопу и таз что бы работал) (ритм 180 )</li>
+          <li>Растяжка 5 мин</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-
-
-<div class="coaching-program-item">
-  <div class="coaching-day typography-text-definition">
+  <ul class="day">
+  <li class="typography-text-definition day-name">
     Четверг
-  </div>
-  <div class="coaching-description">
-    ▪Утро - отдых.
-    ▪Вечер - бег разминка 2 км. Растяжка 5 мин. 1 серия беговых по 40 м. 2 ускорения по 100 м через отдых 1 минута.
-    Разгон 20 метров далее накат как велосипеде.
-    6 по 1000 м через 5 минут заминка 600 м.
-    1000 бежать пульсе 150-155.
-    Заминка 2 км свободно пульс 120 мини.
+  </li>
+  <li>
+    <ul>
+      <li>Утро: отдых</li>
+      <li>Вечер: вело силовое</li>
+      <li>
+        <ul class="evening">
+          <li>бег разминка 2 км. Растяжка 5 мин. 1 серия беговых по 40 м. 2 ускорения по 100 м через отдых 1 минута</li>
+          <li>Разгон 20 метров далее накат как велосипеде</li>
+          <li>6 по 1000 м через 5 минут заминка 600 м</li>
+          <li>1000 бежать пульсе 150-155</li>
+          <li>Заминка 2 км свободно пульс 120 мини</li>
+          <li>1-ОФП статодинамика на одной ноге ( смена ног) 10-10, 8-8, 6-6</li>
+          <li>Распрыжка 3 по 50 через 30 отдыха</li>
+          <li>Отжимания 2 по 15</li>
+          <li>Стопа 2 по 10</li>
+          <li>Волна 2 по 15</li>
+          <li>пресс 3 по 20</li>
+          <li>Спина 2 по 15</li>
+          <li>Боковой пресс 2-10</li>
+          <li>2 серия Статодинамика 10-10, 8-8, 6-6.</li>
+          <li>Махи ногами -2 по 20</li>
+          <li>Работа рук 2 по 30 сек.</li>
+          <li>Растяжка всего тела 5-7 минут</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-    ✅1-ОФП статодинамика на одной ноге ( смена ног)
-    10-10,, 8-8, 6-6.
-    ▪Распрыжка 3 по 50 через 30 отдыха.
-    ▪Отжимания 2 по 15
-    ▪Стопа 2 по 10
-    ▪Волна 2 по 15
-    ▪пресс 3 по 20
-    ▪Спина 2 по 15
-    ▪Боковой пресс 2-10
-    ▪2 серия Статодинамика 10-10, 8-8, 6-6.
-    ▪Махи ногами -2 по 20
-    ▪Работа рук 2 по 30 сек.
-    ▪Растяжка всего тела 5-7 минут
-  </div>
-</div>
+  <ul class="day">
+  <li class="typography-text-definition day-name">
+     Пятница
+  </li>
+  <li>
+    <ul>
+      <li>
+        Утро: плавание - дистанционное 2 по 800 м без остановки
+        <ul>
+          <li>1-Плыть на 50 процентов. На технику дыхание 3-3</li>
+          <li>2-плыть с колобашкой лопатками на технику дыхание 3-3</li>
+          <li>Вечер бег - 8 км свободно на технику. Ритм 180 шагов пульс 130 не выше. Растяжка</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-
-
-<div class="coaching-program-item">
-  <div class="coaching-day typography-text-definition">
-    Пятница
-  </div>
-  <div class="coaching-description">
-    ▪Утро - плавание - дистанционное 2 по 800 м без остановки
-    1-Плыть на 50 процентов. На технику дыхание 3-3.
-    2-плыть с колобашкой лопатками на технику дыхание 3-3.
-    ▪Вечер бег - 8 км свободно на технику. Ритм 180 шагов пульс 130 не выше. Растяжка.
-  </div>
-</div>
-
-
-
-<div class="coaching-program-item">
-  <div class="coaching-day typography-text-definition">
+  <ul class="day">
+  <li class="typography-text-definition day-name">
     Суббота
-  </div>
-  <div class="coaching-description">
-    ▪Утро вело -длинное. ( сразу бег )
-    ▪Бег -8 км вокруг канала. ( 4 км в одну сторону первые 4 км на мощность бежать частота 180 шагов( толкаться стопой )  -4 км в другую строну. Обратно -на своей частоте 185-190.
-    Растяжку 5 мини.
-  </div>
-</div>
+  </li>
+  <li>
+    <ul>
+      <li>
+        Утро: вело - длинное (сразу бег)
+        <ul>
+          <li>Бег -8 км вокруг канала. ( 4 км в одну сторону первые 4 км на мощность бежать частота 180 шагов( толкаться
+            стопой )  -4 км в другую строну. Обратно -на своей частоте 185-190</li>
+          <li>Растяжку 5 мини</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
+  <ul class="day">
+  <li class="typography-text-definition day-name">
+    Четверг
+  </li>
+  <li>
+    <ul>
+      <li>Утро: отдых</li>
+      <li>Вечер: вело силовое</li>
+      <li>
+        <ul class="evening">
+          <li>Плавание - 400 м кроль разминка</li>
+          <li>10 по 50 м - 8 гребков максимально далее</li>
+          <li>Свободно доплывать. Отдых 20 секунд выдох в воду</li>
+          <li>200 спина свободно</li>
+          <li>10 по 50 м</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-
-
-<div class="coaching-program-item">
-  <div class="coaching-day typography-text-definition">
-    Воскресение
-  </div>
-  <div class="coaching-description">
-    Утро - отдых
-    ▪Плавание - 400 м кроль разминка.
-    10 по 50 м - 8 гребков максимально далее
-    Свободно доплывать. Отдых 20 секунд выдох в воду.
-    200 спина свободно
-    10 по 50 м.
-  </div>
 </div>
 </main>
 
@@ -476,17 +487,7 @@
 </a>
 
 
-          
-
-
-<a
-  href="/prices"
-  class="i-nav-item-footer nav-item"
->
-  ЦЕНЫ
-</a>
-
-
+          <!--{ % include nav/item/footer/index.html page_name='PRICES' %}-->
           
 
 

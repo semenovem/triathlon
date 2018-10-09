@@ -1,6 +1,5 @@
 .coaching {}
 
-
 .coaching-intro {
   margin-bottom: var(--indent-xl);
 }
@@ -12,6 +11,13 @@
 .coaching-program-item .day:not(:first-child) {
   margin-top: var(--indent-l);
 }
+
+.coaching-program-item .day-name {
+  background-color: #f8f9fa;
+  padding: 0 var(--indent-s);
+}
+
+
 
 .coaching-day {
   min-width: 150px;
