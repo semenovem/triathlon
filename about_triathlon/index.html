@@ -2,12 +2,10 @@
 layout: a_base
 nav_light: ABOUT_TRIATHLON
 
-title: Академия Триатлона Кирилл Голдовский
-css_main: mt-0 about-triathlon
+pTitle: Академия Триатлона Кирилл Голдовский
+css: about-triathlon
 ---
-
 <!--
-
 ставим стандартный слайдер
 текст объединяем
 
@@ -16,14 +14,17 @@ css_main: mt-0 about-triathlon
  = без картинок - текст смотрится не айс
 -->
 
-<div class="about-triathlon-promo d-flex justify-content-center align-items-center">
+{% capture html %}
   <h1 class="typo-page-name text-white anims-fade-move">О Триатлоне</h1>
-</div>
+{% endcapture %}
+{% assign bgUrl='/imgs/promo_wide/001.png' | relative_url %}
+{% include bg/promo/i.html bgCss='' bgUrl=bgUrl content=html contentCss = '' contentPos='center' %}
 
 
-<div class="about-triathlon-content container-fluid p-0 pt-5 anims-fade-move" style="animation-delay: 0.3s">
+<div class="about-triathlon-content container-fluid p-0 pt-5 anims-fade-move pb-5" style="animation-delay: 0.3s">
   <div class="row g-max-width-content">
-    <img src="{{ 'imgs/about_triathlon/00.png' | relative_url }}" class="col-12 col-lg-6 order-lg-last mb-3">
+    <img src="{{ 'imgs/about_triathlon/00.png' | relative_url }}"
+         class="col-12 col-lg-6 order-lg-last mb-3 about-triathlon-content-img">
 
     <div class="col-12 col-lg-6 typo-intro text-justify">Триатлон – это гонка состоящая из трех этапов плавание, велогонка и бег
       которые
@@ -32,7 +33,8 @@ css_main: mt-0 about-triathlon
 
 
   <div class="row mt-5 g-max-width-content">
-    <img src="{{ 'imgs/about_triathlon/01.png' | relative_url }}" class="col-12 col-lg-6 order-lg-last mb-3">
+    <img src="{{ 'imgs/about_triathlon/01.png' | relative_url }}"
+         class="col-12 col-lg-6 order-lg-last mb-3 about-triathlon-content-img">
 
     <div class="col-12 col-lg-6 typo-intro text-justify">Триатлон преодолело уже десятки тысяч человек всем мире. Так же он
       набирает все больше и больше популярность в России, как для взрослых и особенно детей..</div>
@@ -40,40 +42,23 @@ css_main: mt-0 about-triathlon
 
 
   <div class="row mt-5 g-max-width-content">
-    <img src="{{ 'imgs/about_triathlon/02.png' | relative_url }}" class="col-12 col-lg-6 order-lg-last mb-3">
+    <img src="{{ 'imgs/about_triathlon/02.png' | relative_url }}"
+         class="col-12 col-lg-6 order-lg-last mb-3 about-triathlon-content-img">
 
     <div class="col-12 col-lg-6 typo-intro text-justify">Совершенствуя, каждый вид триатлона вы приобретаете выносливость,
       силу, гибкость, ловкость, но и то же время путешествуете и расширяете горизонты своего привычного жизненного ритма.</div>
   </div>
+
+
+  <section class="container-fluid text-center mt-5">
+    <h2 class="typo-title-h2 mb-4">Тренерский состав</h2>
+
+    {% include scroll/x/coaches/h.html css='about-triathlon-coaches' coaches=site.coach %}
+
+    <a href="{{ site.data.pages.COACHES.url | relative_url }}" class="g-btn btn mt-4">ВЫБРАТЬ ТРЕНЕРА</a>
+  </section>
 </div>
 
 
-
-
 {% comment %}
-<section class="about-triathlon-coaches">
-  <h2 class="typography-title-another-page title">Тренерский состав</h2>
-
-  <div class="list">
-    <div class="coaches">
-      <div class="first"></div>
-      {% for coach in site.coach %}
-        <a href="{{ 'coach/' | append: coach.coach_id | relative_url }}/">
-          {% include coach/avatar/index.html avatars=coach.avatars css='about-triathlon-coach-avatar' %}
-        </a>
-      {% endfor %}
-    </div>
-
-    <div class="shadow-left"></div>
-    <div class="shadow-right"></div>
-  </div>
-
-  {%
-    include act/link/btn/more/index.html
-    css='action'
-    url=site.data.pages.COACHES.url
-    text='ВЫБРАТЬ ТРЕНЕРА'
-  %}
-
-</section>
 {% endcomment %}

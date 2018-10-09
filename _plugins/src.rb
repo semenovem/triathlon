@@ -19,6 +19,12 @@ module Jekyll
     end
 
 
+    # get css files page
+    def getIncludesCssFiles(a)
+      page = @context.registers[:page]
+      page["pIncludesCss"]
+    end
+
     #
     def src_get_path(src)
       # todo change for any file name

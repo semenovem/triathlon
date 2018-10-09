@@ -33,7 +33,7 @@ layout: a_base
         {% assign members = site.coach | where:'coach_id', coach_id %}
 
         {% for coach in members %}
-          {% include coach/avatar/index.html css='report-members-avatar' avatars=coach.avatars %}
+          {% include coach/avatar/h.html css='report-members-avatar' avatars=coach.avatars %}
         {% endfor %}
       {% endfor %}
     </div>

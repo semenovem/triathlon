@@ -1,6 +1,6 @@
 ---
 ---
-{% include coach/avatar/style.css %}
+{% include coach/avatar/c.css %}
 {% include coach/about/style.css %}
 {% include student/item/style.css %}
 {% include act/link/btn/more/style.css %}

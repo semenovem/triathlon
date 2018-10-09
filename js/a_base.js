@@ -16,6 +16,10 @@
    * Прилепить footer к низу страницы
    */
   function stickFooter() {
+
+    // todo переделать старт и добавить запуск только на страницы, у которых небольшая высота
+    return;
+
     const hPage = document.body.offsetHeight;
 
     if (hPage < document.body.scrollHeight) {

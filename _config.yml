@@ -63,4 +63,6 @@ defaults:
 # hash commit, for prevent caching file resource
 short_hash_commit:
 
+array: []
+
 #end

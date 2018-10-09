@@ -36,9 +36,9 @@ layout: a_tpl
   </nav>
 </header>
 
-<main class="container-fluid p-0 {{ page.css_main }}">{{ content }}</main>
+<main class="{{ page.css }}">{{ content }}</main>
 
-<footer class="footer bg-light pt-3 pb-3 mt-4">
+<footer class="footer bg-light pt-3 pb-3">
   <div class="container-fluid g-max-width-content">
     <nav class="nav mb-3">
       <div class="d-flex flex-row flex-wrap">
@@ -87,12 +87,18 @@ layout: a_tpl
 </footer>
 
 
+{% if jekyll.environment == 'DEV' %}
+  <div style="position:fixed; bottom: 0; right: 0; color: gray; z-index: 10000; font-size: smaller; text-align: right;">
+    {{ '' | getIncludesCssFiles | join:'<br>' }}
+{% endif %}
 
 
-
-{% if jekyll.environment == '__DEV' %}
+{% if jekyll.environment == '_DEV' %}
   <!-- debug info -->
   <div class="i-debug-panel"><div>
+
+
+    <br>-- {% getIncludesCssFiles %} --<br>
 
 
     {% comment %}}
@@ -108,6 +114,7 @@ layout: a_tpl
 
 
 
+    {% comment %}
     <h3>site</h3>
     <table>
       {% for key in site.contacts.social %}
@@ -120,6 +127,7 @@ layout: a_tpl
       {% endfor %}
     </table>
     <br>
+    {% endcomment %}
 
 
 
@@ -163,8 +171,6 @@ layout: a_tpl
 
 
   </div></div>
-
-
 
 
   <style>

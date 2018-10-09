@@ -1,0 +1,23 @@
+{% comment %}<!--
+
+карточка на главной странице
+
+@param css String
+@param style String
+@param insideCss String
+@param first String | HTML
+@param second String | HTML
+@param third String | HTML
+
+-->{% endcomment %}
+{% includesCssFiles cards/one %}
+
+<div class="card-one {{ include.css }}">
+  <div class="cards-it-inside" style="{{ include.style }}">
+    <div class="first">{{ include.first }}</div>
+
+    <div class="second">{{ include.second }}</div>
+
+    <p class="third">{{ include.third }}</p>
+  </div>
+</div>

@@ -1,9 +1,7 @@
-.slider-promo {
-  --height: 200px;
-}
-
 .slider-promo-inner {
-  height: var(--height);
+  height: var(--el-slider-promo-h);
+  min-height: var(--el-slider-promo-min-h);
+  max-height: var(--el-slider-promo-max-h);
 }
 
 .slider-promo .carousel-item {
