@@ -1,98 +1,105 @@
 ---
 layout: a_base
 nav_light: RECORDING_TRAINING
+
+css: container pt-5 pb-5
 ---
 
-<h1 class="typography-page-name recording-training-title">Запись на тренировку</h1>
+<h1 class="typo-page-name mb-5">Запись на тренировку</h1>
 
-<div class="recording-training-form">
-
-  <div class="recording-training-item">
-    <input placeholder="Ваш email или телефон" class="forms-field field">
-    <label>Ваш email или телефон</label>
+<form action="https://formcarry.com/s/MB-mTFeZLiu" method="POST" accept-charset="UTF-8">
+  <div class="row recording-training-item">
+    <input id="contact" name="contact" class="col-12 col-md-6 forms-field">
+    <label class="col-12 col-md-6" for="contact">Ваш email или телефон</label>
   </div>
 
-  <div class="recording-training-item">
-    <input placeholder="Ваше имя" class="forms-field field">
-    <label>Ваше имя</label>
+  <div class="row recording-training-item">
+    <input id="name" name="name" class="col-12 col-md-6 forms-field">
+    <label class="col-12 col-md-6" for="name">Ваше имя</label>
   </div>
 
-  <div class="recording-training-item">
-    <input placeholder="Вес" class="forms-field field">
-    <label>Вес</label>
+  <div class="row recording-training-item">
+    <input id="weight" name="weight" class="col-12 col-md-6 forms-field">
+    <label class="col-12 col-md-6" for="weight">Вес</label>
   </div>
 
-  <div class="recording-training-item">
-    <input placeholder="Рост" class="forms-field field">
-    <label>Рост</label>
+  <div class="row recording-training-item">
+    <input id="height" name="height" class="col-12 col-md-6 forms-field">
+    <label class="col-12 col-md-6" for="height">Рост</label>
   </div>
 
-  <div class="recording-training-item">
-    <input placeholder="Пульс в покое" class="forms-field field">
-    <label>Пульс в покое</label>
+  <div class="row recording-training-item">
+    <input id="heartOfRate" name="heartOfRate" class="col-12 col-md-6 forms-field">
+    <label class="col-12 col-md-6" for="heartOfRate">Пульс в покое</label>
   </div>
 
-  <div class="recording-training-item">
-    <textarea placeholder="Участие в соревнованиях" class="forms-field field"></textarea>
-    <label>Участие в соревнованиях (плавание, бег, вело, триатлон и тд)<br>страна и место соревнований</label>
+  <div class="row recording-training-item">
+    <textarea id="participationInCompetitions" name="participationInCompetitions"
+              class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="participationInCompetitions">Участие в соревнованиях (плавание, бег, вело, триатлон и тд)<br>страна и место
+      соревнований</label>
   </div>
 
-  <div class="recording-training-item">
-    <textarea placeholder="Контрольные результаты" class="forms-field field"></textarea>
-    <label>Контрольные результаты  ( отрезки на время ) все дистанции ( например ( 400, 1 км , 2 км  м плавание ) , вело ; 5 км , 10 км ,20 км , 40 км , 90 км . бег 1-2-3-5-10-21 км .
+  <div class="row recording-training-item">
+    <textarea id="testResult" name="testResult" class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="testResult">Контрольные результаты  ( отрезки на время ) все дистанции ( например ( 400, 1 км , 2 км  м
+      плавание
+      ) , вело ; 5 км , 10 км ,20 км , 40 км , 90 км . бег 1-2-3-5-10-21 км .
       Плавание
       Бег
       Вело
       Триатлон (время 750-20-5 ) , 1.5-40-10 км )</label>
   </div>
 
-  <div class="recording-training-item">
-    <input placeholder="Стаж тренировок" class="forms-field field">
-    <label>Стаж тренировок, месяцев, лет</label>
+  <div class="row recording-training-item">
+    <input id="trainingExperience" name="trainingExperience" class="col-12 col-md-6 forms-field">
+    <label class="col-12 col-md-6" for="trainingExperience">Стаж тренировок, месяцев, лет</label>
   </div>
 
-  <div class="recording-training-item">
-    <textarea placeholder="Тренировочный план на неделю" class="forms-field field"></textarea>
-    <label>Тренировочный план на неделю (количество тренировок в неделю. Виды тренировок) количество часов в
+  <div class="row recording-training-item">
+    <textarea id="trainingPlanForWeek" name="trainingPlanForWeek" class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="trainingPlanForWeek">Тренировочный план на неделю (количество тренировок в неделю. Виды тренировок) количество
+      часов в
       неделю</label>
   </div>
 
 
-  <div class="recording-training-item">
-    <textarea placeholder="Цели тренировок" class="forms-field field"></textarea>
-    <label>Цели тренировок ( старты -  пробеги, триатлоны, велогонки) Айронмен, половинка айронмену . Конечная цель имеется такая . Например Айронмен Кона , Noserman , ультра Ironman</label>
+  <div class="row recording-training-item">
+    <textarea id="trainingGoal" name="trainingGoal" class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="trainingGoal">Цели тренировок ( старты -  пробеги, триатлоны, велогонки) Айронмен, половинка айронмену .
+      Конечная
+      цель имеется такая . Например Айронмен Кона , Noserman , ультра Ironman</label>
   </div>
 
 
-  <div class="recording-training-item">
-    <textarea placeholder="Аэробный порог, пано" class="forms-field field"></textarea>
-    <label>Аэробный порог, пано</label>
+  <div class="row recording-training-item">
+    <textarea id="aerobicThresholdPano" name="aerobicThresholdPano" class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="aerobicThresholdPano">Аэробный порог, пано</label>
   </div>
 
 
-  <div class="recording-training-item">
-    <textarea placeholder="Участие в УТС, учебено-тренировочный сбор" class="forms-field field"></textarea>
-    <label>Участие в УТС, учебено-тренировочный сбор, при наличии)</label>
+  <div class="row recording-training-item">
+    <textarea id="participationTrainingCamps" name="participationTrainingCamps"
+              class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="participationTrainingCamps">Участие в УТС, учебно-тренировочный сбор, при
+      наличии)</label>
   </div>
 
 
-  <div class="recording-training-item">
-    <textarea placeholder="Углубленное медицинское обследование" class="forms-field field"></textarea>
-    <label>Углубленное медицинское обследование, (имеются ли противопоказания или ограничения)</label>
+  <div class="row recording-training-item">
+    <textarea id="inDepthMedicalExamination" name="inDepthMedicalExamination" class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="inDepthMedicalExamination">Углубленное медицинское обследование, (имеются ли
+      противопоказания
+      или ограничения)</label>
   </div>
 
 
-  <div class="recording-training-item">
-    <textarea placeholder="Медикаментозное сопровождение" class="forms-field field"></textarea>
-    <label>Медикаментозное сопровождение - какие препараты принимаете</label>
+  <div class="row recording-training-item">
+    <textarea id="medicalSupport" name="medicalSupport" class="col-12 col-md-6 forms-field"></textarea>
+    <label class="col-12 col-md-6" for="medicalSupport">Медикаментозное сопровождение - какие препараты принимаете</label>
   </div>
-</div>
 
-<div class="recording-training-action">
-  {%
-    include act/link/btn/more/index.html
-      css=''
-      url=''
-      text='ОТПРАВИТЬ'
-  %}
-</div>
+  <div class="row justify-content-center">
+    <button class="btn g-btn mt-5" type="submit">ОТПРАВИТЬ</button>
+  </div>
+</form>
