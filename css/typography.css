@@ -11,7 +11,7 @@
 
 /* надпись на промо банере */
 .typo-on-promo {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h1);
   font-weight: bold;
 }
 
