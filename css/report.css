@@ -4,7 +4,7 @@
 {% include act/back_to_list/style.css %}
 {% include icon_text/style.css %}
 {% include coach/avatar/c.css %}
-{% include scroll/x/photos/style.css %}
+{% include scroll/x/photos/c.css %}
 {% include img_fit/text_fit/style.css %}
 
 .report {

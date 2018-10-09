@@ -1,7 +1,7 @@
 ---
 name: Гамбург. Отбор на Чемпионат Мира Kailua-Kona, Hawaii 2017г
 location: Европа, Германия, Гамбург
-text_on_top: Hamburg
+textOnTop: Hamburg
 
 coords:
   - 34.23423
@@ -44,7 +44,7 @@ intro: >-
 </p>
 
 {% assign photos = page.url | src_get_path | append: '/photos' | src_add_path: page.photos %}
-{% include scroll/x/photos/index.html css='report-block-with-photos' photos=photos %}
+{% include scroll/x/photos/h.html css='report-block-with-photos' photos=photos %}
 
 
 <p>
