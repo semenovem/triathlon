@@ -21,6 +21,10 @@ body {
   padding-top: var(--el-header-h);
 }
 
+header .navbar {
+  background-color: #191919;
+}
+
 .g-max-width-content {
   max-width: var(--max-width-content);
   margin-left: auto;
