@@ -48,3 +48,30 @@ end
 Liquid::Template.register_tag('getIncludesCssFiles', Jekyll::GetIncludesCssFiles)
 
 
+# todo доделывать обработку входных параметров
+module Jekyll
+  class PageVariables < Liquid::Tag
+
+    def initialize(tag_name, markup, tokens)
+      super
+      @markup = markup.strip
+    end
+
+    def render(context)
+      page = context.registers[:page]
+
+      if @markup.empty?
+        return "Error processing input, expected syntax: {% pageVariables name variable value %}"
+      end
+
+      res = @markup.split('=')
+
+      page[res[0]] = res[1]
+      return nil
+    end
+  end
+end
+
+Liquid::Template.register_tag('pageVariables', Jekyll::PageVariables)
+
+

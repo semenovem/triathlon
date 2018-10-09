@@ -1,24 +1,25 @@
 ---
 layout: a_base
----
 
-<h1 class="typography-page-name">Тренеры</h1>
+---
+{% pageVariables css=pt-5 pb-5 container %}
+
+<h1 class="typo-page-name">Тренеры</h1>
 
 {% include act/back_to_list/index.html css='' url=site.data.pages.COACHES.url text='назад к списку тренеров' %}
 
 <div class="coach">
-  <section class="coach-ava-about">
-    {% include coach/avatar/h.html
-        css='coach-ava-size'
-        avatars=page.avatars
-    %}
-    {% capture content %}
-      <h4 class="typography-people-block">{{ page.post }}</h4>
-      <div class="typography-people-block fio">{{ page.fio }}</div>
-      {{ page.about }}
-    {% endcapture %}
-    {% include coach/about/index.html css='coach-about' content=content %}
-  </section>
+  {% include coach/avatar/h.html
+      css='coach-ava'
+      avatars=page.avatars
+  %}
+
+  {% capture content %}
+    <h4 class="typography-people-block">{{ page.post }}</h4>
+    <div class="typography-people-block fio">{{ page.fio }}</div>
+    {{ page.about }}
+  {% endcapture %}
+  {% include coach/about/index.html css='coach-about' content=content %}
 
 
   {% capture output %}
@@ -58,11 +59,7 @@ layout: a_base
 
 
   <div class="coach-action">
-    {% include act/link/btn/more/index.html
-      css=''
-      url=site.data.pages.COACHING.url
-      text='НАЧАТЬ ТРЕНИРОВАТЬСЯ ИНДИВИДУАЛЬНО'
-    %}
+    <a href="{{ site.data.pages.COACHING.url | relative_url }}" class="btn g-btn">НАЧАТЬ ТРЕНИРОВАТЬСЯ</a>
   </div>
 
 </div>
