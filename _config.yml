@@ -48,17 +48,24 @@ collections:
 
 defaults:
   - scope:
-      path: ""
+#      path: "coach/*/index.html"
       type: coach
     values:
       layout: coach
       nav_light: COACHES
+
   - scope:
-      path: ""
+#      path: "report/*/index.html"
       type: report
     values:
       layout: report
       nav_light: REPORTS
+
+  - scope:
+      path: ""
+#      path: "*/index.html"
+    values:
+      yandexMetrika: true
 
 # hash commit, for prevent caching file resource
 short_hash_commit:

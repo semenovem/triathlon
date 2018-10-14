@@ -3,10 +3,15 @@
 Liquid:
 
 ### Переменные страницы: 
-зарезервированные:  
+ 
 - `includesCss` - массив с `css` файлами, которые добавятся в файл `css` страницы. Добавлять с помощью фильтра `includesCss` {{ '' | includesCss }}. Только для компонентов из `_includes/` 
 
-- pTitle
+- title - название страницы
+- cssMain - css класс, добавить на <body><main class="... {{ cssMain }}">  
+
+- yandexMetrika  @default true метрика YA на странице
+
+
 
 
 

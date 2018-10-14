@@ -1,0 +1,39 @@
+{% assign cssClass = '' %}
+
+{% unless include.s %}
+  {% assign cssClass = 'bg-dark' %}
+{% endunless %}
+
+<nav class="navbar navbar-expand-lg navbar-dark {{cssClass}}" style="margin-bottom: 10px; {{ include.s }}">
+  <div class="container-fluid g-max-width-content">
+    <a class="navbar-brand" href="/">{% include logo/index.html src=include.src %}</a>
+
+    <div class="collapse navbar-collapse w-100" id="{{ include.id }}">
+      <div class="navbar-nav d-flex flex-wrap justify-content-around">
+        <div class="nav-item">{% include nav/item/header/index.html page_name='MAIN' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='ABOUT_TRIATHLON' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='COACHES' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='PLACES' %}</div>
+        <!--<div class="nav-item">{ % include nav/item/header/index.html page_name='PRICES' %}</div>-->
+        <div class="nav-item">{% include nav/item/header/index.html page_name='COACHING' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='REPORTS' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='RECORDING_TRAINING' %}</div>
+        <div class="nav-item">{% include nav/item/header/index.html page_name='CONTACTS' %}</div>
+
+        <div class="nav-item d-lg-none">{% include contacts/social/one/index.html social=site.contacts.social css='' %}</div>
+      </div>
+    </div>
+
+    <div class="d-xs-none">
+      <div class="d-flex flex-column">
+        {% include contacts/phone/one/index.html %}
+        {% include contacts/social/one/index.html social=site.contacts.social css='d-none d-lg-block' %}
+      </div>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#{{ include.id }}"
+            aria-controls="{{ include.id }}" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
