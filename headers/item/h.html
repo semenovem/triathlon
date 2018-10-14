@@ -4,7 +4,8 @@
   {% assign cssClass = 'bg-dark' %}
 {% endunless %}
 
-<nav class="navbar navbar-expand-lg navbar-dark {{cssClass}}" style="margin-bottom: 10px; {{ include.s }}">
+<nav class="navbar navbar-expand-lg navbar-dark {{cssClass}} {{ include.css }}" style="margin-bottom: 10px; {{
+include.s }}">
   <div class="container-fluid g-max-width-content">
     <a class="navbar-brand" href="/">{% include logo/index.html src=include.src %}</a>
 

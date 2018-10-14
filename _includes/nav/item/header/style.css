@@ -20,3 +20,13 @@
   color: var(--font-color-secondary);
   cursor: default;
 }
+
+
+/* todo example with light theme */
+.bg-light .i-nav-item-header:not(.selected) {
+  color: var(--font-color-primary);
+}
+
+.bg-light .i-nav-item-header:hover {
+  color: var(--font-color-secondary);
+}
