@@ -30,7 +30,7 @@
   },
   "REPORTS": {
     "url": "reports",
-    "nav_item_name": "ОТЧЕТЫ О ПРОШЕДШИХ СОРЕВНОВАНИЯХ"
+    "nav_item_name": "ОТЧЕТЫ О СОРЕВНОВАНИЯХ"
   },
   "FEEDBACK": {
     "url": "feedback",
