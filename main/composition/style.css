@@ -1,8 +1,1 @@
-.main-composition-sign {
-  color: var(--font-color-secondary);
-  font-size: 24px;
-  font-weight: bold;
-}
-
-
-{% include cards/it/c.css %}
+.main-composition-sign{color:var(--font-color-secondary);font-size:24px;font-weight:700}
