@@ -29,7 +29,9 @@
     "gulp-clean-css": "^3.9.2",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
-    "imagemin-pngquant": "^5.0.1"
+    "gulp-uglify": "^3.0.1",
+    "imagemin-pngquant": "^5.0.1",
+    "through2": "^2.0.3"
   },
   "dependencies": {}
 }
