@@ -1,15 +1,12 @@
+const del = require('del');
+
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
-const del = require('del');
 const imagemin = require('gulp-imagemin');
-// const uglify = require('gulp-uglify');
-
-// var through = require('through2');
-// const pngquant = require('imagemin-pngquant');
-
-// const dotenv = require('dotenv');
-// import dotenv from 'dotenv';
+const uglify = require('gulp-uglify');
+const svgmin = require('gulp-svgmin');
 
 const SOURCE = '_site';
 const TARGET = '_dist';
@@ -18,9 +15,10 @@ const EXCEPTION_PATH = ['!refs/**/*', '!libs/**/*'];
 const PATCH = {
   javascript: makeSource(['**/*.js'].concat(EXCEPTION_PATH)),
   images: makeSource(['**/*.png', '**/*.jpg', '**/*.jpeg'].concat(EXCEPTION_PATH)),
+  svg: makeSource(['**/*.svg'].concat(EXCEPTION_PATH)),
   css: makeSource(['**/style.css', '404.htmlstyle.css', 'css/**/*.css'].concat(EXCEPTION_PATH)),
   html: makeSource(['**/index.html', '**/404.html'].concat(EXCEPTION_PATH)),
-  move: makeSource(['libs/**/*', 'css/fonts/**/*', 'CNAME', '**/*.svg']),
+  move: makeSource(['libs/**/*', 'css/fonts/**/*', 'CNAME']),
 };
 
 function makeSource(a) {
@@ -31,8 +29,7 @@ function makeSource(a) {
   })
 }
 
-
-gulp.task('build', ['clean-target', 'move', 'css', 'html', 'javascript', 'img']);
+gulp.task('build', ['clean-target', 'move', 'css', 'html', 'javascript', 'svg', 'img']);
 
 
 // tasks
@@ -51,8 +48,18 @@ gulp.task('html', () => (
     .pipe(gulp.dest(TARGET))
 ));
 
+gulp.task('svg', () => (
+  gulp.src(PATCH.svg, { base: SOURCE })
+    .pipe(svgmin())
+    .pipe(gulp.dest(TARGET))
+));
+
 gulp.task('javascript', () => (
   gulp.src(PATCH.javascript, { base: SOURCE })
+    .pipe(babel({
+      presets: ['@babel/preset-env']
+    }))
+    .pipe(uglify())
     .pipe(gulp.dest(TARGET))
 ));
 
