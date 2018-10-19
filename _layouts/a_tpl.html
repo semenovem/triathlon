@@ -16,6 +16,43 @@
   <meta name="robots" content="noindex,nofollow">
 
 
+  <script>
+    const app = {
+      deviceSize: 'xs',
+
+      domContentLoaded: new Promise(resolve => {
+        document.addEventListener('DOMContentLoaded', () => {
+          app._updDeviceSize();
+          // todo debounce for resize
+          window.addEventListener('resize', app._onResize.bind(app));
+          resolve();
+        });
+      }),
+
+      loaded: new Promise(resolve => {
+        window.addEventListener('load', resolve);
+      }),
+
+      getDeviceSize() {},
+
+      _updDeviceSize() {
+        this.deviceSize = this._defDeviceSize(document.body.clientWidth);
+      },
+
+      _defDeviceSize(w) {
+        if (w < 576) { return 'xs'; }
+        if (w < 768) { return 'sm'; }
+        if (w < 992) { return 'md'; }
+        if (w < 1200) { return 'lg'; }
+        return 'xl';
+      },
+
+      _onResize() {
+        this._updDeviceSize();
+      }
+    };
+  </script>
+
   <!-- favicons beg -->
   <link rel="apple-touch-icon" href="{{ '/icons/favicons/fav57.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="72x72" href="{{ '/icons/favicons/fav72.png' | relative_url }}">
@@ -37,9 +74,17 @@
   <!-- common styles end -->
 
 
+
+  {% if page.cssUrls %}
+    <link rel="stylesheet" type="text/css" href="{{ page.ccsHref | relative_url }}"/>
+  {% endif %}
+
+
+
   <link rel="stylesheet" type="text/css"
     href="{{ '/css/' | append: page.layout | append: '.css' | relative_url | add_hash }}"
   />
+
   <link rel="stylesheet" type="text/css"
     href="{{ page.path | remove:'index.html' | remove:'index.md' | append:'style.css' | relative_url | add_hash }}"
   />
@@ -70,9 +115,17 @@
     <script defer src="{{ 'js/' | append:'report.js' | relative_url | add_hash }}"></script>
   {% endif %}
 
+  <script async src="{{ 'js/adapt_imgs.js' | relative_url | add_hash }}"></script>
 
 </head>
 <body>
+
+{{ page.layout }}
+<br>
+{{ page.path }}
+<br>
+{{ page.cssHref }}
+
 {{ content }}
 
 {% if page.yandexMetrika and jekyll.environment <> 'DEV' %}

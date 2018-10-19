@@ -1,12 +1,18 @@
 /**
  *
  */
-const anim = {
-  _attrName: 'data-anims',
-  _querySel: '[data-anims]',
+const adaptImgs = {
 
   init() {
-    // [].forEach.call(document.body.querySelectorAll(this._querySel), this._observe, this);
+    this._findImgs();
+  },
+
+  _findImgs() {
+    const imgs = document.querySelectorAll('[data-src]');
+
+    // [].forEach.call(imgs, console.log);
+
+    console.log(imgs.length);
   },
 
   _observe(el) {
@@ -19,11 +25,11 @@ const anim = {
 
   _parse() {
 
-  }
+  },
 
   // получить все узлы с установленной анимацией
 
   // добавить observer
 };
 
-app.domContentLoaded.then(anim.init.bind(anim));
+app.domContentLoaded.then(adaptImgs.init.bind(adaptImgs));
