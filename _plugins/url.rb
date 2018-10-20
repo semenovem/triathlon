@@ -44,9 +44,13 @@ module Jekyll
       end
 
       page = @context.registers[:page]
+      if page['url'].include? "404"
+        return format("/" + resource)
+      end
+
       up = def_len_path(page['url'])
 
-      ((up == 0 ? './' : '../' * up) + resource).gsub(/\/{2,}/, "/")
+      format((up == 0 ? './' : '../' * up) + resource)
     end
 
 
@@ -55,7 +59,6 @@ module Jekyll
     def def_len_path(path)
       path.scan(/\//).size - 1
     end
-
 
     def trim(s)
       s.gsub(/^\s+/, '').gsub(/\s+$/, '')
