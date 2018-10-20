@@ -53,17 +53,13 @@ defaults:
     values:
       layout: coach
       nav_light: COACHES
-      cssUrl: ../style.css
-      jsUrl: ../script.js
 
   - scope:
-      path: "_report/*/index.html"
+      path: "_report/**/index.html"
       type: report
     values:
       layout: report
       nav_light: REPORTS
-      cssUrl: ../style.css
-      jsUrl: ../script.js
 
   - scope:
       path: ""

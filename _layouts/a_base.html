@@ -1,7 +1,11 @@
 ---
 layout: a_tpl
 ---
-{{ 'css/a_base.css' | url | addVarToPage:'cssLayoutUrls' | void }}
+{{ 'css/a_base.css' | url | addVarToPage:'cssUrls' | void }}
+
+{{ 'js/a_base.js' | url | addVarToPage:'jsUrls' | void }}
+{{ 'js/anims.js' | url | addVarToPage:'jsUrls' | void }}
+{{ 'js/adapt_imgs.js' | url | addVarToPage:'jsUrls' | void }}
 
 <header>
   <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top">
@@ -96,7 +100,7 @@ layout: a_tpl
 {% endif %}
 
 
-{% if jekyll.environment == 'DEV' %}
+{% if jekyll.environment == '_DEV' %}
   <!-- debug info -->
   <div class="i-debug-panel"><div>
 

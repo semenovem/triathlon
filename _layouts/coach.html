@@ -2,6 +2,9 @@
 layout: a_base
 
 ---
+{{ 'coach/style.css' | url | addVarToPage:'cssUrls' | void }}
+{{ 'coach/script.js' | url | addVarToPage:'jsUrls' | void }}
+
 {% pageVariables css=pt-5 pb-5 container %}
 
 <h1 class="typo-page-name">Тренеры</h1>

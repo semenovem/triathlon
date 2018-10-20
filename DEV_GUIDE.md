@@ -13,15 +13,12 @@ Liquid:
 
 
 подключение файла стилей и скриптов.
+- cssUrls: Array<String>
+- jsUrls: Array<String>
 
-  @default ./style.css
-  возможные значения: ../style.css | ../ | ./ | false
-- cssUrl: String
-
-  @default ./script.js
-  возможные значения: ../script.js | ../ | ./ | false
-- jsUrl: String
-
+пример добавления: 
+{{ 'css/a_base.css' | url | addVarToPage:'cssUrls' | void }}
+{{ 'js/a_base.js' | url | addVarToPage:'jsUrls' | void }}
 
 
 ### _includes

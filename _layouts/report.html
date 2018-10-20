@@ -4,6 +4,9 @@ layout: a_base
 ---
 {% pageVariables css=pt-5 pb-5 container %}
 
+{{ 'report/style.css' | url | addVarToPage:'cssUrls' | void }}
+{{ 'report/script.js' | url | addVarToPage:'jsUrls' | void }}
+
 
 <h1 class="typo-page-name">Отчеты о прошедших соревнованиях</h1>
 

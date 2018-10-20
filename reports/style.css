@@ -1,7 +1,7 @@
 ---
 ---
 
-{% include_relative item/style.css %}
+{% include_relative item/c.css %}
 
 .reports {
   display: flex;

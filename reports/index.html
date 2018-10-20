@@ -2,7 +2,7 @@
 layout: a_base
 nav_light: REPORTS
 
-jsUrl: false
+cssUrls: style.css
 
 cssContentClassName: pt-5 pb-5 container-fluid
 ---
@@ -23,10 +23,10 @@ cssContentClassName: pt-5 pb-5 container-fluid
 
 {% assign reports = site.report | reverse %}
 
-{% assign cur_year = '2017' %}
+{% assign cur_year = '2018' %}
 
 <div class="reports">
   {% for report in reports %}
-    {% include_relative item/index.html css='' report=report %}
+    {% include_relative item/h.html report=report %}
   {% endfor %}
 </div>
