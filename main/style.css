@@ -1,4 +1,5 @@
 ---
+permalink: /style.css
 ---
 
 {% include last_news/widget/style.css %}

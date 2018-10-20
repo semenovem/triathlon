@@ -1,6 +1,7 @@
 ---
 layout: a_tpl
 ---
+{{ 'css/a_base.css' | url | addVarToPage:'cssLayoutUrls' | void }}
 
 <header>
   <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top">
@@ -37,7 +38,7 @@ layout: a_tpl
   </nav>
 </header>
 
-<main class="{{ page.css }}">{{ content }}</main>
+<main class="{{ page.cssContentClassName }}">{{ content }}</main>
 
 <footer class="footer bg-light pt-3 pb-3">
   <div class="container-fluid g-max-width-content">
@@ -89,21 +90,19 @@ layout: a_tpl
 </footer>
 
 
-{% if jekyll.environment == 'DEV' %}
+{% if jekyll.environment == '_DEV' %}
   <div style="position:fixed; bottom: 0; right: 0; color: gray; z-index: 10000; font-size: smaller; text-align: right;">
     {{ '' | getIncludesCssFiles | join:'<br>' }}
 {% endif %}
 
 
-{% if jekyll.environment == '_DEV' %}
+{% if jekyll.environment == 'DEV' %}
   <!-- debug info -->
   <div class="i-debug-panel"><div>
 
 
-    <br>-- {% getIncludesCssFiles %} --<br>
 
-
-    {% comment %}}
+    { % comment %}}
     <textarea rows="5" style="width: 700px; height: 500px;">
 
       {% assign image_files = site.static_files | where: "image", true %}
@@ -112,7 +111,7 @@ layout: a_tpl
       {% endfor %}
 
     </textarea>
-    {% endcomment %}
+    { % endcomment %}
 
 
 

@@ -12,6 +12,15 @@ Liquid:
 - yandexMetrika  @default true метрика YA на странице
 
 
+подключение файла стилей и скриптов.
+
+  @default ./style.css
+  возможные значения: ../style.css | ../ | ./ | false
+- cssUrl: String
+
+  @default ./script.js
+  возможные значения: ../script.js | ../ | ./ | false
+- jsUrl: String
 
 
 

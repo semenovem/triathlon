@@ -33,7 +33,7 @@ kramdown:
 # Exclude from processing.
 exclude: [
   '.idea/',
-  'node_modules', '_scripts', '_dev',
+  'node_modules', '_scripts', '_dev', '_plugins',
   'README.md', 'DEV_GUIDE.md',
   'gulpfile.js', 'package.json', 'package-lock.json', 'yarn.lock',
   'LICENSE',
@@ -48,18 +48,22 @@ collections:
 
 defaults:
   - scope:
-#      path: "coach/*/index.html"
+      path: "_coach/*/index.html"
       type: coach
     values:
       layout: coach
       nav_light: COACHES
+      cssUrl: ../style.css
+      jsUrl: ../script.js
 
   - scope:
-#      path: "report/*/index.html"
+      path: "_report/*/index.html"
       type: report
     values:
       layout: report
       nav_light: REPORTS
+      cssUrl: ../style.css
+      jsUrl: ../script.js
 
   - scope:
       path: ""
