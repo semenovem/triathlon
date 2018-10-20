@@ -2,8 +2,8 @@
 {% assign css=include.css %}
 
 <div class="i-last-news-item {{ include.css }}">
-  <a class="" href="{{ item.url | relative_url }}">
-    <img src="{{ item.url | remove:'index.html' | relative_url }}poster.jpg">
+  <a class="" href="{{ item.url | makeUrl }}">
+    <img src="{{ item.url | remove:'index.html' | makeUrl }}poster.jpg">
   </a>
 
   <div class="i-last-news-item-sign-pos">

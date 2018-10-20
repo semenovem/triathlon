@@ -5,83 +5,83 @@
     "title": "Академия Триатлона"
   },
   "ABOUT_TRIATHLON": {
-    "url": "about_triathlon",
+    "url": "/about_triathlon",
     "nav_item_name": "О ТРИАТЛОНЕ"
   },
   "COACHES": {
-    "url": "coaches",
+    "url": "/coaches",
     "nav_item_name": "ТРЕНЕРЫ"
   },
   "COACH": {
-    "url": "coach",
+    "url": "/coach",
     "nav_item_name": "СТРАНИЦА ТРЕНЕРА"
   },
   "PLACES": {
-    "url": "places",
+    "url": "/places",
     "nav_item_name": "МЕСТА"
   },
   "SPORTS_FEES": {
-    "url": "sports_fees",
+    "url": "/sports_fees",
     "nav_item_name": "СБОРЫ"
   },
   "PRICES": {
-    "url": "prices",
+    "url": "/prices",
     "nav_item_name": "ЦЕНЫ"
   },
   "REPORTS": {
-    "url": "reports",
+    "url": "/reports",
     "nav_item_name": "ОТЧЕТЫ О СОРЕВНОВАНИЯХ"
   },
   "FEEDBACK": {
-    "url": "feedback",
+    "url": "/feedback",
     "nav_item_name": "ОТЗЫВЫ"
   },
   "CONTACTS": {
-    "url": "contacts",
+    "url": "/contacts",
     "nav_item_name": "КОНТАКТЫ"
   },
   "COACHING": {
-    "url": "coaching",
+    "url": "/coaching",
     "nav_item_name": "ТРЕНИРОВКИ"
   },
   "TRAINING_SESSIONS": {
-    "url": "training_sessions",
+    "url": "/training_sessions",
     "nav_item_name": "Тренировки"
   },
   "SWIM": {
-    "url": "swim",
+    "url": "/swim",
     "nav_item_name": "Плавание"
   },
   "BIKE": {
-    "url": "bike",
+    "url": "/bike",
     "nav_item_name": "Велосипед"
   },
   "RUNNING": {
-    "url": "running",
+    "url": "/running",
     "nav_item_name": "Бег"
   },
   "NEWS": {
-    "url": "news",
+    "url": "/news",
     "nav_item_name": "Новости"
   },
   "GALLERY": {
-    "url": "gallery",
+    "url": "/gallery",
     "nav_item_name": "Галлерея"
   },
   "CALENDAR": {
-    "url": "calendar",
+    "url": "/calendar",
     "nav_item_name": "Календарь"
   },
   "STUDENTS": {
-    "url": "students",
+    "url": "/students",
     "nav_item_name": "ВОСПИТАННИКИ"
   },
   "RECORDING_TRAINING": {
-    "url": "recording_training",
+    "url": "/recording_training",
     "nav_item_name": "ЗАПИСЬ НА ТРЕНИРОВКУ"
   },
   "PARTNERS": {
-    "url": "partners",
+    "url": "/partners",
     "nav_item_name": "ПАРТНЕРЫ",
     "name": "Партнеры"
   }

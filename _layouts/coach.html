@@ -2,8 +2,8 @@
 layout: a_base
 
 ---
-{{ 'coach/style.css' | url | addVarToPage:'cssUrls' | void }}
-{{ 'coach/script.js' | url | addVarToPage:'jsUrls' | void }}
+{{ '/coach/style.css' | makeUrl | addVarToPage:'cssUrls' | void }}
+{{ '/coach/script.js' | makeUrl | addVarToPage:'jsUrls' | void }}
 
 {% pageVariables css=pt-5 pb-5 container %}
 
@@ -62,6 +62,6 @@ layout: a_base
 
 
   <div class="coach-action">
-    <a href="{{ site.data.pages.RECORDING_TRAINING.url | relative_url }}" class="btn g-btn">НАЧАТЬ ТРЕНИРОВАТЬСЯ</a>
+    <a href="{{ site.data.pages.RECORDING_TRAINING.url | makeUrl }}" class="btn g-btn">НАЧАТЬ ТРЕНИРОВАТЬСЯ</a>
   </div>
 </div>

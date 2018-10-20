@@ -6,8 +6,8 @@ permalink: /style.css
 {% include act/link/btn/more/style.css %}
 {% include slider/promo/style.css %}
 
-{% include_relative composition/style.css %}
-{% include_relative tile/style.css %}
+{% include_relative composition/c.css %}
+{% include_relative tile/c.css %}
 
 .home-info {
   max-width: var(--max-width-content);

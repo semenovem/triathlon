@@ -2,8 +2,8 @@
 ---
 
 {% include logo/style.css %}
-{% include contacts/social/one/style.css %}
-{% include contacts/phone/one/style.css %}
+{% include contacts/social/one/c.css %}
+{% include contacts/phone/one/c.css %}
 
 {% include nav/item/header/style.css %}
 {% include nav/item/footer/style.css %}

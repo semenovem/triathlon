@@ -10,9 +10,8 @@ const adaptImgs = {
   _findImgs() {
     const imgs = document.querySelectorAll('[data-src]');
 
-    // [].forEach.call(imgs, console.log);
+    [].forEach.call(imgs, el => console.log(el.getAttribute('data-src')));
 
-    console.log(imgs.length);
   },
 
   _observe(el) {

@@ -7,13 +7,13 @@
     "sign": "ЦСКА",
     "name": "Легкоатлетическо-футбольный комплекс ЦСКА",
     "imgs": [
-      "imgs/places/arena_tssk/63daab.jpg"
+      "/imgs/places/arena_tssk/63daab.jpg"
     ],
     "sports": [
       "run"
     ],
     "describe": "круг 200м",
-    "icon": "icons/map_placemark_place_blue.svg"
+    "icon": "/icons/map_placemark_place_blue.svg"
   },
 
   "tekstilshchiki": {
@@ -24,14 +24,14 @@
     "sign": "Москвич",
     "name": "ГБУ Спортивная школа олимпийского резерва Москвич",
     "imgs": [
-      "imgs/places/tekstilshchiki/7740561.jpg"
+      "/imgs/places/tekstilshchiki/7740561.jpg"
     ],
     "sports": [
       "run"
     ],
     "describe": "круг 200м",
     "site": "http://www.sport-moskvich.ru/",
-    "icon": "icons/map_placemark_place_yellow.svg"
+    "icon": "/icons/map_placemark_place_yellow.svg"
   },
 
   "krylatskoe": {
@@ -42,7 +42,7 @@
     "sign": "Крылатское",
     "name": "Велотрек Крылатское",
     "imgs": [
-      "imgs/places/krylatskoe/s1200.jpeg"
+      "/imgs/places/krylatskoe/s1200.jpeg"
     ],
     "sports": [
       "bike",
@@ -50,7 +50,7 @@
     ],
     "describe": "круг 200м и 400м",
     "site": "www.velotrek.msk.ru",
-    "icon": "icons/map_placemark_place_pink.svg"
+    "icon": "/icons/map_placemark_place_pink.svg"
   },
 
   "park_meshcherskii": {
@@ -61,15 +61,15 @@
     "sign": "Мещерский",
     "name": "Парк Мещерский",
     "imgs": [
-      "imgs/places/park_meshcherskii/11-10-18-13-54.jpg",
-      "imgs/places/park_meshcherskii/345hs.jpg"
+      "/imgs/places/park_meshcherskii/11-10-18-13-54.jpg",
+      "/imgs/places/park_meshcherskii/345hs.jpg"
     ],
     "sports": [
       "run"
     ],
     "describe": "круг 200м и 400м",
     "site": "www.park-meshersky.ru",
-    "icon": "icons/map_placemark_place_pink.svg"
+    "icon": "/icons/map_placemark_place_pink.svg"
   },
 
 
@@ -81,7 +81,7 @@
     "sign": "Самбо70",
     "name": "Центр спорта и образования Самбо 70, отделение Юность",
     "imgs": [
-      "imgs/places/sambo70/sambo.jpeg"
+      "/imgs/places/sambo70/sambo.jpeg"
     ],
     "sports": [
       "swim",
@@ -89,6 +89,6 @@
     ],
     "describe": "круг 200м и 400м",
     "site": "www.самбо-70.рф",
-    "icon": "icons/map_placemark_place_pink.svg"
+    "icon": "/icons/map_placemark_place_pink.svg"
   }
 }

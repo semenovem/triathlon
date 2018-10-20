@@ -9,7 +9,7 @@
 <div class="i-contacts-social-one {{ include.css }}">
   {% if include.social.instagram %}
     <a href="{{ include.social.instagram.url }}" target="_blank" rel="noopener">
-      <img src="{{ '/icons/instagram.svg' | relative_url }}"
+      <img src="{{ '/icons/instagram.svg' | makeUrl }}"
            class="i-contacts-social-one-size"
            alt="{{ include.social.instagram.alt }}"/>
     </a>
@@ -17,7 +17,7 @@
 
   {% if include.social.instagram %}
     <a href="{{ include.social.youtube.url }}" target="_blank" rel="noopener">
-      <img src="{{ '/icons/youtube.svg' | relative_url }}"
+      <img src="{{ '/icons/youtube.svg' | makeUrl }}"
            class="i-contacts-social-one-size"
            alt="{{ include.social.youtube.url }}">
     </a>

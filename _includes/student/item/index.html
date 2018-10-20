@@ -4,7 +4,7 @@
 
 <div class="i-student-item {{ include.css }}">
   <div class="i-student-item-avatar">
-    <img src="{{ avatar | relative_url }}">
+    <img src="{{ avatar | makeUrl }}">
   </div>
   <div class="i-student-item-info">
     <div class="i-student-item-fio">{{ student.fio }}</div>
@@ -28,7 +28,7 @@
     {% for race in student.races %}
       {% assign src=site.data.logo_of_races[race.logo].logo %}
       {% if src %}
-        <img src="{{ src | relative_url }}">
+        <img src="{{ src | makeUrl }}">
       {% endif %}
     {% endfor %}
   </div>

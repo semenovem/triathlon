@@ -1,6 +1,6 @@
 .i-nav-item-header {
   font-family: var(--font-family-first);
-  color: white;
+  color: var(--font-color-primary);
 
   font-size: calc(var(--font-size-base) - 2px);
   font-weight: bold;
@@ -19,14 +19,4 @@
 .i-nav-item-header.selected {
   color: var(--font-color-secondary);
   cursor: default;
-}
-
-
-/* todo example with light theme */
-.bg-light .i-nav-item-header:not(.selected) {
-  color: var(--font-color-primary);
-}
-
-.bg-light .i-nav-item-header:hover {
-  color: var(--font-color-secondary);
 }

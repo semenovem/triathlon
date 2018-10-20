@@ -8,7 +8,7 @@
 
 {% assign items='' | split:',' %}
 {% for photo in include.photos %}
-  {% capture it %}<img src="{{ photo | relative_url }}" class="i-scroll-x-photos-img">{% endcapture %}
+  {% capture it %}<img src="{{ photo | makeUrl }}" class="i-scroll-x-photos-img">{% endcapture %}
 
   {% assign items = items | push: it %}
 {% endfor %}

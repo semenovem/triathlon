@@ -17,8 +17,8 @@ Liquid:
 - jsUrls: Array<String>
 
 пример добавления: 
-{{ 'css/a_base.css' | url | addVarToPage:'cssUrls' | void }}
-{{ 'js/a_base.js' | url | addVarToPage:'jsUrls' | void }}
+{{ '/css/a_base.css' | makeUrl | addVarToPage:'cssUrls' | void }}
+{{ '/js/a_base.js' | makeUrl | addVarToPage:'jsUrls' | void }}
 
 
 ### _includes

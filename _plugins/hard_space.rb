@@ -1,7 +1,10 @@
 module Jekyll
   module AssetFilter
     def hardSpace(txt)
-      txt.gsub(/\s+/, "\u00A0")
+      if txt
+        return txt.gsub(/\s+/, "\u00A0")
+      end
+      nil
     end
 
      def delAllSpace(txt)

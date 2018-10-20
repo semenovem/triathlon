@@ -17,7 +17,7 @@ module Jekyll
 
       up = def_len_path(page['url'])
 
-      (up == 0 ? './' : '../' * up) + props
+      ((up == 0 ? './' : '../' * up) + props).gsub(/\/{2,}/, "/")
     end
 
 
@@ -36,11 +36,17 @@ Liquid::Template.register_tag('url', Jekyll::Url)
 
 module Jekyll
   module AssetFilter
-    def url(resource)
+    def makeUrl(r)
+      resource = trim(r)
+
+      unless resource[0] == "/"
+        return format("./" + resource)
+      end
+
       page = @context.registers[:page]
       up = def_len_path(page['url'])
 
-      (up == 0 ? './' : '../' * up) + resource
+      ((up == 0 ? './' : '../' * up) + resource).gsub(/\/{2,}/, "/")
     end
 
 
@@ -48,6 +54,15 @@ module Jekyll
 
     def def_len_path(path)
       path.scan(/\//).size - 1
+    end
+
+
+    def trim(s)
+      s.gsub(/^\s+/, '').gsub(/\s+$/, '')
+    end
+
+    def format(s)
+      s.gsub(/\/{2,}/, "/")
     end
   end
 end

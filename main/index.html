@@ -10,11 +10,16 @@ cssContentClassName: mt-0
 ---
 
 {% capture sliderItems %}
-  <img class="d-block w-100" src="/imgs/promo_wide/004.jpg" alt="First slide">
+  <img class="d-block w-100"
+       alt="First slide"
+       src="{{ '/imgs/promo_wide/001.jpg' | makeUrl }} "
+       data-src="md:001.jpg"
+  >
+
   <div class="carousel-caption d-none d-md-block">
     <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
     <p>
-        <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | relative_url  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
+        <a class="g-btn btn" href="{{ site.data.pages.ABOUT_TRIATHLON.url | makeUrl  }}">УЗНАТЬ БОЛЬШЕ</a>
     </p>
   </div>
   ------
@@ -22,15 +27,15 @@ cssContentClassName: mt-0
   <div class="carousel-caption d-none d-md-block">
     <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
     <p>
-      <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | relative_url  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
+      <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | makeUrl  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
     </p>
   </div>
   ------
-  <img class="d-block w-100" src="/imgs/promo_wide/005.jpeg" alt="Third slide">
+  <img class="d-block w-100" src="/imgs/promo_wide/003.jpeg" alt="Third slide">
   <div class="carousel-caption d-none d-md-block">
     <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
     <p>
-      <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | relative_url  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
+      <a href="{{ site.data.pages.ABOUT_TRIATHLON.url | makeUrl  }}" class="g-btn btn">УЗНАТЬ БОЛЬШЕ</a>
     </p>
   </div>
 {% endcapture %}
@@ -47,9 +52,9 @@ cssContentClassName: mt-0
     с детским тренером. Вы получаете только профессиональные рекомендации по подготовке к триатлону так как в нашей команде работают тренеры высшей категории. Все что нужно это отправить заявку и мы свяжемся с вами.
   </p>
 
-  {% include_relative composition/index.html %}
+  {% include_relative composition/h.html %}
 
-  {% include_relative tile/index.html %}
+  {% include_relative tile/h.html %}
 </div>
 
 

@@ -7,12 +7,12 @@
 
 <div class="row places-item">
   <div class="col-12 col-md-4 places-item-img">
-    <img src="{{ place.imgs[0] | relative_url }}">
+    <img src="{{ place.imgs[0] | makeUrl }}">
   </div>
 
   <div class="col-12 col-md-8 places-item-info">
     <div class="places-item-main">
-      <img src="{{ place.icon | relative_url }}" class="d-none d-sm-block">
+      <img src="{{ place.icon | makeUrl }}" class="d-none d-sm-block">
       <div>
         <div>{{ place.name }}</div>
         <div>{{ place.addr }}</div>

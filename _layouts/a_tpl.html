@@ -50,23 +50,23 @@
   </script>
 
   <!-- favicons beg -->
-  <link rel="apple-touch-icon" href="{{ '/icons/favicons/fav57.png' | relative_url }}">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ '/icons/favicons/fav72.png' | relative_url }}">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/icons/favicons/fav144.png' | relative_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/icons/favicons/fav180.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/icons/favicons/fav32.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/icons/favicons/fav57.png' | makeUrl }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ '/icons/favicons/fav72.png' | makeUrl }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/icons/favicons/fav144.png' | makeUrl }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/icons/favicons/fav180.png' | makeUrl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/icons/favicons/fav32.png' | makeUrl }}">
   <!-- favicons end -->
 
 
   <!-- vv common styles beg -->
-  <link rel="stylesheet" href="{{ 'libs/bootstrap.min.css' | relative_url }}">
-  <link rel="stylesheet" type="text/css" href="{{ '/css/vars.css' | relative_url | addHash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/indent.css' | relative_url | addHash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/fonts.css' | relative_url | addHash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/typography.css' | relative_url | addHash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/typography_coach.css' | relative_url | addHash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/forms.css' | relative_url | addHash }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/anims.css' | relative_url | addHash }}" />
+  <link rel="stylesheet" href="{{ '/libs/bootstrap.min.css' | makeUrl }}">
+  <link rel="stylesheet" type="text/css" href="{{ '/css/vars.css' | makeUrl | addHash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/indent.css' | makeUrl | addHash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/fonts.css' | makeUrl | addHash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/typography.css' | makeUrl | addHash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/typography_coach.css' | makeUrl | addHash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/forms.css' | makeUrl | addHash }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/anims.css' | makeUrl | addHash }}" />
   <!-- common styles end -->
 
   <!-- styles for page beg -->
@@ -80,9 +80,9 @@
 
 
   <!-- common script beg -->
-  <script defer src="{{ 'libs/jquery-3.3.1.slim.min.js' | relative_url }}"></script>
-  <script defer src="{{ 'libs/popper.min.js' | relative_url }}"></script>
-  <script defer src="{{ 'libs/bootstrap.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/libs/jquery-3.3.1.slim.min.js' | makeUrl }}"></script>
+  <script defer src="{{ '/libs/popper.min.js' | makeUrl }}"></script>
+  <script defer src="{{ '/libs/bootstrap.min.js' | makeUrl }}"></script>
   <!-- common script end -->
 
 
@@ -96,12 +96,6 @@
   <!-- script for page end -->
 </head>
 <body>
-
-
-{% for i in page.cssUrls %}
-> {{ i }}<br>
-{% endfor %}
-<br>
 
 {{ content }}
 

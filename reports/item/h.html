@@ -11,8 +11,8 @@
   <div class="typography-title-of-article reports-item-name">{{ report.name }}</div>
   <div class="typography-title-of-article reports-item-date">{{ report.date | slice:0,10 }}</div>
 
-  {% assign img_src = report.url | srcDeepImg: report.preview[0] | relative_url %}
-  {% assign link = report.url | relative_url %}
+  {% assign img_src = report.url | srcDeepImg: report.preview[0] | makeUrl %}
+  {% assign link = report.url | makeUrl %}
 
   {% include img_fit/text_fit/index.html
       css='reports-item-preview'
@@ -26,6 +26,6 @@
   </div>
 
   <div class="reports-item-act">
-    <a href="{{ report.url | relative_url }}" class="btn g-btn">ПОДРОБНЕЕ</a>
+    <a href="{{ report.url | makeUrl }}" class="btn g-btn">ПОДРОБНЕЕ</a>
   </div>
 </div>

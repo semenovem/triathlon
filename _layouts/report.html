@@ -4,8 +4,8 @@ layout: a_base
 ---
 {% pageVariables css=pt-5 pb-5 container %}
 
-{{ 'report/style.css' | url | addVarToPage:'cssUrls' | void }}
-{{ 'report/script.js' | url | addVarToPage:'jsUrls' | void }}
+{{ '/report/style.css' | makeUrl | addVarToPage:'cssUrls' | void }}
+{{ '/report/script.js' | makeUrl | addVarToPage:'jsUrls' | void }}
 
 
 <h1 class="typo-page-name">Отчеты о прошедших соревнованиях</h1>
@@ -15,10 +15,12 @@ layout: a_base
 <div class="report">
   <h2 class="typography-item-title report-name">{{ page.name }}</h2>
 
-  {% include icon_text/index.html css='' content=page.location icon='icons/location.svg' %}
+  {% assign iconUrl = '/icons/location.svg' | makeUrl %}
+  {% include icon_text/index.html css='' content=page.location icon=iconUrl %}
 
   {% capture date %}{{ page.date | date_to_long_string }}{% endcapture %}
-  {% include icon_text/index.html css='report-meta' content=date icon='icons/calendar.svg' %}
+  {% assign iconUrl = '/icons/calendar.svg' | makeUrl %}
+  {% include icon_text/index.html css='report-meta' content=date icon=iconUrl %}
 
   {% if page.event_site %}
     {% capture event_site %}
@@ -44,9 +46,7 @@ layout: a_base
       {% endfor %}
     </div>
 
-    {% assign img_src = page.url | srcDeepImg: page.preview[0] | relative_url %}
-    {% assign link = report.url | relative_url %}
-
+    {% assign img_src = page.preview[0] | makeUrl %}
     {% include img_fit/text_fit/index.html
         css='report-promo'
         img_src=img_src

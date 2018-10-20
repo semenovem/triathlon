@@ -41,7 +41,7 @@ jsUrls: script.js
     {% endif %}
 
     <div class="prices-item">
-      <a href="{{ 'coach/' | append: coach.coach_id | relative_url }}/">
+      <a href="{{ '/coach/' | append: coach.coach_id | makeUrl }}/">
         {% include coach/avatar/h.html avatars=coach.avatars css='' %}
       </a>
 

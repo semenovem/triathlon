@@ -12,15 +12,15 @@ cssContentClassName: about-triathlon
 {% capture html %}
   <h1 class="typo-page-name text-white anims-fade-move">О Триатлоне</h1>
 {% endcapture %}
-{% assign bgUrl='/imgs/promo_wide/001.png' | relative_url %}
+{% assign bgUrl='/imgs/promo_wide/010.png' | makeUrl %}
 {% include bg/promo/i.html bgCss='' bgUrl=bgUrl content=html contentCss = '' contentPos='center' %}
 
 
 <div class="about-triathlon-content container-fluid p-0 pt-5 anims-fade-move pb-5" style="animation-delay: 0.3s">
   <div class="row g-max-width-content">
-    <img src="{{ 'imgs/about_triathlon/00.png' | relative_url }}"
+    <img src="{{ '/imgs/about_triathlon/00.png' | makeUrl }}"
          class="col-12 col-lg-6 order-lg-last mb-3 about-triathlon-content-img"
-         data-src="{{ 'imgs/about_triathlon/00.png' | relative_url }}"
+         data-src="{{ '/imgs/about_triathlon/00.png' | makeUrl }}"
     >
 
     <div class="col-12 col-lg-6 typo-intro text-justify">Триатлон – это гонка состоящая из трех этапов плавание, велогонка и бег
@@ -30,7 +30,7 @@ cssContentClassName: about-triathlon
 
 
   <div class="row mt-5 g-max-width-content">
-    <img src="{{ 'imgs/about_triathlon/01.png' | relative_url }}"
+    <img src="{{ '/imgs/about_triathlon/01.png' | makeUrl }}"
          class="col-12 col-lg-6 order-lg-last mb-3 about-triathlon-content-img">
 
     <div class="col-12 col-lg-6 typo-intro text-justify">Триатлон преодолело уже десятки тысяч человек всем мире. Так же он
@@ -39,7 +39,7 @@ cssContentClassName: about-triathlon
 
 
   <div class="row mt-5 g-max-width-content">
-    <img src="{{ 'imgs/about_triathlon/02.png' | relative_url }}"
+    <img src="{{ '/imgs/about_triathlon/02.png' | makeUrl }}"
          class="col-12 col-lg-6 order-lg-last mb-3 about-triathlon-content-img">
 
     <div class="col-12 col-lg-6 typo-intro text-justify">Совершенствуя, каждый вид триатлона вы приобретаете выносливость,
@@ -52,7 +52,7 @@ cssContentClassName: about-triathlon
 
     {% include scroll/x/coaches/h.html css='about-triathlon-coaches' coaches=site.coach %}
 
-    <a href="{{ site.data.pages.COACHES.url | relative_url }}" class="g-btn btn mt-4">ВЫБРАТЬ ТРЕНЕРА</a>
+    <a href="{{ site.data.pages.COACHES.url | makeUrl }}" class="g-btn btn mt-4">ВЫБРАТЬ ТРЕНЕРА</a>
   </section>
 </div>
 
