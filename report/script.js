@@ -1,0 +1,1 @@
+"use strict";var iScrollX={init:function(){}},iScrollXPhotos=iScrollX;iScrollXPhotos.init();
