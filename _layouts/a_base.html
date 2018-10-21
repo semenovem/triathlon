@@ -10,7 +10,7 @@ layout: a_tpl
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid g-max-width-content">
-      <a class="navbar-brand" href="/">{% include logo/index.html src='/icons/logos/orig.png' %}</a>
+      <a class="navbar-brand" href="/">{% include logo/index.html src='/icons/logos/orig--w100.png' %}</a>
 
       <div class="collapse navbar-collapse w-100" id="header-navbar">
         <div class="navbar-nav d-flex flex-wrap justify-content-around">
@@ -29,9 +29,9 @@ layout: a_tpl
         </div>
       </div>
 
-      <div class="d-xs-none">
+      <div class="">
         <div class="d-flex flex-column">
-          {% include contacts/phone/one/h.html %}
+          {% include contacts/phone/one/h.html css='d-none d-md-block' %}
           {% include contacts/social/one/h.html social=site.contacts.social css='d-none d-lg-block' %}
         </div>
       </div>

@@ -3,7 +3,7 @@
     "fio": "Калистратов Алексей",
     "about": "Мастер спорта по триатлону",
     "avatars": [
-      "imgs/students/kalistratov_aleksei/ava0.png"
+      "/imgs/students/kalistratov_aleksei/ava0.png"
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich",
@@ -23,7 +23,7 @@
   "rostiagaev_dmitrii": {
     "fio": "Ростягаев Дмитрий",
     "avatars": [
-      "imgs/students/rostiagaev_dmitrii/avatar0.png"
+      "/imgs/students/rostiagaev_dmitrii/avatar0.png"
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
@@ -42,7 +42,7 @@
     "fio": "Париенко Артем",
     "about": "Мастер спорта по триатлону",
     "avatars": [
-      "imgs/students/parienko_artem/avatar0.png"
+      "/imgs/students/parienko_artem/avatar0.png"
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
@@ -61,7 +61,7 @@
     "fio": "Матюх Екатерина",
     "about": "Мастер Спорта по триатлону",
     "avatars": [
-      "imgs/students/matiukh_ekaterina/avatar0.png"
+      "/imgs/students/matiukh_ekaterina/avatar0.png"
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich",
@@ -80,7 +80,7 @@
   "briukhankov_andrei": {
     "fio": "Брюханков Андрей",
     "avatars": [
-      "imgs/students/briukhankov_andrei/avatar0.png"
+      "/imgs/students/briukhankov_andrei/avatar0.png"
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
@@ -98,7 +98,7 @@
   "goldovskii_kirill": {
     "fio": "Голдовский Кирилл",
     "avatars": [
-      "imgs/students/goldovskii_kirill/avatar0.png"
+      "/imgs/students/goldovskii_kirill/avatar0.png"
     ],
     "coaches": [
       "nikulshin_aleksandr_viktrovich"
@@ -117,7 +117,7 @@
     "fio": "Пыльский Юрий",
     "about": "Мастер спорта по триатлону",
     "avatars": [
-      "imgs/students/pylskii_urii/avatar0.png"
+      "/imgs/students/pylskii_urii/avatar0.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -134,7 +134,7 @@
     "fio": "Обухов Никита",
     "about": "Мастер спорта по триатлону",
     "avatars": [
-      "imgs/coaches/obukhov_nikita_urevich/avatar.png"
+      "/imgs/coaches/obukhov_nikita_urevich/000.jpg"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -151,7 +151,7 @@
     "fio": "Стамбульский Максим",
     "about": "Мастер спорта по акватлону",
     "avatars": [
-      "imgs/students/stambulskii_maksim/avatar0.png"
+      "/imgs/students/stambulskii_maksim/avatar0.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -168,7 +168,7 @@
     "fio": "Александрова Елена",
     "about": "Мастер спорта по триатлону",
     "avatars": [
-      "imgs/students/aleksandrova_elena/avatar0.png"
+      "/imgs/students/aleksandrova_elena/avatar0.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -185,7 +185,7 @@
     "fio": "Лапшин Иван",
     "about": "Мастер спорта по триатлону и КМС по плаванию",
     "avatars": [
-      "imgs/students/lapshin_ivan/avatar0.png"
+      "/imgs/students/lapshin_ivan/avatar0.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -202,7 +202,7 @@
     "fio": "Гордеева Дарья",
     "about": "Мастер спорта по триатлону",
     "avatars": [
-      "imgs/students/gordeeva_daria/avatar0.png"
+      "/imgs/students/gordeeva_daria/avatar0.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -222,8 +222,8 @@
     "fio": "Морозова Наталья",
     "about": "",
     "avatars": [
-      "imgs/students/morozova_natalia/avatar0.png",
-      "imgs/students/morozova_natalia/avatar1.png"
+      "/imgs/students/morozova_natalia/avatar0.png",
+      "/imgs/students/morozova_natalia/avatar1.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -258,8 +258,8 @@
     "fio": "Любовь Коровина",
     "about": "",
     "avatars": [
-      "imgs/students/liubov_korovina/avatar0.png",
-      "imgs/students/liubov_korovina/avatar1.png"
+      "/imgs/students/liubov_korovina/avatar0.png",
+      "/imgs/students/liubov_korovina/avatar1.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich"
@@ -281,7 +281,7 @@
     "fio": "Калинин Дмитрий",
     "about": "",
     "avatars": [
-      "imgs/students/kalinin_dmitrii/avatar0.png"
+      "/imgs/students/kalinin_dmitrii/avatar0.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich",
@@ -307,7 +307,7 @@
     "fio": "Новицкий Антон",
     "about": "",
     "avatars": [
-      "imgs/students/novitskii_anton/avatar.png"
+      "/imgs/students/novitskii_anton/avatar.png"
     ],
     "coaches": [
       "goldovskii_kirill_mikhailovich",

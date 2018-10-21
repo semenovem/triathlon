@@ -12,8 +12,8 @@ cssContentClassName: mt-0
 {% capture sliderItems %}
   <img class="d-block w-100"
        alt="First slide"
-       src="{{ '/imgs/promo_wide/001.jpg' | makeUrl }}"
-       data-src="md:001.jpg"
+       src="{{ '/imgs/promo_wide/001--xs.jpg' | makeUrl }}"
+       data-src="xs sm md lg xl"
   >
 
   <div class="carousel-caption d-none d-md-block">
@@ -23,7 +23,10 @@ cssContentClassName: mt-0
     </p>
   </div>
   ------
-  <img class="d-block w-100" src="/imgs/promo_wide/002.jpg" alt="Second slide">
+  <img class="d-block w-100"
+       alt="Second slide"
+       data-src="{{ '/imgs/promo_wide/002.jpg' | makeUrl }} xs sm md lg xl"
+  >
   <div class="carousel-caption d-none d-md-block">
     <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
     <p>
@@ -31,7 +34,10 @@ cssContentClassName: mt-0
     </p>
   </div>
   ------
-  <img class="d-block w-100" src="/imgs/promo_wide/003.jpg" alt="Third slide">
+  <img class="d-block w-100"
+       alt="Third slide"
+       data-src="{{ '/imgs/promo_wide/003.jpg' | makeUrl }} xs sm md lg xl"
+  >
   <div class="carousel-caption d-none d-md-block">
     <h1 class="typo-on-promo mb-5">Триатлон<br>Индивидуальные тренировки</h1>
     <p>

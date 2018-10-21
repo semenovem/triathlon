@@ -7,7 +7,7 @@
     "sign": "ЦСКА",
     "name": "Легкоатлетическо-футбольный комплекс ЦСКА",
     "imgs": [
-      "/imgs/places/arena_tssk/63daab.jpg"
+      "/imgs/places/arena_tssk/00.jpg"
     ],
     "sports": [
       "run"
@@ -24,7 +24,7 @@
     "sign": "Москвич",
     "name": "ГБУ Спортивная школа олимпийского резерва Москвич",
     "imgs": [
-      "/imgs/places/tekstilshchiki/7740561.jpg"
+      "/imgs/places/tekstilshchiki/00.jpg"
     ],
     "sports": [
       "run"
@@ -42,7 +42,7 @@
     "sign": "Крылатское",
     "name": "Велотрек Крылатское",
     "imgs": [
-      "/imgs/places/krylatskoe/s1200.jpeg"
+      "/imgs/places/krylatskoe/00.jpg"
     ],
     "sports": [
       "bike",
@@ -61,8 +61,7 @@
     "sign": "Мещерский",
     "name": "Парк Мещерский",
     "imgs": [
-      "/imgs/places/park_meshcherskii/11-10-18-13-54.jpg",
-      "/imgs/places/park_meshcherskii/345hs.jpg"
+      "/imgs/places/park_meshcherskii/00.jpg"
     ],
     "sports": [
       "run"
@@ -81,7 +80,7 @@
     "sign": "Самбо70",
     "name": "Центр спорта и образования Самбо 70, отделение Юность",
     "imgs": [
-      "/imgs/places/sambo70/sambo.jpeg"
+      "/imgs/places/sambo70/00.jpg"
     ],
     "sports": [
       "swim",

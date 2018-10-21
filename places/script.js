@@ -84,7 +84,7 @@ const places = {
         iconContent: placemark.sign
       }, {
         iconLayout: 'default#imageWithContent',
-        iconImageHref: `/${placemark.icon}`,
+        iconImageHref: `../${placemark.icon}`,
         iconImageSize: [50, 50],
         iconImageOffset: [0, -50],
         iconContentOffset: [0, 21],

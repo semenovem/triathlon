@@ -12,7 +12,7 @@
 {% for coach in site.coach %}
   {% capture it %}
     <a href="{{ '/coach/' | append: coach.coach_id | makeUrl }}/" class="scroll-x-coaches-it">
-      {% include coach/avatar/h.html avatars=coach.avatars css='' %}
+      {% include coach/avatar/h.html avatars=coach.avatars %}
     </a>
   {% endcapture %}
 

@@ -1,10 +1,10 @@
 
 {% if site.contacts.phone %}
-  <a class="i-contacts-phone-one text-white-50" href="tel:{{ site.contacts.phone }}">
+  <a class="i-contacts-phone-one text-white-50 {{ include.css }}" href="tel:{{ site.contacts.phone }}">
     {{ site.contacts.phone | hardSpace }}
   </a>
 {% else%}
-  <a class="i-contacts-phone-one text-white-50" href="mailto:{{ site.contacts.email }}">
+  <a class="i-contacts-phone-one text-white-50 {{ include.css }}" href="mailto:{{ site.contacts.email }}">
     {{ site.contacts.email | hardSpace }}
   </a>
 {% endif %}

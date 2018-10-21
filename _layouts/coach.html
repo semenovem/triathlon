@@ -5,7 +5,7 @@ layout: a_base
 {{ '/coach/style.css' | makeUrl | addVarToPage:'cssUrls' | void }}
 {{ '/coach/script.js' | makeUrl | addVarToPage:'jsUrls' | void }}
 
-{% pageVariables css=pt-5 pb-5 container %}
+{% pageVariables cssContentClassName=pt-5 pb-5 container %}
 
 <h1 class="typo-page-name">Тренеры</h1>
 
@@ -42,7 +42,7 @@ layout: a_base
 
       {% assign on='yes' %}
 
-      {% include student/item/index.html student=student css='' %}
+      {% include student/item/index.html student=student %}
     {% endfor %}
   {% endcapture %}
 

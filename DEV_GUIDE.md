@@ -27,28 +27,8 @@ Liquid:
 
 
 ### --
-img
-
-data-src="путь "
-
-в директории картинки для xs sm md lg xl
-разные "базовые" разрешения
-
-<img src=""
-     class="col-12 col-lg-6 order-lg-last mb-3 about-triathlon-content-img"
-     data-src="imgs/about_triathlon/bike.jpg xs-100 sm-300 md-500 lg-700"
-     data-src="imgs/about_triathlon/bike.jpg md=800 ls=600"
->
-
-для одного использования, где, например, xs - начинается с 500px;
-bike-orig-xs-w100-.jpg
-
-
-bike-w500-xs.jpg     w-500px
-bike-100.jpg     w-700px
-bike-200.jpg     w-900px
-bike-300.jpg     w-
-bike-400.jpg
+data-src=""
+смотри js/adapt_imgs.js
 
 
 
