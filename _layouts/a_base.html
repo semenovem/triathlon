@@ -3,7 +3,6 @@ layout: a_tpl
 ---
 {{ '/css/a_base.css' | makeUrl | addVarToPage:'cssUrls' | void }}
 
-{{ '/js/a_base.js' | makeUrl | addVarToPage:'jsUrls' | void }}
 {{ '/js/anims.js' | makeUrl | addVarToPage:'jsUrls' | void }}
 {{ '/js/adapt_imgs.js' | makeUrl | addVarToPage:'jsUrls' | void }}
 
@@ -58,13 +57,14 @@ layout: a_tpl
         <div class="mr-3 d-flex flex-column">
           {% include nav/item/footer/index.html page_name='COACHING' %}
           <!--{ % include nav/item/footer/index.html page_name='PRICES' %}-->
+          {% include nav/item/footer/index.html page_name='PARTNERS' %}
           {% include nav/item/footer/index.html page_name='CONTACTS' %}
           {% include nav/item/footer/index.html page_name='STUDENTS' %}
         </div>
         <div class="d-flex flex-column">
-          {% include nav/item/footer/index.html page_name='PARTNERS' %}
           {% include nav/item/footer/index.html page_name='RECORDING_TRAINING' %}
         {% include nav/item/footer/index.html page_name='REPORTS' %}
+        {% include nav/item/footer/index.html page_name='EDITOR' %}
         </div>
       </div>
     </nav>

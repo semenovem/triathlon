@@ -10,7 +10,7 @@ const svgmin = require('gulp-svgmin');
 
 const SOURCE = '_site';
 const TARGET = '_dist';
-const EXCEPTION_PATH = ['!refs/**/*', '!libs/**/*'];
+const EXCEPTION_PATH = ['!refs/**/*', '!libs/**/*', '!editor/resources/**/*'];
 
 const PATCH = {
   javascript: makeSource(['**/*.js'].concat(EXCEPTION_PATH)),
@@ -18,7 +18,7 @@ const PATCH = {
   svg: makeSource(['**/*.svg'].concat(EXCEPTION_PATH)),
   css: makeSource(['**/style.css', '404.htmlstyle.css', 'css/**/*.css'].concat(EXCEPTION_PATH)),
   html: makeSource(['**/index.html', '**/404.html'].concat(EXCEPTION_PATH)),
-  move: makeSource(['libs/**/*', 'css/fonts/**/*', 'CNAME']),
+  move: makeSource(['libs/**/*', 'css/fonts/**/*', 'CNAME', 'editor/resources/**/*']),
 };
 
 function makeSource(a) {

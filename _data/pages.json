@@ -84,5 +84,10 @@
     "url": "/partners",
     "nav_item_name": "ПАРТНЕРЫ",
     "name": "Партнеры"
+  },
+  "EDITOR": {
+    "url": "/editor",
+    "nav_item_name": "РЕДАКТОР",
+    "name": "Редактор"
   }
 }
